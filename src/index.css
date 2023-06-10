@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+:root {
+  --verde-turk: #32b0be;
+  --verde-mok: #9bcfcd;
+  --purple-bal: #67358c;
+  --black-bl: #262626;
+  --white-wi: #ffff;
+}
+
+@layer components {
+  .my-custom-style {
+    color: #262626;
+    /* ... */
+  }
+}
