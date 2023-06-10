@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --verde-turk: #32b0be;
   --verde-mok: #9bcfcd;
@@ -14,6 +15,7 @@
 
 @layer components {
   .my-custom-style {
+    color: #262626;
     /* ... */
   }
 }
