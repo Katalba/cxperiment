@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        parrafo: ['Poppins', 'sans-serif']
+        titulo: ['Poppins', 'sans-serif'],
+        parrafo: ['Rubik', 'sans-serif']
       },
       colors: {
         verdeTurk: 'var(--verde-turk)',
