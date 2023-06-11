@@ -5,8 +5,6 @@ const Home = () => {
         <h1 className=' text-4xl text-white font-parrafo font-[700]'>CXperiment</h1>
         <button className='botonVerde rounded-md transition-all duration-300 ease-in-out'>CXperiment</button>
         <button className='botonWhite rounded-md transition-all duration-300 ease-in-out'>CXperiment</button>
-    
-    
     </div>
   )
 }

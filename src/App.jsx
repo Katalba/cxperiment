@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './pages/Home'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <button className='botonWhite rounded-md transition-all duration-300 ease-in-out'>CXperiment</button>
       </div>
       <Routes>
-        <Route path='/' element = {<h1>Home</h1>}></Route> 
+        <Route path='/' element={<Home/>}></Route> 
       </Routes>
     </>
   )
