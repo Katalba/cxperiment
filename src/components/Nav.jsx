@@ -15,17 +15,22 @@ const Nav = () => {
 
   return (
     <>
-      <section className={`nav w-full h-[90px] flex flex-row justify-between items-center px-5 relative bg-whiteWi ${isOpem ? 'h-auto md:h-[90px] min-h-[90px]' : 'h-[90px]'} `}>
+      <section className={`nav w-full h-[90px] md:h-[90px] md:max-h-[90px] lg:h-[90] overflow-hidden flex flex-row justify-between items-start px-5 relative bg-whiteWi ${isOpem ? 'openActive' : ''} transition-all duration-300 ease-linear`}>
 
         {/* logotipo */}
-        <section className='icon w-[200px]'>
+
+        <section className='icon w-[200px] h-[90px] flex flex-row justify-center items-center'>
           <img src='https://res.cloudinary.com/dpiwmbsog/image/upload/v1686474264/consultora/Logo_cxperiment_1_ctumyo.svg' alt='logotipo cxperiment' />
         </section>
 
         {/* menu de navegacion */}
         <section
-          className={`navMenu md:flex md:w-[400px] md:h-full md:flex-row md:justify-end flex-nowrap justify-normal items-center gap-6 
-        ${isOpem ? 'absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-6 pb-5 pr-5 pl-5' : 'hidden'} md:flex md:relative md:pr-0 md:pl-0 md:pb-0 md:top-0  transition-all duration-300 ease-in-out `}
+          className={`navMenu absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-7 p-5
+          
+          md:flex md:w-[400px] md:h-full md:flex-row md:justify-end  md:relative md:p-0 md:top-0 transition-all duration-300 ease-linear ${isOpem ? 'activeOpen' : ''}`}
+
+          // className={`navMenu md:flex md:w-[400px] md:h-full md:flex-row md:justify-end flex-nowrap justify-normal items-center gap-6
+          // ${isOpem ? 'absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-6 pb-5 pr-5 pl-5 animate-slideIn' : 'absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-6 pb-5 pr-5 pl-5 animate-slideIn'} md:flex md:relative md:pr-0 md:pl-0 md:pb-0 md:top-0 transition-all duration-300 ease-linear`}
         >
           <NavLink
             to='#'
@@ -57,7 +62,7 @@ const Nav = () => {
         </section>
 
         {/* toggle */}
-        <section className='toggle w-[60px] h-[60px] flex justify-center items-center md:hidden'>
+        <section className='toggle w-[60px] h-[90px] flex justify-center items-center md:hidden'>
           <div
             className={`nav_toggle w-[50px] h-50px flex flex-col justify-center items-center gap-[3px] cursor-pointer ${isOpem ? 'open' : ''}`}
             onClick={handleToggle}
