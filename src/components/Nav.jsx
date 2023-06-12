@@ -27,7 +27,7 @@ const Nav = () => {
         <section
           className={`navMenu absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-7 p-5
           
-          md:flex md:w-[400px] md:h-full md:flex-row md:justify-end  md:relative md:p-0 md:top-0 transition-all duration-300 ease-linear ${isOpem ? 'activeOpen' : ''}`}
+          md:flex md:w-[400px] md:h-full md:flex-row md:justify-end  md:relative md:p-0 md:top-0 ${isOpem ? 'activeOpen' : ''}`}
 
           // className={`navMenu md:flex md:w-[400px] md:h-full md:flex-row md:justify-end flex-nowrap justify-normal items-center gap-6
           // ${isOpem ? 'absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-6 pb-5 pr-5 pl-5 animate-slideIn' : 'absolute top-[90px] left-0 bg-whiteWi w-full flex flex-col justify-center items-center gap-6 pb-5 pr-5 pl-5 animate-slideIn'} md:flex md:relative md:pr-0 md:pl-0 md:pb-0 md:top-0 transition-all duration-300 ease-linear`}
