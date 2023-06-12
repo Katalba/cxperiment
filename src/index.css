@@ -27,6 +27,17 @@
     transition: opacity 0.3s ease;
   }
 
+  /* .nav_toggle.open>span {
+    transform: rotate(45deg) translate(3px, 3px);
+  } */
+
+  /* .nav_toggle.open>span:nth-child(2) {
+    display: none;
+  } */
+
+  /* .nav_toggle.open>span:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -2px);
+  } */
 
   /* .bordeBotMenu {
     position: absolute;
