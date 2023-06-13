@@ -1,5 +1,6 @@
 import React from 'react'
-import BotonBase from './BotonBase'
+import { v4 as uuidv4 } from 'uuid'
+import CardContenido from './CardContenido.jsx'
 
 const SectionCustomer = () => {
   const imgBg = 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1686618408/consultora/Untitled_design_1_1_xurh9o.svg'
@@ -11,31 +12,11 @@ const SectionCustomer = () => {
   ]
 
   return (
-    <section>
+    <section className='conteinerContenido w-full flex flex-col items-center justify-center gap-6'>
       {
       contenido.map(item => {
         return (
-          <section key={item.id} className='contenedoCard'>
-            <section className='contenido'>
-              <p>En<span>CXperiment</span>, {objeto.parrafo}</p>
-              <div className='main'>
-                <div className='icono'>
-                  <img src='' alt='' />
-                </div>
-                <div className='contenido '>
-                  <p>Encuestas Personalizadas Métricas Relevantes Análisis de Redes Sociale Charlas con Colaboradores</p>
-                </div>
-              </div>
-              <section className='pie'>
-                <BotonBase name='ver servicio' clase='botonVerde' />
-                <BotonBase name='reservar consultori' clase='botonWhite' />
-              </section>
-            </section>
-            <section className='imgBg'>
-              <img src={imgBg} alt='' />
-              <h2 />
-            </section>
-          </section>
+          <CardContenido key={uuidv4()} item={item} imgBg={imgBg} />
         )
       })
       }
