@@ -28,7 +28,10 @@ export default {
         '.botonVerde': {
           backgroundColor: 'var(--verde-turk)',
           color: 'var(--white-wi)',
-          padding: '1rem 2rem',
+          border: '1px solid var(--verde-mok)',
+          borderRadius: '40px',
+          padding: '1rem 2.3rem',
+          fontSize: '18px',
           '&:hover': {
             backgroundColor: 'var(--white-wi)',
             color: 'var(--verde-turk)'
