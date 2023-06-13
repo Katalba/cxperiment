@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        tituloClient: ['Newake', 'sans-serif'],
         titulo: ['Poppins', 'sans-serif'],
         parrafo: ['Rubik', 'sans-serif']
       },
