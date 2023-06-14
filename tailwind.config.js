@@ -10,7 +10,8 @@ export default {
     extend: {
       fontFamily: {
         tituloClient: ['Newake', 'sans-serif'],
-        titulo: ['Poppins', 'sans-serif'],
+        // titulo: ['Poppins', 'sans-serif'],
+        titulo: ['DM Sans', 'sans-serif'],
         parrafo: ['Rubik', 'sans-serif']
       },
       colors: {
@@ -18,7 +19,8 @@ export default {
         verdeMok: 'var(--verde-mok)',
         purpleBal: 'var(--purple-bal)',
         blackBl: 'var(--black-bl)',
-        whiteWi: 'var(--white-wi)'
+        whiteWi: 'var(--white-wi)',
+        textPurple: 'var(--text-purple)'
       }
     }
   },
@@ -40,8 +42,10 @@ export default {
         '.botonWhite': {
           backgroundColor: 'var(--white-wi)',
           color: 'var(--verde-turk)',
-          padding: '1rem 2rem',
           border: '1px solid var(--verde-turk)',
+          borderRadius: '40px',
+          padding: '1rem 2.3rem',
+          fontSize: '18px',
           '&:hover': {
             backgroundColor: 'var(--verde-turk)',
             color: 'var(--white-wi)',
