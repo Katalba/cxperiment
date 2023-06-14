@@ -1,5 +1,6 @@
 import React from 'react'
 import BotonBase from './BotonBase'
+import { IoArrowForwardSharp } from 'react-icons/io5'
 
 const CardContenido = ({ item, imgBg }) => {
   const isPar = (val) => {
@@ -18,7 +19,9 @@ const CardContenido = ({ item, imgBg }) => {
           </div>
         </div>
         <section className='pie w-full flex flex-row justify-between items-center gap-4'>
-          <BotonBase name='ver servicio' clase='botonVerde' />
+          <BotonBase name='ver servicio' clase='botonVerde'>
+            <IoArrowForwardSharp />
+          </BotonBase>
           <BotonBase name='reservar consultori' clase='botonWhite' />
         </section>
       </section>
