@@ -23,9 +23,9 @@ const CardContenido = ({ item, imgBg }) => {
         </section>
       </section>
 
-      <section className='imgBg w-[60%] h-full overflow-hidden flex justify-start items-center'>
+      <section className={`imgBg w-[60%] h-full overflow-hidden flex items-center ${isPar(item.id) ? 'justify-end' : 'justify-start'}`}>
         <img src={imgBg} alt='logo cxPeriment' className={`h-[150%] mb-10 object-cover object-left overflow-hidden transform relative ${isPar(item.id) ? '-scale-x-100' : ''}`} />
-        <h2 className='absolute w-[300px] ml-[220px] font-titulo font-[700] text-[56px] text-textPurple leading-none'>
+        <h2 className={`absolute w-[300px] ${isPar(item.id) ? 'mr-[200px]' : 'ml-[220px]'} font-titulo font-[700] text-[56px] text-textPurple leading-none`}>
           {item.titulo}
         </h2>
       </section>
