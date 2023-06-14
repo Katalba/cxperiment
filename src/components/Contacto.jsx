@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoCall, IoLocation, IoMail } from 'react-icons/io5'
+import { IoArrowForwardOutline, IoCall, IoLocation, IoMail } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import BotonBase from './BotonBase'
 
@@ -51,13 +51,17 @@ const Contacto = () => {
             </div>
 
             <div className='w-full flex flex-row flex-nowrap gap-5'>
-              <label for='opciones' className='w-full flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>Opciones de consulta
-                <select id='opciones' name='opciones' className='w-full p-5 rounded-[50px] font-parrafo font-[400] text-lg bg-whiteWi border-none outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100'>
+              <label for='opciones' className='w-full flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem] relative'>Opciones de consulta
+                <select id='opciones' name='opciones' className='w-full p-5 rounded-[50px] font-parrafo font-[400] text-lg bg-whiteWi border-none outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 appearance-none relative'>
                   <option value=''>Servicio de customer research</option>
                   <option value='opcion1'>Opción 1</option>
                   <option value='opcion2'>Opción 2</option>
                   <option value='opcion3'>Opción 3</option>
                 </select>
+                <div className='absolute w-[50px] h-[68px] bottom-0 right-2 flex items-center px-2 pointer-events-none'>
+                  {/* Reemplazar 'IconComponent' con el icono deseado */}
+                  <IoArrowForwardOutline className='w-5 h-5 text-red-500' />
+                </div>
               </label>
             </div>
 
