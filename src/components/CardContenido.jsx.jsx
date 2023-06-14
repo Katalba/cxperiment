@@ -3,12 +3,12 @@ import BotonBase from './BotonBase'
 
 const CardContenido = ({ item, imgBg }) => {
   const isPar = (val) => {
-    return val % 2 === 0
+    return val % 2 !== 0
   }
   return (
-    <section className={`contenedoCard w-full flex ${isPar(item.id) ? 'flex-row-reverse' : 'flex-row'} flex-row justify-start items-center`}>
-      <section className='contenido w-1/2'>
-        <p>En<span>CXperiment</span>, {item.parrafo}</p>
+    <section className={`contenedoCard w-full max-w-[1650px] h-[440px] flex bg-whiteWi ${isPar(item.id) ? 'flex-row-reverse' : 'flex-row'} flex-row justify-start items-center px-10`}>
+      <section className='contenido w-[40%] h-full flex flex-col justify-center items-start gap-4'>
+        <p className='w-full font-parrafo font-[400] text-textPurple text-lg '>En <span className='font-[600]'>CXperiment</span>, {item.parrafo}</p>
         <div className='main'>
           <div className='icono'>
             <img src={item.icono} alt='icono seccion contenido' />
@@ -23,9 +23,11 @@ const CardContenido = ({ item, imgBg }) => {
         </section>
       </section>
 
-      <section className='imgBg w-1/2'>
-        <img src={imgBg} alt='logo cxPeriment background' />
-        <h2 />
+      <section className='imgBg w-[60%] h-full overflow-hidden flex justify-start items-center'>
+        <img src={imgBg} alt='logo cxPeriment' className={`h-[150%] mb-10 object-cover object-left overflow-hidden transform relative ${isPar(item.id) ? '-scale-x-100' : ''}`} />
+        <h2 className='absolute w-[300px] ml-[220px] font-titulo font-[700] text-[56px] text-textPurple leading-none'>
+          {item.titulo}
+        </h2>
       </section>
     </section>
 
