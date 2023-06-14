@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,800&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:ital,wght@0,400;0,500;0,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,8 @@
   --purple-bal: #67358c;
   --black-bl: #262626;
   --white-wi: #ffff;
+  --text-purple: #67358c;
+  --bg-form: #f2f1fa;
 }
 
 @layer components {
@@ -47,6 +50,17 @@
     background-position: center, center;
     background-attachment: fixed;
   }
+
+  .homeImage {
+    position: relative;
+    width: 100%;
+    height: calc(915px - 90px);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/collage-creativo-experiencia-cliente%201.png?alt=media&token=20826d1d-347d-4bc7-98aa-c317c321c168&_gl=1*20tnie*_ga*MTQ2MjEzMjM4Ny4xNjc3MjUxMTI0*_ga_CW55HF8NVT*MTY4NjYwNTAzNy42LjEuMTY4NjYwNTMyOC4wLjAuMA..);
+    background-size: cover;
+    background-position: center, center;
+    background-attachment: fixed;
+  }
+
 
   .homeImage::before {
     content: "";

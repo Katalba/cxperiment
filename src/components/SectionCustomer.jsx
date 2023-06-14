@@ -12,7 +12,7 @@ const SectionCustomer = () => {
   ]
 
   return (
-    <section className='conteinerContenido w-full flex flex-col items-center justify-center gap-6'>
+    <section className='conteinerContenido w-full flex flex-col items-center justify-center gap-5 lg:gap-7'>
       {
       contenido.map(item => {
         return (
