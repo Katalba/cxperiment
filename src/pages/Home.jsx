@@ -6,7 +6,7 @@ const Home = () => {
   const algo = 'algo'
   console.log(algo)
   return (
-    <div className='w-full min-h-screen h-auto flex flex-col bg-purple-300 justify-start items-center gap-5'>
+    <div className='w-full min-h-screen h-auto flex flex-col bg-purple-300 justify-start items-center gap-5 lg:gap-7'>
       <Nav />
       <CardPrecentacion />
       <SectionCustomer />
