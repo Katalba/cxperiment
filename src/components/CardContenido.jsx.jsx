@@ -6,18 +6,18 @@ const CardContenido = ({ item, imgBg }) => {
     return val % 2 !== 0
   }
   return (
-    <section className={`contenedoCard w-full max-w-[1650px] h-[440px] flex bg-whiteWi ${isPar(item.id) ? 'flex-row-reverse' : 'flex-row'} flex-row justify-start items-center px-10`}>
-      <section className='contenido w-[40%] h-full flex flex-col justify-center items-start gap-4'>
+    <section className={`contenedoCard w-full max-w-[1650px] h-[440px] flex bg-whiteWi ${isPar(item.id) ? 'flex-row-reverse' : 'flex-row'} flex-row justify-start items-center px-10 py-1 overflow-hidden`}>
+      <section className='contenido w-[40%] h-full flex flex-col justify-center items-start gap-5'>
         <p className='w-full font-parrafo font-[400] text-textPurple text-lg '>En <span className='font-[600]'>CXperiment</span>, {item.parrafo}</p>
-        <div className='main'>
-          <div className='icono'>
-            <img src={item.icono} alt='icono seccion contenido' />
+        <div className='main w-full flex flex-row justify-between items-center gap-4'>
+          <div className='icono w-[30%]'>
+            <img src={item.icono} alt='icono seccion contenido' className='w-full aspect-square object-contain' />
           </div>
-          <div className='contenido '>
-            <p>{item.subparrafo}</p>
+          <div className='contenido w-[70%]'>
+            <p className='text-parrafo font-[400] text-xl text-textPurple'>{item.subparrafo}</p>
           </div>
         </div>
-        <section className='pie'>
+        <section className='pie w-full flex flex-row justify-between items-center gap-4'>
           <BotonBase name='ver servicio' clase='botonVerde' />
           <BotonBase name='reservar consultori' clase='botonWhite' />
         </section>
