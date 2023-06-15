@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import BotonBase from './BotonBase'
+import { useFetchForm } from '../hook/useFetchForm'
 
 const FormContacto = () => {
   const [name, setName] = useState('')
@@ -10,7 +11,14 @@ const FormContacto = () => {
   const [opciones, setOpciones] = useState('')
   const [mensaje, setMensaje] = useState('')
 
+  // control del error
   const [errors, setErrors] = useState({})
+
+  // control de mensaje y modal
+  const [successMessage, setSuccessMessage] = useState('')
+  const [showModal, setShowModal] = useState(false)
+
+  const mailUser = 'guillermoneculqueo@gmail.com'
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -38,16 +46,32 @@ const FormContacto = () => {
     }
   }
 
+  const handleReset = () => {
+    setName('')
+    setEmail('')
+    setTelefono('')
+    setEmpresa('')
+    setOpciones('')
+    setMensaje('')
+    setErrors({})
+  }
+
+  const handleCloseModal = () => {
+    setSuccessMessage('')
+    setShowModal(false)
+    handleReset()
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
 
     const mensajeUsuario = {
       name,
+      message: mensaje,
       email,
       telefono,
       empresa,
       opciones,
-      mensaje,
       fecha: new Date()
     }
 
@@ -95,11 +119,41 @@ const FormContacto = () => {
     } else if (Object.keys(validationErrors).length === 0) {
       setErrors({})
       console.log(mensajeUsuario)
+      useFetchForm(mailUser, mensajeUsuario)
+        .then((response) => {
+          console.log('Respuesta del servidor -> ', response)
+          setSuccessMessage(response.message)
+          setShowModal(true)
+
+          // reset estados
+          handleReset()
+        })
+        .catch((error) => {
+          console.log('Error -> ', error)
+          setSuccessMessage(error.message)
+          setShowModal(true)
+
+          // reset estados
+          handleReset()
+        })
+        .finally(() => {
+          console.log('Finalizado')
+          setTimeout(() => {
+            handleCloseModal()
+          }, 6000)
+        })
     }
   }
 
   return (
-    <section className='w-full flex justify-center items-center'>
+    <section className='w-full flex flex-col justify-center items-center gap-2'>
+      {showModal
+        ? (
+          <div className='w-full h-[90px] rounded-md flex items-center justify-center bg-green-400'>
+            <p className='font-titulo font-[500] text-lg text-center text-white '>{successMessage}</p>
+          </div>
+          )
+        : null}
       <form onSubmit={handleSubmit} className='w-full h-auto md:w-[80%] lg:w-full xl:w-[620px] xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-3 xl:px-7 py-14 flex flex-col gap-4 lg:gap-6 xl:gap-7'>
         <div className='w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
           <label htmlFor='name' className='md:w-1/2 flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
