@@ -4,6 +4,8 @@ import SectionCustomer from '../components/SectionCustomer'
 import HomeBanner from '../components/HomeBanner'
 import FlipCard from '../components/FlipCard'
 
+import Contacto from '../components/Contacto'
+
 const Home = () => {
   return (
     <div className='w-full min-h-screen h-auto flex flex-col bg-green-100 justify-start items-center gap-5 lg:gap-7'>
@@ -12,6 +14,7 @@ const Home = () => {
       <CardPrecentacion />
       <FlipCard />
       <SectionCustomer />
+      <Contacto />
     </div>
   )
 }

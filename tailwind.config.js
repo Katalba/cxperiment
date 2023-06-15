@@ -20,7 +20,8 @@ export default {
         purpleBal: 'var(--purple-bal)',
         blackBl: 'var(--black-bl)',
         whiteWi: 'var(--white-wi)',
-        textPurple: 'var(--text-purple)'
+        textPurple: 'var(--text-purple)',
+        bgForm: 'var(--bg-form)'
       }
     }
   },
