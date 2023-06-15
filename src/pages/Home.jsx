@@ -12,8 +12,10 @@ const Home = () => {
       <Nav />
       <HomeBanner />
       <CardPrecentacion />
-      <FlipCard />
-      <SectionCustomer />
+      <Titulo titulo='Servicios' />
+      <FlipCardComp />
+      <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
+      <CardListContenido />
       <Contacto />
     </div>
   )

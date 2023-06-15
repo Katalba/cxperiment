@@ -1,10 +1,10 @@
-import React from 'react';
-import Title from './Title';
-import BotonBase from './BotonBase';
+import React from 'react'
+import Title from './Title'
+import BotonBase from './BotonBase'
 
-const FlipCard = ({ bgColor, textFront, textBack}) => {
+const FlipCard = ({ bgColor, textFront, textBack }) => {
   const cardBg = `bg-${bgColor}`
-  
+
   return (
     <section className='flipCard group w-[441px] h-[441px] [perspective:1000px]'>
       <div className='cardService relative w-full h-full transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
@@ -22,7 +22,7 @@ const FlipCard = ({ bgColor, textFront, textBack}) => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default FlipCard;
+export default FlipCard
