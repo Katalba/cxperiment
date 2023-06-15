@@ -15,7 +15,7 @@ const Home = () => {
       <section className='w-full h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20'>
         <CardPrecentacion />
         <Titulo titulo='Servicios' />
-        {/* <FlipCard /> */}
+        <FlipCard />
         <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
         <CardListContenido />
         <Contacto />
