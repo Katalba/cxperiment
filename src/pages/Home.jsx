@@ -1,17 +1,18 @@
 import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
-import SectionCustomer from '../components/SectionCustomer'
 import HomeBanner from '../components/HomeBanner'
 import FlipCardComp from '../components/FlipCardComp'
 import Contacto from '../components/Contacto'
+import CardListContenido from '../components/CardListContenido'
+import Titulo from '../components/Titulo'
 
 const Home = () => {
   return (
-    <div className='w-full min-h-screen h-auto flex flex-col bg-green-100 justify-start items-center gap-5 lg:gap-7'>
+    <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center'>
       <Nav />
       <HomeBanner />
       <CardPrecentacion />
-      <FlipCardComp />
+      <FlipCard />
       <SectionCustomer />
       <Contacto />
     </div>
