@@ -2,6 +2,7 @@ import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
 import SectionCustomer from '../components/SectionCustomer'
 import HomeBanner from '../components/HomeBanner'
+import FlipCard from '../components/FlipCard'
 
 const Home = () => {
   const algo = 'algo'
@@ -11,6 +12,7 @@ const Home = () => {
       <Nav />
       <HomeBanner />
       <CardPrecentacion />
+      <FlipCard />
       <SectionCustomer />
     </>
   )

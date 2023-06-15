@@ -11,7 +11,7 @@ const HomeBanner = () => {
       className='mySwiper sm:flex-row  sm: h-[300px]   md:h-[400px]  lg:h-[500px] '
     >
       <SwiperSlide>
-        <div className='h-[915px] flex'>
+        <section className='h-[915px] flex'>
           <div className='homeImage sm:flex-row sm: h-[300px] md:h-[400px] lg:h-[500px]' />
           <div className='homeTitle absolute top-[50%] sm:left-[1rem] lg:left-[3rem] sm: w-1/2 lg:w-2/5'>
             <h1 className='font-medium sm:text-[34px] md:text-[50px] lg:text-[56px]'>Convertí a tus clientes en tus fans</h1>
@@ -23,7 +23,7 @@ const HomeBanner = () => {
               <BotonBase name='Reservar consultoría' clase='botonWhite' />
             </div>
           </div>
-        </div>
+        </section>
 
       </SwiperSlide>
 
