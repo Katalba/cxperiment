@@ -2,6 +2,8 @@ import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
 import SectionCustomer from '../components/SectionCustomer'
 import HomeBanner from '../components/HomeBanner'
+import FlipCard from '../components/FlipCard'
+
 import Contacto from '../components/Contacto'
 
 const Home = () => {
@@ -10,6 +12,7 @@ const Home = () => {
       <Nav />
       <HomeBanner />
       <CardPrecentacion />
+      <FlipCard />
       <SectionCustomer />
       <Contacto />
     </div>
