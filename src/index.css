@@ -23,6 +23,7 @@
     /* ... */
   }
 
+  /* guille */
   .navMenu .active .bordeBotMenu {
     bottom: -8px;
     background-color: var(--verde-turk);
@@ -36,6 +37,8 @@
     height: 300px;
   }
 
+
+  /* katy */
   .mySwiper {
     width: 100%;
     height: calc(915px - 90px);
