@@ -32,8 +32,6 @@ export default {
           color: 'var(--white-wi)',
           border: '1px solid var(--verde-mok)',
           borderRadius: '40px',
-          padding: '1rem 2.3rem',
-          fontSize: '18px',
           '&:hover': {
             backgroundColor: 'var(--white-wi)',
             color: 'var(--verde-turk)'
@@ -44,8 +42,6 @@ export default {
           color: 'var(--verde-turk)',
           border: '1px solid var(--verde-turk)',
           borderRadius: '40px',
-          padding: '1rem 2.3rem',
-          fontSize: '18px',
           '&:hover': {
             backgroundColor: 'var(--verde-turk)',
             color: 'var(--white-wi)',
