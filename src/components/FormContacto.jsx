@@ -154,7 +154,7 @@ const FormContacto = () => {
           </div>
           )
         : null}
-      <form onSubmit={handleSubmit} className='w-full h-auto md:w-[80%] lg:w-full xl:w-[620px] xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-3 xl:px-7 py-14 flex flex-col gap-4 lg:gap-6 xl:gap-7'>
+      <form onSubmit={handleSubmit} className='w-full h-auto md:w-[80%] lg:w-full xl:w-[620px] xl:h-auto bg-bgForm rounded-2xl px-5 md:px-5 lg:px-3 xl:px-7 py-14 flex flex-col gap-4 lg:gap-6 xl:gap-7'>
         <div className='w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
           <label htmlFor='name' className='md:w-1/2 flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
             Nombre
