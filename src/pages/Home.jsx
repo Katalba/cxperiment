@@ -1,7 +1,6 @@
 import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
 import HomeBanner from '../components/HomeBanner'
-import FlipCard from '../components/FlipCard'
 
 import Contacto from '../components/Contacto'
 import CardListContenido from '../components/CardListContenido'
