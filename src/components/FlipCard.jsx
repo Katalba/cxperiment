@@ -6,6 +6,7 @@ const FlipCard = ({ bgColor, textFront, textBack }) => {
   const cardBg = `bg-${bgColor}`
 
   return (
+    // <section className='flipCard group w-[80%] h-[300px] lg:w-[441px] lg:h-[441px] [perspective:1000px]'>
     <section className='flipCard group w-[441px] h-[441px] [perspective:1000px]'>
       <div className='cardService relative w-full h-full transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
         <div className={`cardFront ${cardBg} absolute inset-0  border-2 rounded-t-[100px] rounded-tr-[100px] rounded-b-[0] w-full h-full [backface-visibility: visible] flex flex-col justify-center items-center`}>

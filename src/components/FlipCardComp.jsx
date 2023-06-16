@@ -2,6 +2,7 @@ import FlipCard from './FlipCard'
 
 const FlipCardComp = () => {
   return (
+  // <section className='w-full h-auto flex flex-col max-w-[1650px] lg:flex-row justify-center items-center overflow-hidden py-10 gap-5 lg:gap-5'>
     <section className='w-[1200px] h-[441px] flex'>
       <FlipCard
         bgColor='purpleBal'
