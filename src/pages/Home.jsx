@@ -5,6 +5,7 @@ import FlipCardComp from '../components/FlipCardComp'
 import Contacto from '../components/Contacto'
 import CardListContenido from '../components/CardListContenido'
 import Titulo from '../components/Titulo'
+import QuoteSection from '../components/QuoteSection'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <FlipCardComp />
       <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
       <CardListContenido />
+      <QuoteSection />
       <Contacto />
     </div>
   )
