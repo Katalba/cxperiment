@@ -1,10 +1,10 @@
 import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
 import HomeBanner from '../components/HomeBanner'
-
 import Contacto from '../components/Contacto'
 import CardListContenido from '../components/CardListContenido'
 import Titulo from '../components/Titulo'
+import QuoteSection from '../components/QuoteSection'
 import FlipCardComp from '../components/FlipCardComp'
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
         <FlipCardComp />
         <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
         <CardListContenido />
+        <QuoteSection />
         <Contacto />
       </section>
     </div>
