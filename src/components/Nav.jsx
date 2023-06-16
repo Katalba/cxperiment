@@ -6,27 +6,29 @@ const Nav = () => {
   const [activeIndex, setActiveIndex] = useState(null)
 
   const handleActive = (index) => {
-    setActiveIndex(index === activeIndex ? null : index)
+    // setActiveIndex(index === activeIndex ? null : index)
+  }
+
+  const handleToggle = () => {
+    setIdOpen(!isOpem)
   }
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section')
-    // console.log(sections)
-
+    const sections = document.querySelectorAll('section.contenedor')
     const handleScroll = () => {
-      const currentPosition = window.scrollY
+      sections.forEach((element, index) => {
+        const top = window.scrollY
+        const offset = element.offsetTop - 150
+        const height = element.offsetHeight
+        const id = element.getAttribute('id')
 
-      sections.forEach((section) => {
-        const contactos = section.getAttribute('contacto')
-        const servicios = section.getAttribute('servicios')
-        const sobremi = section.getAttribute('sobremi')
-
-        const navLink = document.querySelector(`.navMenu a[href*='${id}']`)
-
-        if (section.offsetTop <= currentPosition && currentPosition < section.offsetTop + section.offsetHeight) {
-          navLink.classList.add('active')
-        } else {
-          navLink.classList.remove('active')
+        if (top >= offset && top < offset + height) {
+          setActiveIndex(index)
+        } else if (
+          (id === 'contacto' || id === 'servicios' || id === 'sobremi') &&
+          activeIndex === index
+        ) {
+          setActiveIndex(null)
         }
       })
     }
@@ -36,11 +38,7 @@ const Nav = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
-
-  const handleToggle = () => {
-    setIdOpen(!isOpem)
-  }
+  }, [activeIndex])
 
   return (
     <>
