@@ -1,12 +1,12 @@
 const QuoteSection = () => {
   return (
     <section className='w-full h-[732px] bg-verdeTurk relative flex justify-center items-center'>
-      <section className='absolute w-[1184px] h-[540px] flex flex-col justify-center items-center space-y-[2rem] '>
+      <section className='absolute w-full h-auto lg:w-[1184px] lg:h-[540px] flex flex-col justify-center items-center space-y-[2rem]'>
         <div className='logo w-full h-[43px]'>
           <img className='w-full h-full' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/logoCxperiment.svg?alt=media&token=ae43d2fd-4d55-49d1-805d-4866f1346e61' alt='logo' />
         </div>
-        <div className='quote w-full h-[188px]'>
-          <p className='text-[36px] text-whiteWi text-center'> “Mi objetivo es brindar a las empresas las herramientas necesarias para alcanzar el éxito a través de la mejora continua de su Customer Experience”.</p>
+        <div className='quote w-[80%] h-auto'>
+          <p className='sm:text-[30px] md:text-[34px] lg:text-[36px] text-whiteWi text-center'> “Mi objetivo es brindar a las empresas las herramientas necesarias para alcanzar el éxito a través de la mejora continua de su Customer Experience”.</p>
         </div>
         <div className='w-[200px] h-[200px]'>
           <img className='w-full h-full rounded-full grayscale' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/Jesica.svg?alt=media&token=1e6a32bf-50bc-4b87-bedf-0ca751429aa1' alt='founder' />
