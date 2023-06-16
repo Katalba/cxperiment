@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 
 const Nav = () => {
@@ -9,13 +9,42 @@ const Nav = () => {
     setActiveIndex(index === activeIndex ? null : index)
   }
 
+  useEffect(() => {
+    const sections = document.querySelectorAll('section')
+    // console.log(sections)
+
+    const handleScroll = () => {
+      const currentPosition = window.scrollY
+
+      sections.forEach((section) => {
+        const contactos = section.getAttribute('contacto')
+        const servicios = section.getAttribute('servicios')
+        const sobremi = section.getAttribute('sobremi')
+
+        const navLink = document.querySelector(`.navMenu a[href*='${id}']`)
+
+        if (section.offsetTop <= currentPosition && currentPosition < section.offsetTop + section.offsetHeight) {
+          navLink.classList.add('active')
+        } else {
+          navLink.classList.remove('active')
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   const handleToggle = () => {
     setIdOpen(!isOpem)
   }
 
   return (
     <>
-      <section className={`nav w-full fixed top-0 left-0 z-10 h-[90px] md:h-[90px] md:max-h-[90px] lg:h-[90] overflow-hidden flex flex-row justify-between items-start px-5  bg-whiteWi ${isOpem ? 'openActive' : ''} transition-all duration-300 ease-linear`}>
+      <nav className={`nav w-full fixed top-0 left-0 z-10 h-[90px] md:h-[90px] md:max-h-[90px] lg:h-[90] overflow-hidden flex flex-row justify-between items-start px-5  bg-whiteWi ${isOpem ? 'openActive' : ''} transition-all duration-300 ease-linear`}>
 
         {/* logotipo */}
 
@@ -93,7 +122,7 @@ const Nav = () => {
             <span className={`w-[30px] h-[4px] bg-verdeTurk rounded-sm transition-all duration-300 ease-linear ${isOpem ? 'transform -rotate-45 translate-x-0 -translate-y-[2.5px]' : ''}`} />
           </div>
         </section>
-      </section>
+      </nav>
     </>
   )
 }
