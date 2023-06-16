@@ -1,11 +1,11 @@
 import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
 import HomeBanner from '../components/HomeBanner'
-import FlipCardComp from '../components/FlipCardComp'
 import Contacto from '../components/Contacto'
 import CardListContenido from '../components/CardListContenido'
 import Titulo from '../components/Titulo'
 import QuoteSection from '../components/QuoteSection'
+import FlipCardComp from '../components/FlipCardComp'
 
 const Home = () => {
   return (
