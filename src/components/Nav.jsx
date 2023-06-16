@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <>
-      <section className={`nav w-full h-[90px] md:h-[90px] md:max-h-[90px] lg:h-[90] overflow-hidden flex flex-row justify-between items-start px-5 relative bg-whiteWi ${isOpem ? 'openActive' : ''} transition-all duration-300 ease-linear`}>
+      <section className={`nav w-full fixed top-0 left-0 z-10 h-[90px] md:h-[90px] md:max-h-[90px] lg:h-[90] overflow-hidden flex flex-row justify-between items-start px-5  bg-whiteWi ${isOpem ? 'openActive' : ''} transition-all duration-300 ease-linear`}>
 
         {/* logotipo */}
 

@@ -9,7 +9,7 @@ import FlipCardComp from '../components/FlipCardComp'
 
 const Home = () => {
   return (
-    <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center'>
+    <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative'>
       <Nav />
       <HomeBanner />
       <section className='w-full h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20'>
