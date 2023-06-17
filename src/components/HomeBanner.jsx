@@ -11,7 +11,7 @@ const HomeBanner = () => {
       className='mySwiper w-full h-[450px] sm:h-[500px] md:h-[550px] lg:h-[650px] xl:h-[800px] sm:flex-row mt-[91px]'
     >
       <SwiperSlide>
-        <div className='h-full flex'>
+        <div className='w-full sm:h-[161px] md:h-[262px] lg:h-[363px] xl:h-[509px] flex'>
           <div className='homeImage sm:flex-row h-full' />
           <div className='homeTitle absolute top-[50%] sm:left-[1rem] lg:left-[3rem] sm: w-1/2 lg:w-2/5'>
             <h1 className='font-medium sm:text-[34px] md:text-[50px] lg:text-[56px]'>Convertí a tus clientes en tus fans</h1>
