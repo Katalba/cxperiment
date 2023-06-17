@@ -2,6 +2,8 @@ import React from 'react'
 import Title from './Title'
 import BotonBase from './BotonBase'
 
+FLIPCARD
+
 const FlipCard = ({ bgColor, radiusFront, radiusBack, radiusImg, textFront, textBack, fcbImg, titulo }) => {
   const cardBg = `bg-${bgColor}`
 

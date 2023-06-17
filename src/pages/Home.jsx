@@ -1,24 +1,26 @@
 import CardPrecentacion from '../components/CardPrecentacion'
 import Nav from '../components/Nav'
 import HomeBanner from '../components/HomeBanner'
-import FlipCardComp from '../components/FlipCardComp'
 import Contacto from '../components/Contacto'
 import CardListContenido from '../components/CardListContenido'
 import Titulo from '../components/Titulo'
 import QuoteSection from '../components/QuoteSection'
+import FlipCardComp from '../components/FlipCardComp'
 
 const Home = () => {
   return (
-    <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center'>
+    <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative'>
       <Nav />
       <HomeBanner />
-      <CardPrecentacion />
-      <Titulo titulo='Servicios' />
-      <FlipCardComp />
-      <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
-      <CardListContenido />
-      <QuoteSection />
-      <Contacto />
+      <section className='w-full h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20'>
+        <CardPrecentacion />
+        <Titulo titulo='Servicios' />
+        <FlipCardComp />
+        <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
+        <CardListContenido />
+        <QuoteSection />
+        <Contacto />
+      </section>
     </div>
   )
 }
