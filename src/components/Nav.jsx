@@ -34,8 +34,8 @@ const Nav = () => {
         }
         return false
       })
-      console.log('currentSection -->', currentSection)
-      console.log('currentSection -->', currentSection)
+      // console.log('currentSection -->', currentSection)
+      // console.log('currentSection -->', currentSection)
 
       setActiveIndex(currentSection ? currentSection.id : null)
     }

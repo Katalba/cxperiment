@@ -146,7 +146,7 @@ const FormContacto = () => {
   }
 
   return (
-    <section className='w-full flex flex-col justify-center items-center gap-2'>
+    <section className='card-scroll w-full flex flex-col justify-center items-center gap-2'>
       {showModal
         ? (
           <div className='w-full h-[90px] rounded-md flex items-center justify-center bg-green-400'>
