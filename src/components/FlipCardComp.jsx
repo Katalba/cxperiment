@@ -15,7 +15,7 @@ const FlipCardComp = () => {
   //   }
   // })
   return (
-    <section className='w-[1200px] h-[441px] flex'>
+    <section className='w-full h-auto flex justify-center space-x-4'>
       <FlipCard
         titulo='Custumer Research'
         bgColor='purpleBal'

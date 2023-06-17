@@ -1,8 +1,22 @@
-import React from 'react'
+// import React, { useEffect, useRef } from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import CardContenido from './CardContenido.jsx.jsx'
+import CardContenido from './CardContenido.jsx'
+// import ScrollReveal from 'scrollreveal'
 
 const CardListContenido = () => {
+  // const revealRef = useRef()
+
+  // useEffect(() => {
+  //   const sr = ScrollReveal({
+  //     duration: 1500,
+  //     delay: 300,
+  //     distance: '50px',
+  //     easing: 'ease-in-out'
+  //   })
+
+  //   sr.reveal('.card-contenido', { interval: 100 })
+  // }, [])
+
   const imgBg = 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1686860782/consultora/Group_1_h9hlha.svg'
 
   const contenido = [

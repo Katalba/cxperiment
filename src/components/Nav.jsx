@@ -1,36 +1,43 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
+import { useGeneralContext } from '../context/GeneralContext'
 
 const Nav = () => {
   const [isOpem, setIdOpen] = useState(false)
   const [activeIndex, setActiveIndex] = useState(null)
 
-  const handleActive = (index) => {
-    // setActiveIndex(index === activeIndex ? null : index)
-  }
+  const { contactoRef, serviciosRef, sobremiRef } = useGeneralContext()
+
+  // const handleActive = (index) => {
+  //   // setActiveIndex(index === activeIndex ? null : index)
+  // }
 
   const handleToggle = () => {
     setIdOpen(!isOpem)
   }
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section.contenedor')
     const handleScroll = () => {
-      sections.forEach((element, index) => {
-        const top = window.scrollY
-        const offset = element.offsetTop - 150
-        const height = element.offsetHeight
-        const id = element.getAttribute('id')
+      const sections = [
+        { ref: contactoRef, id: 'contacto' },
+        { ref: serviciosRef, id: 'servicios' },
+        { ref: sobremiRef, id: 'sobremi' }
+      ]
 
-        if (top >= offset && top < offset + height) {
-          setActiveIndex(index)
-        } else if (
-          (id === 'contacto' || id === 'servicios' || id === 'sobremi') &&
-          activeIndex === index
-        ) {
-          setActiveIndex(null)
+      const currentSection = sections.find((section) => {
+        const { ref } = section
+        if (ref && ref.current) {
+          const top = window.scrollY
+          const offset = ref.current.offsetTop - 150
+          const height = ref.current.offsetHeight
+          return top >= offset && top < offset + height
         }
+        return false
       })
+      // console.log('currentSection -->', currentSection)
+      // console.log('currentSection -->', currentSection)
+
+      setActiveIndex(currentSection ? currentSection.id : null)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -38,7 +45,7 @@ const Nav = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [activeIndex])
+  }, [contactoRef, serviciosRef, sobremiRef])
 
   return (
     <>
@@ -74,12 +81,12 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 0 ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
-            onClick={() => handleActive(0)}
+            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 'servicios' ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            // onClick={() => handleActive(0)}
           >
             Servicios
             {/* {activeIndex === 0 && <div className='bordeBotMenu translate-x-1 transition-all duration-300 ease ' />} */}
-            {activeIndex === 0 && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
+            {activeIndex === 'servicios' && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
           </Link>
 
           <Link
@@ -88,11 +95,11 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink  cursor-pointer font-titulo text-lg relative ${activeIndex === 1 ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
-            onClick={() => handleActive(1)}
+            className={`navLink  cursor-pointer font-titulo text-lg relative ${activeIndex === 'sobremi' ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            // onClick={() => handleActive(1)}
           >
             Sobre mi
-            {activeIndex === 1 && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
+            {activeIndex === 'sobremi' && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
 
           </Link>
           <Link
@@ -101,11 +108,11 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 2 ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
-            onClick={() => handleActive(2)}
+            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 'contacto' ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            // onClick={() => handleActive(2)}
           >
             Contacto
-            {activeIndex === 2 && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
+            {activeIndex === 'contacto' && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
           </Link>
         </section>
 
