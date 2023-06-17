@@ -1,6 +1,10 @@
+import { useGeneralContext } from '../context/GeneralContext'
+
 const QuoteSection = () => {
+  const { sobremiRef } = useGeneralContext()
+
   return (
-    <section id='sobremi' className='contenedor w-full h-[732px] bg-verdeTurk relative flex justify-center items-center'>
+    <section ref={sobremiRef} id='sobremi' className='contenedor w-full h-[732px] bg-verdeTurk relative flex justify-center items-center'>
       <section className='absolute w-[1184px] h-[540px] flex flex-col justify-center items-center space-y-[2rem] '>
         <div className='logo w-full h-[43px]'>
           <img className='w-full h-full' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/logoCxperiment.svg?alt=media&token=ae43d2fd-4d55-49d1-805d-4866f1346e61' alt='logo' />
