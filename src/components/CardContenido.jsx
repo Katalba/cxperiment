@@ -22,7 +22,7 @@ const CardContenido = ({ item, imgBg }) => {
 
   return (
     <>
-      <section className={`contenedoCard card-contenido bg-whiteWi w-full max-w-[1650px] h-auto lg:h-[460px] flex flex-row flex-wrap justify-start items-center lg:flex-row lg:flex-nowrap lg:justify-start lg:items-center ${isPar(item.id) ? 'lg:flex-row-reverse' : 'lg:flex-row'} p-2 xl:px-10 py-1 overflow-hidden gap-5 lg:gap-5 `}>
+      <section className={`contenedoCard card-scroll bg-whiteWi w-full max-w-[1650px] h-auto lg:h-[460px] flex flex-row flex-wrap justify-start items-center lg:flex-row lg:flex-nowrap lg:justify-start lg:items-center ${isPar(item.id) ? 'lg:flex-row-reverse' : 'lg:flex-row'} p-2 xl:px-10 py-1 overflow-hidden gap-5 lg:gap-5 `}>
 
         {/* seccion contenido */}
         <section className='contenido w-full md:h-auto xl:h-[400px] lg:w-[40%] lg:h-full flex flex-col md:flex-row lg:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
