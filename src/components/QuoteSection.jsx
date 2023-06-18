@@ -1,4 +1,6 @@
 import { useGeneralContext } from '../context/GeneralContext'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const QuoteSection = () => {
   const { sobremiRef } = useGeneralContext()
@@ -18,6 +20,10 @@ const QuoteSection = () => {
         <div className='w-[200px] h-[52px] text-center'>
           <h3 className=' text-whiteWi text-[18px] font-semibold'> Jesica Bilotti</h3>
           <p className='text-whiteWi text-[18px]'> Customer Experience</p>
+        </div>
+        <div className=' flex justify-center w-[200px] h-[52px] space-x-[1rem]'>
+          <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='invert-[100%] w-[44px] h-[44px]' /></Link>
+          <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='invert-[100%] w-[44px] h-[44px]' /> </Link>
         </div>
         <div />
       </section>
