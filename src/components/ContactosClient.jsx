@@ -58,9 +58,9 @@ const ContactosClient = () => {
       </div>
       <div className='w-full h-auto flex justify-start items-center'>
         <BotonBase
+          func={handlePhoneClick}
           name='Conecta'
           clase='botonVerde font-titulo font-[600] font-md lg:text-lg '
-          onClick={handlePhoneClick}
         >
           <FaWhatsapp className='text-2xl' />
         </BotonBase>
