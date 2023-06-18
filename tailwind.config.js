@@ -17,6 +17,7 @@ export default {
       colors: {
         verdeTurk: 'var(--verde-turk)',
         verdeMok: 'var(--verde-mok)',
+        verdeMok2: 'var(--verde-mok2)',
         purpleBal: 'var(--purple-bal)',
         blackBl: 'var(--black-bl)',
         whiteWi: 'var(--white-wi)',

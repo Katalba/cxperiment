@@ -2,6 +2,7 @@
 import FlipCard from './FlipCard'
 // import Swiper from 'swiper'
 // import 'swiper/css/swiper.css'
+import { useGeneralContext } from '../context/GeneralContext'
 
 const FlipCardComp = () => {
   // const swiperRef = useRef(null);
@@ -14,8 +15,10 @@ const FlipCardComp = () => {
   //     swiper.destroy()
   //   }
   // })
+  const { serviciosRef } = useGeneralContext()
+
   return (
-    <section className='w-full h-auto flex justify-center space-x-4'>
+    <section ref={serviciosRef} id='servicios' className='w-full h-auto flex justify-center space-x-4'>
       <FlipCard
         titulo='Custumer Research'
         bgColor='purpleBal'
