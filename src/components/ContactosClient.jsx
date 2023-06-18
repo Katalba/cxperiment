@@ -1,6 +1,7 @@
 import React from 'react'
 import { FcGoogle, FcHome, FcPhoneAndroid } from 'react-icons/fc'
 import { FaWhatsapp } from 'react-icons/fa'
+import BotonBase from './BotonBase'
 
 const ContactosClient = () => {
   const mail = 'info.cxperiment@gmail.com'
@@ -9,17 +10,17 @@ const ContactosClient = () => {
 
   const handleEmailClick = (e) => {
     e.preventDefault()
-    window.location.href = `mailto:${mail}`
+    window.open(`mailto:${mail}`, '_blank')
   }
 
   const handlePhoneClick = (e) => {
     e.preventDefault()
-    window.location.href = `https://wa.me/${watsapp}`
+    window.open(`https://wa.me/${watsapp}`, '_blank')
   }
 
   const handleLocationClick = (e) => {
     e.preventDefault()
-    window.location.href = `https://www.google.com/maps?q=${ubicacion}`
+    window.open(`https://www.google.com/maps?q=${ubicacion}`, '_blank')
   }
 
   return (
@@ -56,7 +57,13 @@ const ContactosClient = () => {
         </a>
       </div>
       <div className='w-full h-auto flex justify-start items-center'>
-        <button className='whatsapp px-4 py-3 bg-verdeTurk rounded-3xl text-whiteWi flex flex-row justify-center items-center flex-nowrap gap-2'>Conecta <FaWhatsapp className='text-2xl text-whiteWi' /> </button>
+        <BotonBase
+          func={handlePhoneClick}
+          name='Conecta'
+          clase='botonVerde font-titulo font-[600] font-md lg:text-lg '
+        >
+          <FaWhatsapp className='text-2xl' />
+        </BotonBase>
       </div>
     </section>
   )
