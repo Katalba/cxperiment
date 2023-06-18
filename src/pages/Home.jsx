@@ -13,7 +13,7 @@ const Home = () => {
     <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
       <Nav />
       <HomeBanner />
-      <section className='w-full h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20'>
+      <section className='w-full max-w-[1650px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 overflow-hidden'>
         <CardPrecentacion />
         <Titulo titulo='Servicios' />
         <FlipCardComp />
