@@ -22,7 +22,7 @@ const CardContenido = ({ item, imgBg }) => {
 
   return (
     <>
-      <section className={`contenedoCard card-scroll bg-whiteWi w-full max-w-[1650px] h-auto lg:h-[460px] flex flex-row flex-wrap justify-start items-center lg:flex-row lg:flex-nowrap lg:justify-start lg:items-center ${isPar(item.id) ? 'lg:flex-row-reverse' : 'lg:flex-row'} p-2 xl:px-10 py-1 overflow-hidden gap-5 lg:gap-5 `}>
+      <section className={`contenedoCard card-scroll bg-whiteWi w-full max-w-[1650px] h-auto lg:h-[460px] flex flex-col-reverse  flex-wrap justify-start items-center lg:flex-row lg:flex-nowrap lg:justify-start lg:items-center ${isPar(item.id) ? 'lg:flex-row-reverse' : 'lg:flex-row'} p-2 xl:px-10 py-1 overflow-hidden gap-5 lg:gap-5 `}>
 
         {/* seccion contenido */}
         <section className='contenido w-full md:h-auto xl:h-[400px] lg:w-[40%] lg:h-full flex flex-col md:flex-row lg:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
@@ -50,9 +50,9 @@ const CardContenido = ({ item, imgBg }) => {
         </section>
 
         {/* seccion imagen */}
-        <section className={`imgBg w-full h-[280px] lg:w-[60%] lg:h-full overflow-hidden flex items-center ${isPar(item.id) ? 'justify-end' : 'justify-start'}`}>
-          <img src={imgBg} alt='logo cxPeriment' className={`h-full w-full object-cover object-center lg:object-left opacity-40 transform relative  ${isPar(item.id) ? '-scale-x-100' : ''}`} />
-          <h2 className={`absolute w-full text-center lg:w-[300px] ${isPar(item.id) ? 'lg:mr-[132px]' : 'lg:ml-[125px]'} font-titulo font-[700] text-[56px] text-textPurple leading-none`}>
+        <section className={`imgBg w-full h-[90px] md:h-[280px] lg:w-[60%] lg:h-full overflow-hidden flex justify-start items-center ${isPar(item.id) ? 'justify-end' : 'justify-start'}`}>
+          <img src={imgBg} alt='logo cxPeriment' className={`h-full w-full object-contain md:object-cover object-center lg:object-left opacity-40 transform relative  ${isPar(item.id) ? '-scale-x-100' : ''}`} />
+          <h2 className={`absolute w-full  text-left md:text-center lg:w-[300px] ${isPar(item.id) && 'left-2 md:left-auto'} ${isPar(item.id) ? 'lg:mr-[132px]' : 'lg:ml-[125px]'} font-titulo font-[700] text-3xl md:text-[45px] lg:text-[56px] text-textPurple leading-none`}>
             {item.titulo}
           </h2>
         </section>
