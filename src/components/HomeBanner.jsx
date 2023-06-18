@@ -8,6 +8,7 @@ const HomeBanner = () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
+      id='home'
       className='mySwiper w-full h-[450px] sm:h-[500px] md:h-[550px] lg:h-[650px] xl:h-[800px] sm:flex-row mt-[91px]'
     >
       <SwiperSlide>
