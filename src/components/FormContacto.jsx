@@ -149,92 +149,94 @@ const FormContacto = () => {
     <section className='card-scroll w-full flex flex-col justify-center items-center gap-2'>
       {showModal
         ? (
-          <div className='w-full h-[90px] rounded-md flex items-center justify-center bg-green-400'>
+          <div className='w-full h-[90px] rounded-lg flex items-center justify-center bg-green-400'>
             <p className='font-titulo font-[500] text-lg text-center text-white '>{successMessage}</p>
           </div>
           )
         : null}
-      <form onSubmit={handleSubmit} className='w-full h-auto md:w-[80%] lg:w-full xl:w-[620px] xl:h-auto bg-bgForm rounded-2xl px-5 md:px-5 lg:px-3 xl:px-7 py-14 flex flex-col gap-4 lg:gap-6 xl:gap-7'>
+      <form onSubmit={handleSubmit} className='w-full h-auto md:w-[80%] lg:w-full xl:w-[620px] xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-3 xl:px-7 py-14 flex flex-col gap-5 lg:gap-6 xl:gap-7'>
         <div className='w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
-          <label htmlFor='name' className='md:w-1/2 flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='name' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
             Nombre
             <input
               type='text' name='name' id='name'
               value={name}
               onChange={handleInputChange}
-              className={`p-3 lg:p-3 xl:p-5 rounded-[50px] font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.name ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Nombre'
+              className={`p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.name ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Nombre'
             />
             {errors.name && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.name}</p>)}
           </label>
-          <label htmlFor='email' className='md:w-1/2 flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='email' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
             Email
             <input
               type='email' name='email' id='email'
               value={email}
               onChange={handleInputChange}
-              className={`p-3 lg:p-3 xl:p-5 rounded-[50px] font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.email ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Email'
+              className={`p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.email ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Email'
             />
             {errors.email && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.email}</p>)}
           </label>
         </div>
 
         <div className='w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
-          <label htmlFor='telefono' className='md:w-1/2 flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='telefono' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
             Teléfono
             <input
               type='text' name='telefono' id='telefono'
               value={telefono}
               onChange={handleInputChange}
-              className={`p-3 lg:p-3 xl:p-5 rounded-[50px] font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.telefono ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Teléfono'
+              className={`p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.telefono ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Teléfono'
             />
             {errors.telefono && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.telefono}</p>)}
           </label>
-          <label htmlFor='empresa' className='md:w-1/2 flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='empresa' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
             Empresa
             <input
               type='text' name='empresa' id='empresa'
               value={empresa}
               onChange={handleInputChange}
-              className={`p-3 lg:p-3 xl:p-5 rounded-[50px] font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.empresa ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Empresa'
+              className={`p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 ${errors.empresa ? 'border-2 border-red-600 focus:ring-0' : ''}`} placeholder='Empresa'
             />
             {errors.empresa && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.empresa}</p>)}
           </label>
         </div>
 
         <div className='w-full flex flex-row flex-nowrap gap-5'>
-          <label htmlFor='opciones' className='w-full flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem] relative'>Opciones de consulta
-            <select
-              id='opciones' name='opciones'
-              value={opciones}
-              onChange={handleInputChange}
-              className={`w-full p-3 lg:p-3 xl:p-5 rounded-[50px] font-parrafo font-[400] text-lg bg-whiteWi outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 appearance-none inputBgCard
+          <label htmlFor='opciones' className='w-full flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem] relative'>Opciones de consulta
+            <div className='w-full h-full relative'>
+              <select
+                id='opciones' name='opciones'
+                value={opciones}
+                onChange={handleInputChange}
+                className={`w-full p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] text-lg bg-whiteWi outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 appearance-none inputBgCard relative
               ${errors.opciones ? 'border-2 border-red-600 focus:ring-0' : ''}`}
-            >
-              <option value=''>Servicio de customer research</option>
-              <option value='opcion1'>Opción 1</option>
-              <option value='opcion2'>Opción 2</option>
-              <option value='opcion3'>Opción 3</option>
-            </select>
-            <div className={`absolute ${errors.opciones ? 'bottom-8 right-2' : 'bottom-0 right-2'} w-[50px] h-[68px] flex items-center px-2 pointer-events-none`}>
-              {/* Reemplazar 'IconComponent' con el icono deseado */}
-              <IoArrowForwardOutline className={`w-5 h-5  ${errors.opciones ? 'text-red-500 ' : 'text-verdeTurk'} `} />
+              >
+                <option value=''>Servicio de customer research</option>
+                <option value='opcion1'>Opción 1</option>
+                <option value='opcion2'>Opción 2</option>
+                <option value='opcion3'>Opción 3</option>
+              </select>
+              <div className='absolute w-auto h-full flex items-center justify-center bottom-0 right-0 px-2 pointer-events-none'>
+                {/* Reemplazar 'IconComponent' con el icono deseado */}
+                <IoArrowForwardOutline className={`w-5 h-5  ${errors.opciones ? 'text-red-500 ' : 'text-verdeTurk'} `} />
+              </div>
             </div>
             {errors.opciones && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.opciones}</p>)}
           </label>
         </div>
 
-        <label htmlFor='mensaje' className='w-full flex flex-col gap-1 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+        <label htmlFor='mensaje' className='w-full flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
           Mensaje
           <textarea
             name='mensaje' id='mensaje'
             value={mensaje}
             onChange={handleInputChange}
-            className={`block p-3 lg:p-3 xl:p-4 w-full h-[140px] rounded-xl  outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 font-parrafo font-[400] text-lg resize-none ${errors.mensaje ? 'border-2 border-red-600 focus:ring-0' : ''}`}
+            className={`block p-3 lg:p-3 xl:p-4 w-full h-[140px] rounded-lg  outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 font-parrafo font-[400] text-lg resize-none ${errors.mensaje ? 'border-2 border-red-600 focus:ring-0' : ''}`}
             placeholder='Ingrese su mensaje'
           />
           {errors.mensaje && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.mensaje}</p>)}
         </label>
-        <div className='w-full flex flex-row flex-nowrap gap-5'>
+        <div className='w-full flex flex-row flex-nowrap justify-center items-center mt-6'>
           <BotonBase type='submit' name='enviar mensaje' clase='botonVerde' />
         </div>
       </form>
