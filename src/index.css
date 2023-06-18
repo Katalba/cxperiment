@@ -46,11 +46,8 @@
   }
 
   .homeImage {
-    position: relative;
-    width: 100%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/fotoHero.png?alt=media&token=d4f9e2cb-e468-48df-b9e1-a9ae1e1b1ab5);
-    background-size: cover;
-    background-position: center center;
+
   }
 
 
