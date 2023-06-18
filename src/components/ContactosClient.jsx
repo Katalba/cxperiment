@@ -28,7 +28,7 @@ const ContactosClient = () => {
       <div className='w-full h-auto flex flex-col gap-4'>
         <h3 className='font-parrafo text-purpleBal  font-[700] text-lg uppercase'>Contactanos</h3>
         <h2 className='font-titulo text-purpleBal font-[700] text-5xl'>Conectemos hoy</h2>
-        <p className='font-parrafo font-[400] text-lg text-[#333]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem voluptas maiores harum iusto enim aperiam, necessitatibus nisi qui velit fuga veniam est? Architecto, beatae quis perspiciatis magni blanditiis nisi eveniet!</p>
+        <p className='font-parrafo font-[400] text-lg text-[#333]'>Si necesitás una cotización o simplemente tenés curiosidad por saber más sobre alguno de los servicios, ¡Escribime!</p>
       </div>
       <div className='w-full h-auto flex flex-col gap-4'>
         <a
