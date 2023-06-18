@@ -12,7 +12,7 @@ const HomeBanner = () => {
     >
       <SwiperSlide>
         <div className='w-full sm:h-[161px] md:h-[262px] lg:h-[363px] xl:h-[509px] flex'>
-          <div className='homeImage sm:flex-row h-full' />
+          <div className='homeImage  sm:flex-row h-full' />
           <div className='homeTitle absolute top-[50%] sm:left-[1rem] lg:left-[3rem] sm: w-1/2 lg:w-2/5'>
             <h1 className='font-medium sm:text-[34px] md:text-[50px] lg:text-[56px]'>Convertí a tus clientes en tus fans</h1>
             <p className='text-justify hidden sm:block'>Mejoramos la experiencia de tus clientes y tu reputación de marca, identificamos oportunidades, implementamos soluciones efectivas, y ayudamos a impulsar tu crecimiento en el mercado.</p>

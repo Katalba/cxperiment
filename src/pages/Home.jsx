@@ -6,6 +6,7 @@ import CardListContenido from '../components/CardListContenido'
 import Titulo from '../components/Titulo'
 import QuoteSection from '../components/QuoteSection'
 import FlipCardComp from '../components/FlipCardComp'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <CardListContenido />
         <QuoteSection />
         <Contacto />
+        <Footer />
       </section>
     </div>
   )
