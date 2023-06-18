@@ -50,21 +50,19 @@
     width: 100%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/fotoHero.png?alt=media&token=d4f9e2cb-e468-48df-b9e1-a9ae1e1b1ab5);
     background-size: cover;
-    background-position: center, center;
-    background-attachment: fixed;
+    background-position: center center;
   }
 
 
-  .homeImage::before {
+  /* .homeImage::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 27%, rgba(9, 9, 121, 0) 77%);
     pointer-events: none;
-  }
+  } */
 
   .buttons {
     display: flex;

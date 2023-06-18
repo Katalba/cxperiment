@@ -1,4 +1,5 @@
 import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -15,8 +16,8 @@ const Footer = () => {
         <div className='redes'>
           <h3>Redes Sociales</h3>
           <div className='flex space-x-2 mt-[1rem]'>
-            <FaLinkedin className='w-[44px] h-[44px]' />
-            <FaInstagram className='w-[44px] h-[44px]' />
+            <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='w-[44px] h-[44px]' /></Link>
+            <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='w-[44px] h-[44px]' /> </Link>
           </div>
         </div>
       </div>
