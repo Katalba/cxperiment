@@ -15,7 +15,7 @@ const FormContacto = () => {
   const [errors, setErrors] = useState({})
 
   // control de mensaje y modal
-  const [successMessage, setSuccessMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState({})
   const [showModal, setShowModal] = useState(false)
 
   const mailUser = 'guillermoneculqueo@gmail.com'
@@ -57,7 +57,7 @@ const FormContacto = () => {
   }
 
   const handleCloseModal = () => {
-    setSuccessMessage('')
+    setSuccessMessage({})
     setShowModal(false)
     handleReset()
   }
@@ -122,15 +122,25 @@ const FormContacto = () => {
       useFetchForm(mailUser, mensajeUsuario)
         .then((response) => {
           console.log('Respuesta del servidor -> ', response)
-          setSuccessMessage(response.message)
+          if (response.message === 'The form was submitted successfully.') {
+            setSuccessMessage({ mensaje: 'Mensaje enviado, me pondre en contacto contigo a la brevedad', color: 'bg-green-500' })
+          } else if (response.message === 'This form needs Activation. We\'ve sent you an email containing an \'Activate Form\' link. Just click it and your form will be actived!') { setSuccessMessage({ mensaje: 'Necesita activar el formulario, se le ha enviado un email con un enlace para activarlo', color: 'bg-orange-500' }) } else { setSuccessMessage({ mensaje: 'Ocurrio un error al enviar el mensaje', color: 'bg-red-500' }) }
+
           setShowModal(true)
+
+          // This form needs Activation. We've sent you an email containing an 'Activate Form' link. Just click it and your form will be actived!
 
           // reset estados
           handleReset()
         })
         .catch((error) => {
           console.log('Error -> ', error)
-          setSuccessMessage(error.message)
+          if (error.message === 'Failed to fetch') {
+            setSuccessMessage({ mensaje: 'Ups!!! algo salio mal, intentalo mas tarde', color: 'bg-red-500' })
+            setShowModal(true)
+          } else {
+            setSuccessMessage({ mensaje: error.message, color: 'bg-red-500' })
+          }
           setShowModal(true)
 
           // reset estados
@@ -149,8 +159,8 @@ const FormContacto = () => {
     <section className='card-scroll w-full flex flex-col justify-center items-center gap-2'>
       {showModal
         ? (
-          <div className='w-full h-[90px] rounded-lg flex items-center justify-center bg-green-400'>
-            <p className='font-titulo font-[500] text-lg text-center text-white '>{successMessage}</p>
+          <div className={`w-full h-[90px] rounded-lg flex items-center justify-center ${successMessage.color}`}>
+            <p className='font-titulo font-[500] text-lg text-center text-white '>{successMessage.mensaje}</p>
           </div>
           )
         : null}
