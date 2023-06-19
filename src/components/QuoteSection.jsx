@@ -6,7 +6,7 @@ const QuoteSection = () => {
   const { sobremiRef } = useGeneralContext()
 
   return (
-    <section ref={sobremiRef} id='sobremi' className='contenedor w-full h-[calc(100vh_-_90px)] bg-verdeTurk relative flex justify-center items-center space-y-[2rem]'>
+    <section ref={sobremiRef} id='sobremi' className='card-scroll contenedor w-full h-[calc(100vh_-_90px)] bg-verdeTurk relative flex justify-center items-center space-y-[2rem]'>
       <section className='container absolute h-full flex flex-col justify-center items-center space-y-6'>
         <div className='logo w-[240px] h-[31px]'>
           <img className='w-full h-full' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/logoWhite.png?alt=media&token=e025e897-8318-46c4-b001-3ad03397f262' alt='logo' />
