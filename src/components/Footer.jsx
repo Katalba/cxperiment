@@ -16,8 +16,8 @@ const Footer = () => {
         <div className='redes md:mx-0'>
           <h3>Redes Sociales</h3>
           <div className='flex space-x-2 mt-[1rem]'>
-            <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='w-[44px] h-[44px]' /></Link>
-            <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='w-[44px] h-[44px]' /> </Link>
+            <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='w-[44px] h-[44px] hover:text-[#264BD3] hover:bg-whiteWi rounded-lg' /></Link>
+            <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='w-[44px] h-[44px] transition duration-700 ease-in-out hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg' /> </Link>
           </div>
         </div>
       </div>
