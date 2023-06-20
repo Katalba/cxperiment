@@ -84,7 +84,7 @@ const FlipCardComp = () => {
       <section
         ref={serviciosRef}
         id='servicios'
-        className={`cajaPadre w-[300px] md:w-[385px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 py-10`}
+        className={`cajaPadre w-[300px] md:w-[385px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
         // style={{ transform: `translateX(${getTranslateX()}px)` }}
       >
         {
@@ -103,7 +103,7 @@ const FlipCardComp = () => {
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
         <HiChevronRight />
       </button>
-      <div className='w-full h-[30px] absolute bottom-0 left-0 flex justify-center items-center gap-5 lg:hidden'>
+      <div className='w-full h-[30px] absolute bottom-10 left-0 flex justify-center items-center gap-5 lg:hidden'>
         <span className={`h-[12px] aspect-square ${currentCardIndex === 2 ? 'bg-verdeTurk' : 'bg-purpleBal'} rounded-full`} />
         <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 0 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
         <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 1 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
