@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import FlipCard from './FlipCard'
 // import Swiper from 'swiper'
 // import 'swiper/css/swiper.css'
@@ -77,7 +77,7 @@ const FlipCardComp = () => {
   }
 
   return (
-    <div className='w-full h-auto flex justify-center items-center'>
+    <div className='w-full h-auto flex justify-center items-center gap-2 relative'>
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
         <HiChevronLeft />
       </button>
@@ -103,6 +103,11 @@ const FlipCardComp = () => {
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
         <HiChevronRight />
       </button>
+      <div className='w-full h-[30px] absolute bottom-0 left-0 flex justify-center items-center gap-5 lg:hidden'>
+        <span className={`h-[12px] aspect-square ${currentCardIndex === 2 ? 'bg-verdeTurk' : 'bg-purpleBal'} rounded-full`} />
+        <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 0 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
+        <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 1 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
+      </div>
     </div>
   )
 }
