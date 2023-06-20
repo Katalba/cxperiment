@@ -2,22 +2,24 @@ import React from 'react'
 import Title from './Title'
 import BotonBase from './BotonBase'
 
-const FlipCard = ({ bgColor, radiusFront, radiusBack, radiusImg, textFront, textBack, fcbImg, titulo }) => {
+const FlipCard = ({ objeto }) => {
+  const { bgColor, radiusFront, radiusBack, radiusImg, textFront, textBack, fcbImg, titulo } = objeto
+
   const cardBg = `bg-${bgColor}`
 
   return (
-    <section className='flipCard group w-[381px] h-[381px] lg:h-[441px] [perspective:1000px]'>
-      <div className='cardService relative w-full h-full transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
-        <div className={`cardFront ${cardBg} absolute inset-0  border-2 ${radiusFront} w-full h-full [backface-visibility: visible] flex flex-col justify-center items-center`}>
-          <div className='w-[305px] h-[208px]'>
+    <section className='flipCard group w-[300px] h-[300px] md:w-[380px] md:h-[380px] aspect-square p-0 '>
+      <div className='cardService relative w-full h-full transition-all ease-in-out duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+        <div className={`cardFront ${cardBg} absolute ${radiusFront} w-full h-full [backface-visibility: visible] flex flex-col justify-center items-center`}>
+          <div className='w-full h-full p-2 flex flex-col justify-center items-center gap-4 overflow-hidden'>
             <Title name={`${titulo}`} />
-            <p className='text-[18px] text-whiteWi mt-[30px] text-center'>{textFront}</p>
+            <p className='text-lg text-whiteWi text-center'>{textFront}</p>
           </div>
         </div>
-        <div className={`cardBack ${cardBg} absolute inset-0  border-2 ${radiusBack} w-full h-full [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center`}>
+        <div className={`cardBack ${cardBg} absolute ${radiusBack} w-full h-full [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center overflow-hidden`}>
           <img className={`absolute w-full h-full object-fill ${radiusImg}`} src={`${fcbImg}`} alt='imagenServicio' />
-          <div className='w-[305px] h-[60] absolute text-center'>
-            <p className='text-[18px] text-whiteWi mb-[50px] font-semibold'>{textBack}</p>
+          <div className='w-full h-full absolute text-center overflow-hidden p-5 flex flex-col justify-center items-center gap-4'>
+            <p className='text-lg text-whiteWi font-semibold'>{textBack}</p>
             <BotonBase name='Más info' clase='botonVerde' />
           </div>
         </div>
