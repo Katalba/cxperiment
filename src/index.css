@@ -25,8 +25,12 @@
   }
 
   /* guille */
-  .difuminado {
-    position: relative;
+  .navMenu .active .bordeBotMenu {
+    bottom: -8px;
+    background-color: var(--verde-turk);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s ease;
   }
 
   .nav.openActive {
