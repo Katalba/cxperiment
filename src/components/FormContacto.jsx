@@ -156,7 +156,7 @@ const FormContacto = () => {
   }
 
   return (
-    <section className='card-scroll w-full flex flex-col justify-center items-center gap-2'>
+    <section className='card-scroll w-full xl:w-full xl:max-w-[600px] flex flex-col justify-center items-center gap-2'>
       {showModal
         ? (
           <div className={`w-full h-[90px] rounded-lg flex items-center justify-center ${successMessage.color}`}>
@@ -166,7 +166,7 @@ const FormContacto = () => {
         : null}
       <form
         onSubmit={handleSubmit}
-        className='w-full h-auto md:w-[80%] lg:w-full xl:w-[620px] xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-0 xl:px-8 py-14 flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7 border-[.5px]'
+        className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-0 xl:px-8 py-14 flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7 border-[.5px]'
         style={{ boxShadow: '5px 5px 10px #d4d4d4,-5px -5px 10px #ffffff' }}
       >
         <div className='w-full lg:w-[92%] xl:w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
