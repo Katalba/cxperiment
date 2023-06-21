@@ -5,7 +5,7 @@ const BotonBase = ({ name, clase, func, children }) => {
   return (
     <button
       onClick={func}
-      className={`${clase} rounded-md transition-all duration-300 ease-in-out flex flex-row flex-nowrap items-center justify-start gap-2 capitalize xl:px-6 xl:py-4 xl:text-lg lg:text-md lg:py-3 lg:px-3 text-sm py-3 px-4 `}
+      className={`${clase} rounded-md transition-all duration-300 ease-in-out flex flex-row flex-nowrap items-center justify-start gap-2 xl:px-8 xl:py-6 lg:py-3 lg:px-4 py-[10px] px-[24px] font-[600] font-titulo text-xs lg:text-xs xs:text-lg`}
     >
       {name}
       {children || null}

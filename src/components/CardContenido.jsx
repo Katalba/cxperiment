@@ -8,17 +8,6 @@ const CardContenido = ({ item, imgBg }) => {
     return val % 2 !== 0
   }
 
-  // const imgBgStyle = {
-  //   backgroundImage: `url(${imgBg})`,
-  //   backgroundPosition: isPar(item.id) ? 'right' : 'left',
-  //   width: 'auto',
-  //   height: '150%',
-  //   marginBottom: '46px',
-  //   backgroundSize: 'cover',
-  //   backgroundRepeat: 'no-repeat',
-  //   opacity: 0.5,
-  //   transform: isPar(item.id) ? 'scaleX(-1)' : 'none'
-  // };
   /*
 
   Tamaños fuentes componente CardContenido
