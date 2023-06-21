@@ -77,13 +77,15 @@ const FlipCardComp = () => {
   }
 
   return (
-    <div className='w-full h-auto flex justify-center items-center gap-2 relative'>
+    <div
+      ref={serviciosRef}
+      id='servicios'
+      className='w-full h-auto flex justify-center items-center gap-2 relative'
+    >
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
         <HiChevronLeft />
       </button>
       <section
-        ref={serviciosRef}
-        id='servicios'
         className={`cajaPadre w-[300px] md:w-[385px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
         // style={{ transform: `translateX(${getTranslateX()}px)` }}
       >

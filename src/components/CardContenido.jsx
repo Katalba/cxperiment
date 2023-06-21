@@ -19,20 +19,41 @@ const CardContenido = ({ item, imgBg }) => {
   //   opacity: 0.5,
   //   transform: isPar(item.id) ? 'scaleX(-1)' : 'none'
   // };
+  /*
+
+  Tamaños fuentes componente CardContenido
+  titulo:
+  font-size: 20px; >= xl = 32px
+  font-size: 20px  = lg = 17px  (16.51)
+  font-size: 16px; = md = 16px
+  font-size: 16px; <= sm = 20px
+
+  parrafo:
+            tamaño  |  en resolucion:
+  font-size:  text-base 16px; >=  xl 1280px
+  font-size:  text-sm 14px; ==  lg = 1024px
+  font-size:  text-xs 12px; ==  md = 768px
+  font-size:  text-xs 12px; <=  sm = 640px
+
+  leading-[18px] lg:leading-[24px] //linehe height
+  */
 
   return (
     <>
-      <section className={`contenedoCard card-scroll bg-whiteWi w-full max-w-[1650px] h-auto lg:h-[460px] flex flex-col-reverse  flex-wrap justify-start items-center lg:flex-row lg:flex-nowrap lg:justify-start lg:items-center ${isPar(item.id) ? 'lg:flex-row-reverse' : 'lg:flex-row'} p-2 xl:px-10 py-1 overflow-hidden gap-5 lg:gap-5 `}>
+      <section className={`contenedoCard card-scroll bg-whiteWi w-full h-auto lg:h-auto flex flex-col-reverse  flex-wrap justify-start items-center lg:flex-row lg:flex-nowrap lg:justify-start lg:items-center ${isPar(item.id) ? 'lg:flex-row-reverse' : 'lg:flex-row'} py-1 overflow-hidden gap-5 lg:gap-5 `}>
 
         {/* seccion contenido */}
-        <section className='contenido w-full md:h-auto xl:h-[400px] lg:w-[40%] lg:h-full flex flex-col md:flex-row lg:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
-          <p className='w-full md:w-[50%] lg:w-full font-parrafo font-[300] text-textPurple text-md lg:text-lg md:pb-[100px] lg:pb-0'>En <span className='font-[600]'>CXperiment</span>, {item.parrafo}</p>
+        <section className='contenido w-full md:h-auto xl:h-[500px] lg:w-[40%] lg:h-full flex flex-col md:flex-row lg:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
+          <p className='w-full md:w-[50%] lg:w-full font-parrafo font-[400] text-textPurple text-xs lg:text-sm xl:text-base md:pb-[100px] lg:pb-0 leading-[18px] lg:leading-[24px] xl:leading-[27px]'>En <span className='font-[600]'>CXperiment</span>, {item.parrafo}</p>
           <div className='main w-full md:w-[50%] gap-3 lg:w-full flex flex-row justify-around items-center relative'>
             <ul className='w-full flex flex-col justify-start items-start gap-3'>
               {
             item.lista.map((element) => {
               return (
-                <li key={uuidv4()} className='font-parrafo font-[400] text-textPurple text-md lg:text-lg flex flex-row flex-nowrap justify-start items-center gap-2 '>
+                <li
+                  key={uuidv4()} className='font-parrafo font-[400] text-textPurple flex flex-row flex-nowrap justify-start items-center gap-1 xl:gap-2 text-xs lg:text-sm xl:text-base
+                leading-[18px] lg:leading-[24px] xl:leading-[27px]'
+                >
                   <span className='text-purpleBal p-1 bg-verdeMok rounded-full text-sm lg:text-lg'>
                     <IoCheckmarkSharp />
                   </span>
@@ -44,7 +65,7 @@ const CardContenido = ({ item, imgBg }) => {
 
             </ul>
           </div>
-          <section className='pie w-full h-auto relative md:absolute md:right-0 md:bottom-3 lg:right-auto lg:bottom-auto lg:relative lg:w-full flex justify-center items-center  lg:flex-row lg:justify-start lg:items-center'>
+          <section className='pie w-full h-auto relative flex justify-start items-start md:absolute md:right-0 md:bottom-3 lg:right-auto lg:bottom-auto lg:relative lg:w-full  lg:flex-row lg:justify-start lg:items-center'>
             <BotonBase name='Solicita información' clase='botonVerde' />
           </section>
         </section>
