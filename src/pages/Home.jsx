@@ -13,13 +13,22 @@ const Home = () => {
     <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
       <Nav />
       <HomeBanner />
-      <section className='w-full max-w-[1650px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 overflow-hidden'>
+      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
         <CardPrecentacion />
         <Titulo titulo='Servicios' />
         <FlipCardComp />
         <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
         <CardListContenido />
-        <QuoteSection />
+      </section>
+
+      {/* separador margen */}
+      <div className='separador w-full h-10 lg:h-20' />
+
+      {/* banner 2 */}
+      <QuoteSection />
+      <div className='separador w-full h-10 lg:h-20' />
+
+      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
         <Contacto />
         <Footer />
       </section>

@@ -24,7 +24,8 @@ const ContactosClient = () => {
   }
 
   return (
-    <section className='contenidoContacto card-scroll w-full lg:w-1/2 flex flex-col gap-6 p-6'>
+
+    <section className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto xl:max-w-[600px]  rounded-lg px-5 md:px-5 lg:px-0 xl:px-8 py-14 flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7 border-[.5px]'>
       <div className='w-full h-auto flex flex-col gap-4'>
         <h3 className='font-parrafo text-purpleBal  font-[700] text-lg uppercase'>Contactanos</h3>
         <h2 className='font-titulo text-purpleBal font-[700] text-5xl'>Conectemos hoy</h2>

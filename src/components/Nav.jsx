@@ -81,7 +81,7 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 'servicios' ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 'servicios' ? 'active font-titulo text-lg font-[700] text-verdeTurk' : 'font-[400]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(0)}
           >
             Servicios

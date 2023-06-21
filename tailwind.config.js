@@ -11,8 +11,10 @@ export default {
       fontFamily: {
         tituloClient: ['Newake', 'sans-serif'],
         // titulo: ['Poppins', 'sans-serif'],
-        titulo: ['DM Sans', 'sans-serif'],
-        parrafo: ['Rubik', 'sans-serif']
+        // titulo: ['DM Sans', 'sans-serif'],
+        // parrafo: ['Rubik', 'sans-serif']
+        titulo: ['Montserrat', 'sans-serif'],
+        parrafo: ['Montserrat', 'sans-serif']
       },
       colors: {
         verdeTurk: 'var(--verde-turk)',
