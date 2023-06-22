@@ -84,7 +84,7 @@ const FlipCardComp = () => {
         <HiChevronLeft />
       </button>
       <section
-        className={`cajaPadre w-[300px] md:w-[390px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
+        className={`cajaPadre w-[260px] sm:w-[310px] md:w-[380px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
         // style={{ transform: `translateX(${getTranslateX()}px)` }}
       >
         {
