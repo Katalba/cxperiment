@@ -81,7 +81,7 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 'servicios' ? 'active font-titulo text-lg font-[700] text-verdeTurk' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            className={`navLink cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'servicios' ? 'active font-titulo text-lg font-[700] ' : 'font-[500]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(0)}
           >
             Servicios
@@ -95,7 +95,7 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink  cursor-pointer font-titulo text-lg relative ${activeIndex === 'sobremi' ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            className={`navLink  cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'sobremi' ? 'active font-[700]' : 'font-[500]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(1)}
           >
             Sobre mi
@@ -108,7 +108,7 @@ const Nav = () => {
             smooth
             offset={-100}
             duration={700}
-            className={`navLink cursor-pointer font-titulo text-lg relative ${activeIndex === 'contacto' ? 'active font-[600]' : 'font-[400]'} transition-all duration-0 ease-in-out`}
+            className={`navLink cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'contacto' ? 'active font-[700]' : 'font-[500]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(2)}
           >
             Contacto
