@@ -39,7 +39,7 @@ const CardPrecentacion = () => {
             <FaHandshake />
           </div>
         </div>
-        <h2 className='w-full font-titulo font-[700] text-base sm:text-base md:text-base lg:text-xl xl:text-xl text-center text-purpleBal'>¿Cuál es nuestra propuesta?</h2>
+        <h2 className='w-full font-titulo font-[700] text-base sm:text-base md:text-lg lg:text-xl xl:text-xl text-center text-purpleBal'>¿Cuál es nuestra propuesta?</h2>
         <p className='w-full font-parrafo font-[400] text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base text-center text-purpleBal'>Perfeccionar la experiencia del cliente, identificar oportunidades de mejora, implementar soluciones efectivas, aumentar la satisfacción y lealtad del cliente y mejorar la reputación de la marca.</p>
       </section>
 
