@@ -1,9 +1,11 @@
-import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import BotonBase from './BotonBase'
 import { IoCheckmarkSharp } from 'react-icons/io5'
+import { useGeneralContext } from '../context/GeneralContext'
 
 const CardContenido = ({ item, imgBg }) => {
+  const { contactoRef } = useGeneralContext()
+
   const isPar = (val) => {
     return val % 2 !== 0
   }
@@ -45,6 +47,10 @@ const CardContenido = ({ item, imgBg }) => {
     background: 'linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))'
   }
 
+  const handleClick = () => {
+    contactoRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <section className={`contenedoCard card-scroll bg-whiteWi w-full h-auto md:h-auto flex flex-col-reverse  flex-wrap justify-start items-center md:flex-row md:flex-nowrap md:justify-start md:items-center ${isPar(item.id) ? 'md:flex-row-reverse' : 'md:flex-row'} py-1 overflow-hidden gap-5 lg:gap-5 `}>
@@ -73,7 +79,7 @@ const CardContenido = ({ item, imgBg }) => {
             </ul>
           </div>
           <section className='pie w-full h-auto relative flex justify-start items-start md:right-auto md:bottom-auto md:relative md:w-full  md:flex-row md:justify-start md:items-center'>
-            <BotonBase name='Solicita información' clase='botonVerde' />
+            <BotonBase func={handleClick} name='Solicita información' clase='botonVerde' />
           </section>
         </section>
 

@@ -34,22 +34,23 @@ export default {
         '.botonVerde': {
           backgroundColor: 'var(--verde-turk)',
           color: 'var(--white-wi)',
-          border: '1px solid var(--verde-mok)',
+          border: '2px solid var(--verde-mok)',
           borderRadius: '40px',
           '&:hover': {
             backgroundColor: 'var(--white-wi)',
-            color: 'var(--verde-turk)'
+            color: 'var(--verde-turk)',
+            border: '2px solid var(--verde-turk)'
           }
         },
         '.botonWhite': {
           backgroundColor: 'var(--white-wi)',
           color: 'var(--verde-turk)',
-          border: '1px solid var(--verde-turk)',
+          border: '2px solid var(--verde-turk)',
           borderRadius: '40px',
           '&:hover': {
             backgroundColor: 'var(--verde-turk)',
             color: 'var(--white-wi)',
-            border: '1px solid var(--white-wi)'
+            border: '2px solid var(--white-wi)'
           }
         }
       })
