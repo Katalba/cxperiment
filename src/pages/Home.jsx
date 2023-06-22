@@ -30,8 +30,9 @@ const Home = () => {
 
       <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
         <Contacto />
-        <Footer />
       </section>
+      <div className='separador w-full h-10 lg:h-20' />
+      <Footer />
     </div>
   )
 }
