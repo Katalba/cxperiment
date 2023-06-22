@@ -27,6 +27,7 @@ const CardContenido = ({ item, imgBg }) => {
   font-size:  text-xs 12px; <=  sm = 640px
 
   leading-[18px] lg:leading-[24px] //linehe height
+
   */
   const overlayStyleRight = {
     content: '',
