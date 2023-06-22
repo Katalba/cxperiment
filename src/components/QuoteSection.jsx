@@ -11,7 +11,7 @@ const QuoteSection = () => {
         <div className='logo w-[240px] h-[31px]'>
           <img className='w-full h-full' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/logoWhite.png?alt=media&token=e025e897-8318-46c4-b001-3ad03397f262' alt='logo' />
         </div>
-        <div className='quote w-full px-4 text-center '>
+        <div className='quote w-full px-20 text-center '>
           <p className='w-full text-whiteWi text-center text-2xl md:text-3xl xl:text-4xl'> “Mi objetivo es brindar a las empresas las herramientas necesarias para alcanzar el éxito a través de la mejora continua de su Customer Experience”.</p>
         </div>
         <div className='w-[120px] h-[120px] md:w-[150px] md:h-[150px] lg:w-[160px] lg:h-[160px]'>

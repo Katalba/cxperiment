@@ -39,8 +39,8 @@ const CardPrecentacion = () => {
             <FaHandshake />
           </div>
         </div>
-        <h2 className='w-full font-titulo font-[700] text-base sm:text-base md:text-base lg:text-xl xl:text-xl text-center text-purpleBal'>¿Cuál es nuestra propuesta?</h2>
-        <p className='w-full font-parrafo font-[400] text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base text-center text-purpleBal'>Perfeccionar la experiencia del cliente, identificar oportunidades de mejora, implementar soluciones efectivas, aumentar la satisfacción y lealtad del cliente y mejorar la reputación de la marca.</p>
+        <h2 className='w-full font-titulo font-[700] text-base sm:text-base md:text-lg lg:text-xl xl:text-xl text-center text-purpleBal'>¿Cuál es nuestra propuesta?</h2>
+        <p className='w-full font-parrafo font-[400] text-md lg:text-md xl:text-lg text-center text-purpleBal'>Perfeccionar la experiencia del cliente, identificar oportunidades de mejora, implementar soluciones efectivas, aumentar la satisfacción y lealtad del cliente y mejorar la reputación de la marca.</p>
       </section>
 
       <section className='card-scroll w-full h-[190px] sm:w-1/2 sm:h-[290px] md:w-1/2 md:h-[270px] lg:w-1/2 lg:h-[260px] xl:w-1/2 xl:h-[215px] flex flex-col justify-center items-center p-1 lg:p-2 overflow-hidden gap-2 lg:gap-3'>

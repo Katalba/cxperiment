@@ -80,7 +80,7 @@ const FlipCardComp = () => {
     <div
       ref={serviciosRef}
       id='servicios'
-      className='w-full h-auto flex justify-center items-center gap-2 relative'
+      className='w-full h-auto flex justify-center items-center gap-2 relative card-scroll'
     >
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
         <HiChevronLeft />

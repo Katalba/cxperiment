@@ -8,7 +8,7 @@ const FlipCard = ({ objeto }) => {
   const cardBg = `bg-${bgColor}`
 
   return (
-    <section className='flipCard group w-[300px] h-[300px] md:w-[380px] md:h-[380px] aspect-square p-0 '>
+    <section className='flipCard group w-[318px] h-[318px] md:w-[350px] md:h-[350px] aspect-square p-0 '>
       <div className='cardService relative w-full h-full transition-all ease-in-out duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
         <div className={`cardFront ${cardBg} absolute ${radiusFront} w-full h-full [backface-visibility: visible] flex flex-col justify-center items-center`}>
           <div className='w-full h-full p-2 flex flex-col justify-center items-center gap-4 overflow-hidden'>

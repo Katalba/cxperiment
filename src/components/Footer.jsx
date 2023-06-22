@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='card-scroll w-full bg-purpleBal text-whiteWi text-[18px] '>
+    <div className='footer card-scroll w-full bg-purpleBal text-whiteWi text-[18px]'>
       <div className='items-start p-[5%] pb-[8rem] pt-[20px] mx-auto flex md:items-center md:flex-row md:flex-nowrap flex-wrap flex-col space-y-10'>
         <div className='logo mr-[5%] w-[70%] h-[10%] md:w-[30%] md:h-[3%]'>
           <img className='w-full h-full' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/logoWhite.png?alt=media&token=e025e897-8318-46c4-b001-3ad03397f262' alt='logo' />
