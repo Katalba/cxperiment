@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { IoArrowForwardOutline } from 'react-icons/io5'
+import { IoChevronDown } from 'react-icons/io5'
 import BotonBase from './BotonBase'
 import { useFetchForm } from '../hook/useFetchForm'
 
@@ -155,6 +155,50 @@ const FormContacto = () => {
     }
   }
 
+  /*
+  Tamaños fuentes componente CardContenido
+  titulo0:
+  font-size: 18px; >= xl = 1280px
+  font-size: 16px  = lg = = 1024px
+  font-size: 16 px; = md = md = 768px
+  font-size: 14px; <= sm = 640px
+
+  titulo1:
+  font-size: 44px; >= xl = 1280px
+  font-size: 24px  = lg = = 1024px
+  font-size: 24 px; = md = md = 768px
+  font-size: 20px; <= sm = 640px
+
+  parrafo:
+            tamaño  |  en resolucion:
+  font-size:  text-base 16px; >=  xl 1280px
+  font-size:  text-sm 14px; ==  lg = 1024px
+  font-size:  text-xs 12px; ==  md = 768px
+  font-size:  text-xs 12px; <=  sm = 640px
+  leading-[18px] lg:leading-[30px] //linehe height
+
+  lista:
+  font-size: 18px; >=  xl 1280px
+  font-size: 14px; ==  lg = 1024px
+  font-size: 12px; ==  md = 768px
+  font-size: 12px; <=  sm = 640px
+
+  formulario:
+  font-size:  18px; >=  xl 1280px
+  font-size:  14px; ==  lg = 1024px
+  font-size:  14px; <=  sm = 640px
+  font-size:  16         px; ==  md = 768px
+
+  IoCallOutline
+  IoMailOutline
+  IoLocationOutline
+
+  IoChevronDown
+
+  IoFlashOutline
+
+  */
+
   return (
     <section className='card-scroll w-full xl:w-full xl:max-w-[600px] flex flex-col justify-center items-center gap-2'>
       {showModal
@@ -235,13 +279,13 @@ const FormContacto = () => {
                 style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               >
                 <option value=''>Servicio de customer research</option>
-                <option value='opcion1'>Opción 1</option>
-                <option value='opcion2'>Opción 2</option>
-                <option value='opcion3'>Opción 3</option>
+                <option value='opcion1'>Customer Research</option>
+                <option value='opcion2'>Customer Analysis</option>
+                <option value='opcion3'>Customer Insights</option>
               </select>
               <div className='absolute w-auto h-full flex items-center justify-center bottom-0 right-0 px-2 pointer-events-none'>
                 {/* Reemplazar 'IconComponent' con el icono deseado */}
-                <IoArrowForwardOutline className={`w-5 h-5  ${errors.opciones ? 'text-red-500 ' : 'text-verdeTurk'} `} />
+                <IoChevronDown className={`w-5 h-5  ${errors.opciones ? 'text-red-500 ' : 'text-verdeTurk'} `} />
               </div>
             </div>
             {errors.opciones && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.opciones}</p>)}
