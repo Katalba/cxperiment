@@ -52,8 +52,6 @@ const FlipCardComp = () => {
   const handleClickRight = () => {
     setCurrentCardIndex((prevIndex) => (prevIndex === cardCount - 1 ? 0 : prevIndex + 1))
   }
-
-  // por si queres automatizarlo, faltan añadirle animaciones
   // useEffect(() => {
   //   const interval = setInterval(() => {
   //     setCurrentCardIndex((prevIndex) => (prevIndex === cardCount - 1 ? 0 : prevIndex + 1))
@@ -86,7 +84,7 @@ const FlipCardComp = () => {
         <HiChevronLeft />
       </button>
       <section
-        className={`cajaPadre w-[300px] md:w-[385px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
+        className={`cajaPadre w-[300px] md:w-[390px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
         // style={{ transform: `translateX(${getTranslateX()}px)` }}
       >
         {
