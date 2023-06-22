@@ -79,12 +79,12 @@ const CardContenido = ({ item, imgBg }) => {
 
         {/* seccion imagen */}
         <section className={`imgBg w-full h-auto py-2 sm:h-[50px] md:w-[50%] md:h-full lg:w-[60%] overflow-hidden flex justify-start items-center ${isPar(item.id) ? 'justify-end' : 'justify-start'} relative`}>
-          <div style={isPar(item.id) ? overlayStyleLeft : overlayStyleRight} className='absolute top-0 bottom-0 left-0 right-0 w-full h-full z-10' />
+          <div style={isPar(item.id) ? overlayStyleLeft : overlayStyleRight} className='hidden md:absolute top-0 bottom-0 left-0 right-0 w-full h-full z-10' />
           <img
             src={imgBg} alt='logo cxPeriment'
-            className={`bgCustomerCards h-full w-full hidden sm:block object-contain md:object-cover object-center lg:object-left opacity-40 transform relative  ${isPar(item.id) ? '-scale-x-100' : ''}`}
+            className={`bgCustomerCards h-full w-full hidden md:block object-contain md:object-cover object-center lg:object-left opacity-40 transform relative  ${isPar(item.id) ? '-scale-x-100' : ''}`}
           />
-          <h2 className={`absolute w-full h-auto text-center md:w-[100px] lg:w-[130px] xl:w-[200px] ${isPar(item.id) ? 'md:mr-[50px] lg:mr-[90px] xl:mr-[70px] 2xl:mr-[120px]' : 'md:ml-[65px] lg:ml-[90px] xl:ml-[70px] 2xl:ml-[120px]'} font-titulo font-[700] text-[20px] md:text-[17px] lg:text-[17px] xl:text-[31px] 2xl:text-4xl text-textPurple leading-none`}>
+          <h2 className={`text-left md:absolute w-full h-auto md:text-center md:w-[100px] lg:w-[130px] xl:w-[200px] ${isPar(item.id) ? 'md:mr-[50px] lg:mr-[90px] xl:mr-[70px] 2xl:mr-[120px]' : 'md:ml-[65px] lg:ml-[90px] xl:ml-[70px] 2xl:ml-[120px]'} font-titulo font-[700] text-[20px] md:text-[17px] lg:text-[17px] xl:text-[31px] 2xl:text-4xl text-textPurple leading-none`}>
             {item.titulo}
           </h2>
         </section>

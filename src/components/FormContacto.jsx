@@ -156,38 +156,15 @@ const FormContacto = () => {
   }
 
   /*
-  Tamaños fuentes componente CardContenido
-  titulo0:
-  font-size: 18px; >= xl = 1280px
-  font-size: 16px  = lg = = 1024px
-  font-size: 16 px; = md = md = 768px
-  font-size: 14px; <= sm = 640px
-
-  titulo1:
-  font-size: 44px; >= xl = 1280px
-  font-size: 24px  = lg = = 1024px
-  font-size: 24 px; = md = md = 768px
-  font-size: 20px; <= sm = 640px
-
-  parrafo:
-            tamaño  |  en resolucion:
-  font-size:  text-base 16px; >=  xl 1280px
-  font-size:  text-sm 14px; ==  lg = 1024px
-  font-size:  text-xs 12px; ==  md = 768px
-  font-size:  text-xs 12px; <=  sm = 640px
-  leading-[18px] lg:leading-[30px] //linehe height
-
-  lista:
-  font-size: 18px; >=  xl 1280px
-  font-size: 14px; ==  lg = 1024px
-  font-size: 12px; ==  md = 768px
-  font-size: 12px; <=  sm = 640px
+  Tamaños fuentes componente formulario
 
   formulario:
   font-size:  18px; >=  xl 1280px
   font-size:  14px; ==  lg = 1024px
   font-size:  14px; <=  sm = 640px
-  font-size:  16         px; ==  md = 768px
+  font-size:  16px; ==  md = 768px
+
+  font-[16px] md:font-[14px] lg:font-[14px] xl:font-[18px]
 
   IoCallOutline
   IoMailOutline
@@ -210,11 +187,11 @@ const FormContacto = () => {
         : null}
       <form
         onSubmit={handleSubmit}
-        className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-0 xl:px-8 py-14 flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7 border-[.5px]'
+        className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-0 xl:px-8 py-14 flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7 border-[.5px] text-[16px] md:text-[14px] lg:text-[14px] xl:text-[18px]'
         style={{ boxShadow: '5px 5px 10px #d4d4d4,-5px -5px 10px #ffffff' }}
       >
         <div className='w-full lg:w-[92%] xl:w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
-          <label htmlFor='name' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='name' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple leading-[1.5rem]'>
             Nombre
             <input
               type='text' name='name' id='name'
@@ -224,9 +201,9 @@ const FormContacto = () => {
               style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               placeholder='Nombre'
             />
-            {errors.name && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.name}</p>)}
+            {errors.name && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.name}</p>)}
           </label>
-          <label htmlFor='email' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='email' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple leading-[1.5rem]'>
             Email
             <input
               type='email' name='email' id='email'
@@ -236,12 +213,12 @@ const FormContacto = () => {
               style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               placeholder='Email'
             />
-            {errors.email && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.email}</p>)}
+            {errors.email && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.email}</p>)}
           </label>
         </div>
 
         <div className='w-full lg:w-[92%] xl:w-full flex flex-col md:flex-row md:flex-nowrap gap-4 xl:gap-5 lg:gap-3'>
-          <label htmlFor='telefono' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='telefono' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple leading-[1.5rem]'>
             Teléfono
             <input
               type='text' name='telefono' id='telefono'
@@ -251,9 +228,9 @@ const FormContacto = () => {
               style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               placeholder='Teléfono'
             />
-            {errors.telefono && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.telefono}</p>)}
+            {errors.telefono && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.telefono}</p>)}
           </label>
-          <label htmlFor='empresa' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+          <label htmlFor='empresa' className='md:w-1/2 flex flex-col gap-2 font-titulo font-[600] text-textPurple leading-[1.5rem]'>
             Empresa
             <input
               type='text' name='empresa' id='empresa'
@@ -263,18 +240,18 @@ const FormContacto = () => {
               style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               placeholder='Empresa'
             />
-            {errors.empresa && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.empresa}</p>)}
+            {errors.empresa && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.empresa}</p>)}
           </label>
         </div>
 
         <div className='w-full lg:w-[92%] xl:w-full flex flex-row flex-nowrap gap-5'>
-          <label htmlFor='opciones' className='w-full flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem] relative'>Opciones de consulta
+          <label htmlFor='opciones' className='w-full flex flex-col gap-2 font-titulo font-[600] text-textPurple leading-[1.5rem] relative'>Opciones de consulta
             <div className='w-full h-full relative'>
               <select
                 id='opciones' name='opciones'
                 value={opciones}
                 onChange={handleInputChange}
-                className={`w-full p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] text-lg bg-whiteWi outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 appearance-none inputBgCard relative border-[.5px] 
+                className={`w-full p-3 lg:p-3 xl:p-5 rounded-lg font-parrafo font-[400] bg-whiteWi outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 appearance-none inputBgCard relative border-[.5px] 
               ${errors.opciones ? 'border-2 border-red-600 focus:ring-0' : ''}`}
                 style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               >
@@ -288,21 +265,21 @@ const FormContacto = () => {
                 <IoChevronDown className={`w-5 h-5  ${errors.opciones ? 'text-red-500 ' : 'text-verdeTurk'} `} />
               </div>
             </div>
-            {errors.opciones && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.opciones}</p>)}
+            {errors.opciones && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.opciones}</p>)}
           </label>
         </div>
 
-        <label htmlFor='mensaje' className='w-full lg:w-[92%] xl:w-full  flex flex-col gap-2 font-titulo font-[600] text-textPurple text-lg leading-[1.5rem]'>
+        <label htmlFor='mensaje' className='w-full lg:w-[92%] xl:w-full  flex flex-col gap-2 font-titulo font-[600] text-textPurple leading-[1.5rem]'>
           Mensaje
           <textarea
             name='mensaje' id='mensaje'
             value={mensaje}
             onChange={handleInputChange}
-            className={`block p-3 lg:p-3 xl:p-4 w-full h-[140px] rounded-lg  outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 font-parrafo font-[400] text-lg resize-none border-[.5px]  ${errors.mensaje ? 'border-2 border-red-600 focus:ring-0' : ''}`}
+            className={`block p-3 lg:p-3 xl:p-4 w-full h-[140px] rounded-lg  outline-none shadow-sm focus:ring focus:ring-verdeTurk focus:ring-opacity-100 font-parrafo font-[400] resize-none border-[.5px]  ${errors.mensaje ? 'border-2 border-red-600 focus:ring-0' : ''}`}
             placeholder='Ingrese su mensaje'
             style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
           />
-          {errors.mensaje && (<p className='text-red-500 font-parrafo font-[400] text-lg w-full'>{errors.mensaje}</p>)}
+          {errors.mensaje && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.mensaje}</p>)}
         </label>
         <div className='w-full flex flex-row flex-nowrap justify-center items-center mt-6'>
           <BotonBase type='submit' name='enviar mensaje' clase='botonVerde' />
