@@ -40,10 +40,6 @@
 
 
   /* katy */
-  .mySwiper {
-    width: 100%;
-    height: calc(915px - 90px);
-  }
 
   .homeImage {
     background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/fotoHero.png?alt=media&token=d4f9e2cb-e468-48df-b9e1-a9ae1e1b1ab5);
@@ -60,13 +56,6 @@
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 27%, rgba(9, 9, 121, 0) 77%);
     pointer-events: none;
   } */
-
-  .buttons {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 15px;
-
-  }
 
   .homeTitle {
     height: 50vh;

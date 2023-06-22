@@ -9,9 +9,7 @@ const HomeBanner = () => {
         className=' w-full h-[600px] lg:h-[calc(100vh-90px)] mt-[90px] flex flex-col justify-center items-center  md:flex-row md:justify-center md:items-center gap-3 md:gap-2 relative overflow-hidden'
         style={{ boxShadow: '5px 5px 10px #d4d4d4,-5px -5px 10px #ffffff' }}
       >
-        <div className='homeImage w-full h-2/5 sm:h-1/2 md:w-full md:h-full top-0 left-0 bg-cover bg-center mx-auto '>
-          <a href='' />
-        </div>
+        <div className='homeImage w-full h-2/5 sm:h-1/2 md:w-full md:h-full top-0 left-0 bg-cover bg-center mx-auto ' />
         <div className='containerTitle relative w-full h-3/5 sm:h-1/2 md:w-1/2 md:h-full md:absolute md:top-0 md:left-0 lg:w-1/2  flex flex-col justify-center items-center md:items-center  md:text-left lg:text-left '>
 
           {/* card  */}
