@@ -1,9 +1,8 @@
 import { useState } from 'react'
 
-import { useGeneralContext } from './context/GeneralContext'
-
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
 import CardServicios from './CardServicios.jsx'
+import { useGeneralContext } from '../context/GeneralContext.jsx'
 
 const ListCardServicios = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
