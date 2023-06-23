@@ -3,7 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Error404 from './pages/Error404'
 import { GeneralContextProvider } from './context/GeneralContext'
-import ListCardServicios from './backup/ListCardServicios'
+import ListCardServicios from '../backup/ListCardServicios'
 
 function App () {
   return (
