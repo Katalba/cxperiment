@@ -13,14 +13,14 @@ const Footer = () => {
           <p>Jesica Bilotti</p>
 
           <Link to='https://wa.me/541141568854?text=Hola%20,%20estoy%20interesado%20en%20una%20asesoría%20.%20Me%20gustaría%20tener%20más%20información%20.%20Gracias%20.'>
-            <div className='whatsapp flex space-x-2 transition duration-500 ease-in-out hover:text-verdeTurk'>
+            <div className='whatsapp flex space-x-2 transition duration-500 ease-in-out hover:text-verdeMok'>
               <FaWhatsapp className='text-[2rem]' />
               <p>WhatsApp +54 11 4156-8854</p>
             </div>
           </Link>
 
           <Link to='mailto:info.cxperiment@gmail.com' target='_blank'>
-            <div className='mail flex space-x-2 transition duration-500 ease-in-out hover:text-verdeTurk'>
+            <div className='mail flex space-x-2 transition duration-500 ease-in-out hover:text-verdeMok'>
               <IoMailOutline className='text-[2rem]' />
               <p>info.cxperiment@gmail.com</p>
             </div>
@@ -30,8 +30,8 @@ const Footer = () => {
         <div className='redes'>
           <h3>Redes Sociales</h3>
           <div className='flex space-x-2 mt-3'>
-            <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='w-[2rem] h-[2rem] hover:text-[#264BD3] hover:bg-whiteWi rounded-lg' /></Link>
-            <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='w-[2rem] h-[2rem] transition duration-700 ease-in-out hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg' /> </Link>
+            <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='w-[2rem] h-[2rem] transition duration-500 ease-in-out hover:scale-125 hover:text-verdeMok' /></Link>
+            <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='w-[2rem] h-[2rem] transition duration-500 ease-in-out hover:scale-125 hover:text-verdeMok' /> </Link>
           </div>
         </div>
       </div>
