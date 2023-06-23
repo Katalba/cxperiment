@@ -80,7 +80,7 @@ const FlipCardComp = () => {
       id='servicios'
       className='w-full h-auto flex justify-center items-center gap-2 relative card-scroll'
     >
-      <button className='block md:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
+      <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
         <HiChevronLeft />
       </button>
       <section
@@ -100,10 +100,10 @@ const FlipCardComp = () => {
           })
         }
       </section>
-      <button className='block md:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
+      <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
         <HiChevronRight />
       </button>
-      <div className='w-full h-[30px] absolute bottom-10 left-0 flex justify-center items-center gap-5 md:hidden'>
+      <div className='w-full h-[30px] absolute bottom-10 left-0 flex justify-center items-center gap-5 lg:hidden'>
         <span className={`h-[12px] aspect-square ${currentCardIndex === 2 ? 'bg-verdeTurk' : 'bg-purpleBal'} rounded-full`} />
         <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 0 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
         <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 1 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
