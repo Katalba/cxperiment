@@ -42,25 +42,19 @@
   /* katy */
 
   .homeImage {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/fotoHero.png?alt=media&token=d4f9e2cb-e468-48df-b9e1-a9ae1e1b1ab5);
-
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/manos.jpg?alt=media&token=44b5a893-255f-42fc-a4c7-80606e157f75);
   }
 
 
-  /* .homeImage::before {
+  .homeImage::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 27%, rgba(9, 9, 121, 0) 77%);
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.966) 27%, rgba(9, 9, 121, 0) 77%);
     pointer-events: none;
-  } */
-
-  .homeTitle {
-    height: 50vh;
-    color: var(--purple-bal);
-    transform: translateY(-50%);
   }
 
 
