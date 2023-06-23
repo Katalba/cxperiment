@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import FlipCard from './FlipCard'
-// import Swiper from 'swiper'
-// import 'swiper/css/swiper.css'
+
 import { useGeneralContext } from '../context/GeneralContext'
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
+import CardServicios from './CardServicios.jsx'
 
-const FlipCardComp = () => {
+const ListCardServicios = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
   const { serviciosRef } = useGeneralContext()
   const cardCount = 3
@@ -17,9 +16,7 @@ const FlipCardComp = () => {
     {
       titulo: 'Customer Research',
       bgColor: 'purpleBal',
-      radiusFront: 'rounded-tr-[106px] rounded-l-[106px] rounded-t-[106px]',
-      radiusBack: 'rounded-t-[106px] rounded-br-[106px]',
-      radiusImg: 'rounded-t-[106px] rounded-br-[106px]',
+      radiusBorde: 'rounded-bl-3xl',
       textFront: 'Conociendo realmente a tu cliente',
       textBack: 'Conoce a tus clientes desde una perspectiva profunda y significativa',
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/custumerResearch.png?alt=media&token=bdd5bb54-1d04-4be3-b6f9-c43b04c971cd'
@@ -27,8 +24,7 @@ const FlipCardComp = () => {
     {
       titulo: 'Customer Analysis',
       bgColor: 'verdeTurk',
-      radiusFront: 'rounded-t-[106px] rounded-tr-[106px] rounded-b-[0]',
-      radiusBack: 'rounded-t-[106px] rounded-tr-[106px] rounded-b-[0]',
+      radiusBorde: '',
       textFront: 'Entiende a tu cliente en profundidad',
       textBack: 'Comprende a fondo a tu cliente y su experiencia con tu marca.',
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerAnalysis.png?alt=media&token=3e049d7e-c53d-4d21-a94f-7b568163f3e0'
@@ -36,9 +32,7 @@ const FlipCardComp = () => {
     {
       titulo: 'Customer Insights',
       bgColor: 'purpleBal',
-      radiusFront: 'rounded-t-[106px] rounded-br-[106px]',
-      radiusBack: 'rounded-tr-[106px] rounded-l-[106px] rounded-t-[106px]',
-      radiusImg: 'rounded-tr-[106px] rounded-l-[106px] rounded-t-[106px]',
+      radiusBorde: 'rounded-br-3xl',
       textFront: 'Fidelicemos a tu cliente',
       textBack: 'Descubre aspectos relevantes de tus clientes y sus preferencias.',
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerInsights.png?alt=media&token=440802da-e4df-4671-b064-a5bf24cc8af6'
@@ -64,42 +58,56 @@ const FlipCardComp = () => {
 
   console.log(currentCardIndex)
 
-  const calculaFlex = (index) => {
-    if (index === 0) {
-      return 'justify-center'
-    } else if (index === 1) {
-      return 'justify-start'
-    } else if (index === 2) {
-      return 'justify-end'
+  // const calculaFlex = (index) => {
+  //   if (index === 0) {
+  //     return 'justify-center'
+  //   } else if (index === 1) {
+  //     return 'justify-start'
+  //   } else if (index === 2) {
+  //     return 'justify-end'
+  //   }
+  // }
+  const getTranslateX = () => {
+    if (currentCardIndex === 0) {
+    return 0
+    } else if (currentCardIndex === 1) {
+    return -260
+    } else if (currentCardIndex === 2) {
+      return -520
     }
   }
+
 
   return (
     <div
       ref={serviciosRef}
       id='servicios'
-      className='w-full h-auto flex justify-center items-center gap-2 relative card-scroll'
+      className="w-full h-[500px] flex justify-center items-center gap-2 relative card-scroll"
     >
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
         <HiChevronLeft />
       </button>
-      <section
-        className={`cajaPadre w-[260px] sm:w-[310px] md:w-[380px] h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
-        // style={{ transform: `translateX(${getTranslateX()}px)` }}
-      >
-        {
-          cards.map((element, index) => {
-            return (
-              <FlipCard
-                key={index}
-                objeto={element}
-                isCurrent={index === currentCardIndex}
-              />
+      <div className='w-400px h-400px overflow-hidden'>
+        <section
+          className="sliderContain w-[340px]  flex flex-row justify-start items-center h-[350px] px-5 overflow-x: scroll lg:overflow-hidden gap-5
+          lg:w-full lg:justify-center py-20 lg:py-5"
+          style={{ transform: `translateX(${currentCardIndex * -320}px)`, transition: 'transform 0.5s linear',  }}
+          >
+            {
+              cards.map((element, index) => {
+                return (
+                  <CardServicios
+                    key={index}
+                    objeto={element}
+                    isCurrent={index === currentCardIndex}
+                  />
 
-            )
-          })
-        }
-      </section>
+                )
+              })
+            }
+        </section>
+
+      </div>
       <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
         <HiChevronRight />
       </button>
@@ -112,4 +120,4 @@ const FlipCardComp = () => {
   )
 }
 
-export default FlipCardComp
+export default ListCardServicios
