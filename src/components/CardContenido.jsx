@@ -1,9 +1,11 @@
-import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import BotonBase from './BotonBase'
 import { IoCheckmarkSharp } from 'react-icons/io5'
+import { useGeneralContext } from '../context/GeneralContext'
 
 const CardContenido = ({ item, imgBg }) => {
+  const { contactoRef } = useGeneralContext()
+
   const isPar = (val) => {
     return val % 2 !== 0
   }
@@ -25,6 +27,7 @@ const CardContenido = ({ item, imgBg }) => {
   font-size:  text-xs 12px; <=  sm = 640px
 
   leading-[18px] lg:leading-[24px] //linehe height
+
   */
   const overlayStyleRight = {
     content: '',
@@ -43,6 +46,10 @@ const CardContenido = ({ item, imgBg }) => {
     left: 0,
     right: 0,
     background: 'linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))'
+  }
+
+  const handleClick = () => {
+    contactoRef.current.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -73,7 +80,7 @@ const CardContenido = ({ item, imgBg }) => {
             </ul>
           </div>
           <section className='pie w-full h-auto relative flex justify-start items-start md:right-auto md:bottom-auto md:relative md:w-full  md:flex-row md:justify-start md:items-center'>
-            <BotonBase name='Solicita información' clase='botonVerde' />
+            <BotonBase func={handleClick} name='Solicita información' clase='botonVerde' />
           </section>
         </section>
 
