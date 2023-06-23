@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Error404 from './pages/Error404'
 import { GeneralContextProvider } from './context/GeneralContext'
+import ListCardServicios from './backup/ListCardServicios'
 
 function App () {
   return (
@@ -11,6 +12,7 @@ function App () {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/error404' element={<Error404 />} />
+          <Route path='/servicios' element={<ListCardServicios />} />
           <Route path='*' element={<Navigate to='/error404' />} />
         </Routes>
       </GeneralContextProvider>
