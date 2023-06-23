@@ -14,10 +14,10 @@ const HomeBanner = () => {
 
           {/* card  */}
           <section
-            className='cardContain w-full h-auto md:w-[95%] md:h-auto px-3 py-6 text-purpleBal flex flex-col justify-center items-start gap-7 lg:gap-10 lg:p-7 pb-5 overflow-hidden'
+            className='cardContain w-full h-auto md:w-[95%] md:h-auto px-3 py-6 text-purpleBal flex flex-col justify-center items-start gap-7 lg:gap-10 lg:p-7 pb-5 overflow-hidden absolute -z-1'
           >
             <h1 className='font-titulo font-[700] text-3xl md:text-4xl lg:text-5xl overflow-hidden xl:text-6xl'> Convertí a tus clientes en tus fans</h1>
-            <p className='font-parrafo font-[400] text-md lg:text-lg'>Mejoramos la experiencia de tus clientes y tu reputación de marca, identificamos oportunidades, implementamos soluciones efectivas, y ayudamos a impulsar tu crecimiento en el mercado.</p>
+            <p className='font-parrafo font-[400] text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base'>Mejoramos la experiencia de tus clientes y tu reputación de marca, identificamos oportunidades, implementamos soluciones efectivas, y ayudamos a impulsar tu crecimiento en el mercado.</p>
             <div className='containerButtons flex space-x-2 justify-center'>
               <BotonBase name='Ver servicio' clase='botonWhite'>
                 <IoArrowForwardSharp />
