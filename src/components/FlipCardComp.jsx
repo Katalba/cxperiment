@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import FlipCard from './FlipCard'
-// import Swiper from 'swiper'
-// import 'swiper/css/swiper.css'
 import { useGeneralContext } from '../context/GeneralContext'
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
@@ -10,8 +8,6 @@ const FlipCardComp = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
   const { serviciosRef } = useGeneralContext()
   const cardCount = 3
-  // const cardWidth = 310 // Ancho de cada tarjeta
-  // const gap = 20 // Espacio entre tarjetas
 
   const cards = [
     {
@@ -62,8 +58,6 @@ const FlipCardComp = () => {
   //   }
   // }, [cardCount])
 
-  console.log(currentCardIndex)
-
   const calculaFlex = (index) => {
     if (index === 0) {
       return 'justify-center'
@@ -80,11 +74,11 @@ const FlipCardComp = () => {
       id='servicios'
       className='w-full h-auto flex justify-center items-center gap-2 relative card-scroll'
     >
-      <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
+      <button className='block md:hidden text-[30px] text-verdeTurk ' onClick={handleClickLeft}>
         <HiChevronLeft />
       </button>
       <section
-        className={`cajaPadre w-[190px] min-[450px]:w-[250px] sm:w-[310px] md:w-full  h-auto overflow-hidden lg:w-full flex ${calculaFlex(currentCardIndex)} md: justify-center lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
+        className={`cajaPadre w-[190px] min-[450px]:w-[250px] sm:w-[310px] h-auto overflow-hidden md:w-full lg:w-full flex ${calculaFlex(currentCardIndex)} md:justify-center lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
         // style={{ transform: `translateX(${getTranslateX()}px)` }}
       >
         {
@@ -100,10 +94,10 @@ const FlipCardComp = () => {
           })
         }
       </section>
-      <button className='block lg:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
+      <button className='block md:hidden text-[30px] text-verdeTurk ' onClick={handleClickRight}>
         <HiChevronRight />
       </button>
-      <div className='w-full h-[30px] absolute bottom-10 left-0 flex justify-center items-center gap-5 lg:hidden'>
+      <div className='w-full h-[30px] absolute bottom-10 left-0 flex justify-center items-center gap-5 md:hidden'>
         <span className={`h-[12px] aspect-square ${currentCardIndex === 2 ? 'bg-verdeTurk' : 'bg-purpleBal'} rounded-full`} />
         <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 0 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />
         <span className={`h-[12px] aspect-square rounded-full ${currentCardIndex === 1 ? 'bg-verdeTurk' : 'bg-purpleBal'}`} />

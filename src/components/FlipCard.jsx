@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Title from './Title'
 import BotonBase from './BotonBase'
 
@@ -7,9 +7,25 @@ const FlipCard = ({ objeto }) => {
 
   const cardBg = `bg-${bgColor}`
 
+  useEffect(() => {
+    function rotateCard () {
+      if (window.innerWidth <= 780) {
+        const card = document.getElementById('flipCard')
+        card.classList.toggle('flipped')
+      }
+    }
+
+    const cardElement = document.getElementById('flipCard')
+    cardElement.addEventListener('click', rotateCard)
+
+    return () => {
+      cardElement.removeEventListener('click', rotateCard)
+    }
+  }, [])
+
   return (
-    <section className='flipCard group w-[190px] h-[190px] min-[450px]:w-[250px] min-[450px]:h-[250px] sm:w-[310px] sm:h-[310px] md:w-[200px] md:h-[200px] lg:w-[310px] lg:h-[310px] xl:w-[350px] xl:h-[350px] aspect-square p-0 '>
-      <div className='cardService relative w-full h-full transition-all ease-in-out duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+    <section className='flipCard group w-[190px] h-[190px] min-[450px]:w-[250px] min-[450px]:h-[250px] sm:w-[310px] sm:h-[310px] md:w-[200px] md:h-[200px] lg:w-[298px] lg:h-[298px] xl:w-[350px] xl:h-[350px] aspect-square p-0'>
+      <div id='flipCard' className='cardService relative w-full h-full transition-all ease-in-out duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
         <div className={`cardFront ${cardBg} absolute ${radiusFront} w-full h-full [backface-visibility: visible] flex flex-col justify-center items-center p-[13%]`}>
           <div className='w-full h-full p-2 flex flex-col justify-center items-center gap-4 overflow-hidden'>
             <Title name={`${titulo}`} />

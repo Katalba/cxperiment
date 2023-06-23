@@ -58,4 +58,9 @@
   }
 
 
+  .flipped {
+    transform: rotateY(180deg);
+    transition: transform 300ms;
+  }
+
 }
