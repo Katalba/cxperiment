@@ -13,14 +13,14 @@ const Footer = () => {
           <p>Jesica Bilotti</p>
 
           <Link to='https://wa.me/541141568854?text=Hola%20,%20estoy%20interesado%20en%20una%20asesoría%20.%20Me%20gustaría%20tener%20más%20información%20.%20Gracias%20.'>
-            <div className='whatsapp flex space-x-2'>
+            <div className='whatsapp flex space-x-2 transition duration-500 ease-in-out hover:text-verdeTurk'>
               <FaWhatsapp className='text-[2rem]' />
               <p>WhatsApp +54 11 4156-8854</p>
             </div>
           </Link>
 
           <Link to='mailto:info.cxperiment@gmail.com' target='_blank'>
-            <div className='mail flex space-x-2'>
+            <div className='mail flex space-x-2 transition duration-500 ease-in-out hover:text-verdeTurk'>
               <IoMailOutline className='text-[2rem]' />
               <p>info.cxperiment@gmail.com</p>
             </div>
