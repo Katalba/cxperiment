@@ -85,10 +85,10 @@
 
 ## 💻🎨 Integrantes del Front-end
 
-| <img src="https://res.cloudinary.com/dpiwmbsog/image/upload/v1686264426/PERFIL_GENERAL_hbngdm.jpg" width=60>| <img src="aca la img" width=60>|
+| <img src="https://res.cloudinary.com/dpiwmbsog/image/upload/v1686264426/PERFIL_GENERAL_hbngdm.jpg" width=60>| <img src="https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/cv.jpg?alt=media&token=e37ff2df-6858-464f-90ed-bd9d4ce69d6c" width=60>|
 |:-:|:-:|
-| **Guillermo Neculqueo**| **Kate**|
-| <a href="https://github.com/guillenec"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/guillermo-agust%C3%ADn-neculqueo-57932b196/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="tu guthub"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Tu linkedin"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| **Guillermo Neculqueo**| **Katherine Cantillo**|
+| <a href="https://github.com/guillenec"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/guillermo-agust%C3%ADn-neculqueo-57932b196/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Katalba"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/katalbawebdesign/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 
 </br>
