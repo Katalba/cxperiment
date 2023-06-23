@@ -2,9 +2,8 @@
 
 ![ScreenShot](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png)
 
+***
 ## CXperiment -FRONTEND- 
-
-</br>
 
 ## 👨‍💻 Dependencias
 * Node 16.19.0
@@ -18,30 +17,21 @@
 * tailwindcss: 3.3.2
 * react-scroll: 1.8.9,
 * scrollreveal: 4.0.9,
-
-</br>
-
-* iconos
-  * react-icons: 4.9.0
-  * la gran mayoria ion-icons
-
-</br>   
-
-* para normalizar codigo
-  * standard: 17.1.0
-  * postcss": 8.4.23
+* react-icons: 4.9.0
+* standard: 17.1.0
+* postcss": 8.4.23
 
 </br>
 
 ## 🚀 Caracteristica
-  * Landing page responsive
-  * banner principal + precentación
-  * cards animadas, interactivas para la seccion de ayuda
-  * cards custom genericas para brindar informacion general de cada servicio
-  * banner con informacion personal e imagen del cliente,precentacion de la misma
-  * seccion de contactos, con informacion personal y links telefono personal, mail y ubicacion social.
-  *formulario de contactos: 
-    *Uso de AJAX y API FormSubmit con fetch y asincronía para implementar el formulario de contacto y permitir enviar consultas al mail.
+* Landing page responsive
+* Banner principal y presentación
+* Cards animadas e interactivas para la sección de ayuda
+* Cards genéricas personalizadas para brindar información general de cada servicio
+* Banner con información personal e imagen del cliente, presentación personal
+* Sección de contactos con información personal y enlaces de teléfono, correo electrónico y redes sociales.
+* Formulario de contactos:
+  * Uso de AJAX y API FormSubmit con fetch y asincronía para implementar el formulario de contacto y permitir el envío de consultas por correo.
 
 </br>
 
@@ -93,7 +83,7 @@
 
 </br>
 
-## 💻, 🎨 Integrantes del Front-end
+## 💻🎨 Integrantes del Front-end
 
 | <img src="https://res.cloudinary.com/dpiwmbsog/image/upload/v1686264426/PERFIL_GENERAL_hbngdm.jpg" width=60>| <img src="aca la img" width=60>|
 |:-:|:-:|
@@ -111,7 +101,7 @@
 
 </br>
 
-## 🧪🔎, Integrante Comunity Manager
+## 🌍📣 Integrante Comunity Manager
 | <img src="img ux 1" width=60>| <img src="img ux 2" width=60>|
 |:-:|:-:|
 | **ux 1**| **ux 2**|
@@ -119,16 +109,13 @@
 
 </br>
 
-## 🛠️💾 Integrante Product Manager
+## 🛠️💼 Integrante Product Manager
 | <img src="tu imagen" width=60>|
 |:-:|
 | **Cristian** |
 | <a href="tu"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/cristian-machuca-dev/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
-
-## 🛠️💾 Integrante Comunity MAnager
-
 
 ***
 
