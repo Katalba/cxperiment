@@ -22,8 +22,8 @@ const QuoteSection = () => {
           <p className='text-whiteWi text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base'> Customer Experience</p>
         </div>
         <div className=' flex justify-center w-[200px] h-[52px] space-x-[1rem]'>
-          <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='invert-[100%] w-[2rem] h-[2rem] hover:text-[#264BD3] hover:bg-whiteWi rounded-lg hover:invert-0' /></Link>
-          <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='invert-[100%] w-[2rem] h-[2rem] transition duration-500 ease-in-out hover:invert-0 hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg hover:text-[#fff]' /> </Link>
+          <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='invert-[100%] w-[2rem] h-[2rem] transition duration-500 ease-in-out hover:scale-125 hover:text-purpleBal hover:invert-[0]' /></Link>
+          <Link to='https://www.instagram.com/cxperiment/' target='_blank'><FaInstagram className='invert-[100%] w-[2rem] h-[2rem] transition duration-500 ease-in-out hover:scale-125 hover:text-purpleBal hover:invert-[0]' /> </Link>
         </div>
         <div />
       </section>
