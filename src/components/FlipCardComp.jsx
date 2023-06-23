@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import FlipCard from './FlipCard'
-// import Swiper from 'swiper'
-// import 'swiper/css/swiper.css'
 import { useGeneralContext } from '../context/GeneralContext'
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
@@ -10,8 +8,6 @@ const FlipCardComp = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
   const { serviciosRef } = useGeneralContext()
   const cardCount = 3
-  // const cardWidth = 310 // Ancho de cada tarjeta
-  // const gap = 20 // Espacio entre tarjetas
 
   const cards = [
     {
@@ -61,8 +57,6 @@ const FlipCardComp = () => {
   //     clearInterval(interval)
   //   }
   // }, [cardCount])
-
-  console.log(currentCardIndex)
 
   const calculaFlex = (index) => {
     if (index === 0) {
