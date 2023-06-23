@@ -4,30 +4,30 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='footer card-scroll w-full h-[60vh] bg-purpleBal text-whiteWi text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>
+    <div className='footer card-scroll w-full h-[55vh] bg-purpleBal text-whiteWi'>
       <div className='w-full flex flex-wrap flex-col md:flex-row md:flex-nowrap p-[5%]'>
         <div className='logo mr-[5%] w-[70%] h-[10%] md:w-[30%] md:h-[3%] mb-4'>
           <img className='w-full h-full' src='https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/logoWhite.png?alt=media&token=e025e897-8318-46c4-b001-3ad03397f262' alt='logo' />
         </div>
         <div className='contact md:w-[45%] flex flex-col space-y-3 mb-3 '>
-          <p>Jesica Bilotti</p>
+          <p className='text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>Jesica Bilotti</p>
 
           <Link to='https://wa.me/541141568854?text=Hola%20,%20estoy%20interesado%20en%20una%20asesoría%20.%20Me%20gustaría%20tener%20más%20información%20.%20Gracias%20.'>
             <div className='whatsapp flex space-x-2 transition duration-500 ease-in-out hover:text-verdeMok'>
               <FaWhatsapp className='text-[2rem]' />
-              <p>WhatsApp +54 11 4156-8854</p>
+              <p className='text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>WhatsApp +54 11 4156-8854</p>
             </div>
           </Link>
 
           <Link to='mailto:info.cxperiment@gmail.com' target='_blank'>
             <div className='mail flex space-x-2 transition duration-500 ease-in-out hover:text-verdeMok'>
               <IoMailOutline className='text-[2rem]' />
-              <p>info.cxperiment@gmail.com</p>
+              <p className='text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>info.cxperiment@gmail.com</p>
             </div>
           </Link>
 
         </div>
-        <div className='redes'>
+        <div className='redes text-lg lg:text-xl xl:text-xl'>
           <h3>Redes Sociales</h3>
           <div className='flex space-x-2 mt-3'>
             <Link to='https://www.linkedin.com/in/jesicabilotti/' target='_blank'><FaLinkedin className='w-[2rem] h-[2rem] transition duration-500 ease-in-out hover:scale-125 hover:text-verdeMok' /></Link>
