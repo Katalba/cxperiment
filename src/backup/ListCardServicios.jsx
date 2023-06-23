@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { useGeneralContext } from '../context/GeneralContext'
+import { useGeneralContext } from './context/GeneralContext'
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
 import CardServicios from './CardServicios.jsx'

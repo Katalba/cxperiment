@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import BotonBase from '../components/BotonBase'
+import BotonBase from './context/GeneralContext'
 
 const CardServicios = ({ objeto }) => {
   const [isFlipped, setIsFlipped] = useState(false)
