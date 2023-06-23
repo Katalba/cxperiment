@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
 import Title from './Title'
 import BotonBase from './BotonBase'
+import { useEffect } from 'react'
 
 const FlipCard = ({ objeto }) => {
   const { bgColor, radiusFront, radiusBack, radiusImg, textFront, textBack, fcbImg, titulo } = objeto
