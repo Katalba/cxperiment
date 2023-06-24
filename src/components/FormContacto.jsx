@@ -102,7 +102,7 @@ const FormContacto = () => {
       validationErrors.empresa = 'Se requiere una empresa'
     }
     // validamos opciones
-    if (!opciones || opciones === 'Servicio de customer research') {
+    if (!opciones || opciones === 'Selecciona una servicio') {
       validationErrors.opciones = 'Se requiere una opcion'
     }
     // validamos mensaje
@@ -128,9 +128,6 @@ const FormContacto = () => {
 
           setShowModal(true)
 
-          // This form needs Activation. We've sent you an email containing an 'Activate Form' link. Just click it and your form will be actived!
-
-          // reset estados
           handleReset()
         })
         .catch((error) => {
@@ -154,27 +151,6 @@ const FormContacto = () => {
         })
     }
   }
-
-  /*
-  Tamaños fuentes componente formulario
-
-  formulario:
-  font-size:  18px; >=  xl 1280px
-  font-size:  14px; ==  lg = 1024px
-  font-size:  14px; <=  sm = 640px
-  font-size:  16px; ==  md = 768px
-
-  font-[16px] md:font-[14px] lg:font-[14px] xl:font-[18px]
-
-  IoCallOutline
-  IoMailOutline
-  IoLocationOutline
-
-  IoChevronDown
-
-  IoFlashOutline
-
-  */
 
   return (
     <section className='card-scroll w-full xl:w-full xl:max-w-[600px] flex flex-col justify-center items-center gap-2'>
@@ -255,7 +231,7 @@ const FormContacto = () => {
               ${errors.opciones ? 'border-2 border-red-600 focus:ring-0' : ''}`}
                 style={{ boxShadow: '5px 5px 10px #dcdbe4,-5px -5px 10px #ffffff' }}
               >
-                <option value=''>Servicio de customer research</option>
+                <option value=''>Selecciona una servicio</option>
                 <option value='opcion1'>Customer Research</option>
                 <option value='opcion2'>Customer Analysis</option>
                 <option value='opcion3'>Customer Insights</option>
@@ -282,7 +258,7 @@ const FormContacto = () => {
           {errors.mensaje && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.mensaje}</p>)}
         </label>
         <div className='w-full flex flex-row flex-nowrap justify-center items-center mt-6'>
-          <BotonBase type='submit' name='enviar mensaje' clase='botonVerde' />
+          <BotonBase type='submit' name='Enviar mensaje' clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]' />
         </div>
       </form>
     </section>
