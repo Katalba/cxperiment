@@ -3,34 +3,6 @@ import { IoFlashOutline, IoHappyOutline } from 'react-icons/io5'
 // import ScrollReveal from 'scrollreveal'
 
 const CardPrecentacion = () => {
-  // const revealRef = useRef()
-
-  // useEffect(() => {
-  //   const sr = ScrollReveal({
-  //     duration: 1500,
-  //     delay: 300,
-  //     distance: '50px',
-  //     easing: 'ease-in-out'
-  //   })
-
-  //   sr.reveal('.card-precentacion', { interval: 100 })
-  // }, [])
-
-  /*
-  Tamaños fuentes componente
-  titulo:
-  font-size: 20px; >= xl = 1280px
-  font-size: 20px  = lg = 1024px
-  font-size: 16px; = md = 768px
-  font-size: 16px; <= sm = 640px
-
-  parrafo:
-  font-size: 16px; >= xl = 1280px
-  font-size: 14px  = lg = 1024px
-  font-size: 12px; = md = 768px
-  font-size: 12px; <= sm = 640px
-
-  */
   return (
     <section className='cardPrecentacion w-full h-auto bg-whiteWi flex flex-col justify-start items-center gap-4 sm:flex-row sm:justify-evenly sm:items-center md:gap-4 mt-10 lg:mt-20'>
 
