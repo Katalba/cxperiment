@@ -1,7 +1,18 @@
 import BotonBase from './BotonBase'
 import { IoArrowForwardSharp } from 'react-icons/io5'
+import { useGeneralContext } from '../context/GeneralContext'
 
 const HomeBanner = () => {
+  const { contactoRef, serviciosRef } = useGeneralContext()
+
+  const servicio = () => {
+    serviciosRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const contacto = () => {
+    contactoRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <section
@@ -19,10 +30,10 @@ const HomeBanner = () => {
             <h1 className='font-titulo font-[700] text-3xl md:text-4xl lg:text-5xl overflow-hidden xl:text-6xl'> Convertí a tus clientes en tus fans</h1>
             <p className='font-parrafo font-[400] text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base'>Mejoramos la experiencia de tus clientes y tu reputación de marca, identificamos oportunidades, implementamos soluciones efectivas, y ayudamos a impulsar tu crecimiento en el mercado.</p>
             <div className='containerButtons flex space-x-2 justify-center'>
-              <BotonBase name='Ver servicio' clase='botonWhite'>
+              <BotonBase func={servicio} name='Ver servicio' clase='botonWhite'>
                 <IoArrowForwardSharp />
               </BotonBase>
-              <BotonBase name='Asesoría inicial sin cargo' clase='botonVerde' />
+              <BotonBase func={contacto} name='Asesoría inicial sin cargo' clase='botonVerde' />
             </div>
           </section>
 
