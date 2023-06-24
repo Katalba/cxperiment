@@ -13,10 +13,14 @@ const CardServicios = ({ objeto }) => {
     }
 
   return (
-      <div className="w-[340px] h-[340px] flex flex-column justify-center items-center py-[5rem]">
+      <div className="bg-red-400 w-[260px] h-[260px] md:w-[340px] md:h-[340px] flex justify-center items-center py-[5rem]">
 
       {/* esta es la card */}
-      <div className={`flip-card bg-transparent w-[300px] aspect-square rounded-tl-3xl rounded-tr-3xl border-solid ${radiusBorde} overflow-hidden perspective-1000 relative `} onClick={flipCard}>
+      <div className={`flip-card bg-transparent w-[250px] md:w-[300px] aspect-square rounded-tl-3xl rounded-tr-3xl border-solid ${radiusBorde} overflow-hidden perspective-1000 relative `} 
+      onClick={flipCard} 
+      onMouseEnter={flipCard}
+      onMouseLeave={flipCard}>
+        
         <section className='flip-card-inner w-[100%] h-[100%] transition-transform duration-500 ease-in-out relative' style={{ transformStyle: 'preserve-3d', transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}>
 
           {/* front card */}
