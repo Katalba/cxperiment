@@ -38,7 +38,7 @@ const CardContenido = ({ item, imgBg }) => {
       <section className={`contenedoCard card-scroll bg-whiteWi w-full h-auto md:h-auto flex flex-col-reverse  flex-wrap justify-start items-center md:flex-row md:flex-nowrap md:justify-start md:items-center ${isPar(item.id) ? 'md:flex-row-reverse' : 'md:flex-row'} py-1 overflow-hidden gap-5 lg:gap-5 `}>
 
         {/* seccion contenido */}
-        <section className='contenido w-full xl:h-[500px] md:w-[50%] lg:w-[40%] md:h-full flex flex-col md:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
+        <section className='contenido w-full xl:h-[550px] md:w-[50%] lg:w-[40%] md:h-full flex flex-col md:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
           <h2 className='font-titulo font-[700] text-[20px] md:text-[16.511px ] xl:text-[31px] 2xl:text-4xl text-textPurple'>{item.titulo}</h2>
           <p className='w-full md:w-full font-parrafo font-[400] text-textPurple text-xs md:text-sm xl:text-base md:pb-0 leading-[18px] md:leading-[24px] xl:leading-[27px]'>En <span className='font-[600]'>CXperiment</span>, {item.parrafo}</p>
           <div className='main w-full gap-3 md:w-full flex flex-row justify-around items-center relative'>
