@@ -10,25 +10,6 @@ const CardContenido = ({ item, imgBg }) => {
     return val % 2 !== 0
   }
 
-  /*
-
-  Tamaños fuentes componente CardContenido
-  titulo:
-  font-size: 32px; >= xl = 1280px
-  font-size: 17px  = lg = = 1024px
-  font-size: 17px; = md = md = 768px
-  font-size: 20px; <= sm = 640px
-
-  parrafo:
-            tamaño  |  en resolucion:
-  font-size:  text-base 16px; >=  xl 1280px
-  font-size:  text-sm 14px; ==  lg = 1024px
-  font-size:  text-xs 12px; ==  md = 768px
-  font-size:  text-xs 12px; <=  sm = 640px
-
-  leading-[18px] lg:leading-[24px] //linehe height
-
-  */
   const overlayStyleRight = {
     content: '',
     position: 'absolute',
@@ -80,7 +61,7 @@ const CardContenido = ({ item, imgBg }) => {
             </ul>
           </div>
           <section className='pie w-full h-auto relative flex justify-start items-start md:right-auto md:bottom-auto md:relative md:w-full  md:flex-row md:justify-start md:items-center'>
-            <BotonBase func={handleClick} name='Solicita información' clase='botonVerde' />
+            <BotonBase func={handleClick} name='Solicita información' clase='botonVerde text-[14px] font-[700] md:text-[9.287px] md:font-[600] xl:font-[600]' />
           </section>
         </section>
 

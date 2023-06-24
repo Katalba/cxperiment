@@ -23,37 +23,6 @@ const ContactosClient = () => {
     window.open(`https://www.google.com/maps?q=${ubicacion}`, '_blank')
   }
 
-  /*
-  Tamaños fuentes componente CardContenido
-  titulo0:
-  font-size: 18px; >= xl = 1280px
-  font-size: 16px  = lg = = 1024px
-  font-size: 16 px; = md = md = 768px
-  font-size: 14px; <= sm = 640px
-
-  titulo1:
-  font-size: 44px; >= xl = 1280px
-  font-size: 24px  = lg = = 1024px
-  font-size: 24 px; = md = md = 768px
-  font-size: 20px; <= sm = 640px
-
-  parrafo:
-            tamaño  |  en resolucion:
-  font-size:  text-base 16px; >=  xl 1280px
-  font-size:  text-sm 14px; ==  lg = 1024px
-  font-size:  text-xs 12px; ==  md = 768px
-  font-size:  text-xs 12px; <=  sm = 640px
-  leading-[18px] lg:leading-[30px] //linehe height
-
-  lista:
-  font-size: 18px; >=  xl 1280px
-  font-size: 14px; ==  lg = 1024px
-  font-size: 12px; ==  md =  768px
-  font-size: 12px; <=  sm = 640px
-
-  IoFlashOutline
-
-  */
   return (
 
     <section className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto xl:max-w-[600px] rounded-lg flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7'>
@@ -92,7 +61,7 @@ const ContactosClient = () => {
         <BotonBase
           func={handlePhoneClick}
           name='Conecta'
-          clase='botonVerde font-titulo'
+          clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]'
         >
           <FaWhatsapp className='text-2xl' />
         </BotonBase>
