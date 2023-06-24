@@ -1,16 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import { useGeneralContext } from '../context/GeneralContext'
+import logo from '../images/Logo_cxperiment_1_ctumyo.svg'
 
 const Nav = () => {
   const [isOpem, setIdOpen] = useState(false)
   const [activeIndex, setActiveIndex] = useState(null)
-
   const { contactoRef, serviciosRef, sobremiRef } = useGeneralContext()
 
-  // const handleActive = (index) => {
-  //   // setActiveIndex(index === activeIndex ? null : index)
-  // }
+  const rutaImg = logo
 
   const handleToggle = () => {
     setIdOpen(!isOpem)
@@ -62,7 +60,7 @@ const Nav = () => {
             duration={700}
             className='cursor-pointer w-full h-full flex flex-row justify-center items-center'
           >
-            <img src='https://res.cloudinary.com/dpiwmbsog/image/upload/v1686474264/consultora/Logo_cxperiment_1_ctumyo.svg' alt='logotipo cxperiment' />
+            <img src={rutaImg} alt='logotipo cxperiment' />
           </Link>
         </section>
 
