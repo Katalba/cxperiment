@@ -7,8 +7,11 @@ import Titulo from '../components/Titulo'
 import QuoteSection from '../components/QuoteSection'
 import FlipCardComp from '../components/FlipCardComp'
 import Footer from '../components/Footer'
+import useTitle from '../hook/useTitle'
 
 const Home = () => {
+  useTitle({ title: 'CXperiment' })
+
   return (
     <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
       <Nav />
