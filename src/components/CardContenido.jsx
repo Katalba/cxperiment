@@ -86,7 +86,7 @@ const CardContenido = ({ item, imgBg }) => {
 
         {/* seccion imagen */}
         <section className={`imgBg w-full h-auto py-2 sm:h-[50px] md:w-[50%] md:h-full lg:w-[60%] overflow-hidden flex justify-start items-center ${isPar(item.id) ? 'justify-end' : 'justify-start'} relative`}>
-          <div style={isPar(item.id) ? overlayStyleLeft : overlayStyleRight} className='hidden md:absolute top-0 bottom-0 left-0 right-0 w-full h-full z-10' />
+          <div style={isPar(item.id) ? overlayStyleLeft : overlayStyleRight} className='absolute w-[10px] md:w-full md:h-full md:top-0 md:left-0 top-0 right-0 z-10' />
           <img
             src={imgBg} alt='logo cxPeriment'
             className={`bgCustomerCards h-full w-full hidden md:block object-contain md:object-cover object-center lg:object-left opacity-40 transform relative  ${isPar(item.id) ? '-scale-x-100' : ''}`}
