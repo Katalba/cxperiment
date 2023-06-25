@@ -4,7 +4,7 @@ import { IoCheckmarkSharp } from 'react-icons/io5'
 import { useGeneralContext } from '../context/GeneralContext'
 
 const CardContenido = ({ item, imgBg }) => {
-  const { contactoRef } = useGeneralContext()
+  const { contactoRef, descriptionRef } = useGeneralContext()
 
   const isPar = (val) => {
     return val % 2 !== 0
@@ -47,7 +47,7 @@ const CardContenido = ({ item, imgBg }) => {
             item.lista.map((element) => {
               return (
                 <li
-                  key={uuidv4()} className='font-parrafo font-[400] text-textPurple flex flex-row flex-nowrap justify-start items-center gap-1 xl:gap-2 text-xs lg:text-sm xl:text-base
+                  key={uuidv4()} ref={descriptionRef} className='font-parrafo font-[400] text-textPurple flex flex-row flex-nowrap justify-start items-center gap-1 xl:gap-2 text-xs lg:text-sm xl:text-base
                 leading-[18px] lg:leading-[24px] xl:leading-[27px]'
                 >
                   <span className='text-purpleBal p-1 bg-verdeMok rounded-full text-sm lg:text-lg'>
