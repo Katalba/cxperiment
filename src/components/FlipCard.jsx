@@ -25,7 +25,7 @@ const FlipCard = ({ objeto }) => {
           <img className={`absolute w-full h-full object-fill ${radiusImg}`} src={`${fcbImg}`} alt='imagenServicio' />
           <div className='w-full h-full absolute text-center overflow-hidden p-[15%] flex flex-col justify-center items-center gap-4'>
             <p className='text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base text-whiteWi font-semibold'>{textBack}</p>
-            <BotonBase name='Más info' clase='botonVerde' />
+            <BotonBase name='Más info' clase='botonVerde text-[12px] md:text-[12px]' />
           </div>
         </div>
       </div>
