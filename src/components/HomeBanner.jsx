@@ -16,7 +16,7 @@ const HomeBanner = () => {
     <>
       <section
         id='home'
-        className=' w-full h-[calc(100vh-90px)] mt-[90px] flex flex-col justify-center items-center  md:flex-row md:justify-center md:items-center gap-3 md:gap-2 relative overflow-hidden'
+        className=' w-full h-[calc(100vh-90px)] mt-[60px] lg:mt-[90px] flex flex-col justify-center items-center  md:flex-row md:justify-center md:items-center lg:gap-3 md:gap-2 relative overflow-hidden'
       >
         <div className='homeImage w-full h-2/5 sm:h-1/2 md:w-full md:h-full top-0 left-0 bg-cover bg-center mx-auto ' />
         <div className='containerTitle relative w-full h-1/2 sm:h-1/2 md:w-3/5 md:h-full md:absolute md:top-0 md:left-0 lg:w-3/5  flex flex-col justify-center items-center md:items-center  md:text-left lg:text-left '>
