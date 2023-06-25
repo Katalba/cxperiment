@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import Title from './Title'
 import BotonBase from './BotonBase'
+import { useGeneralContext } from '../context/GeneralContext'
 
 const FlipCard = ({ objeto }) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const { bgColor, radiusFront, radiusBack, radiusImg, textFront, textBack, fcbImg, titulo } = objeto
 
   const cardBg = `bg-${bgColor}`
+
+  const { descriptionRef } = useGeneralContext()
+  const description = () => {
+    descriptionRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
 
   const flipCard = () => {
     setIsFlipped(prevState => !prevState)
@@ -18,14 +24,14 @@ const FlipCard = ({ objeto }) => {
         <div className={`cardFront ${cardBg} absolute ${radiusFront} w-full h-full [backface-visibility: visible] flex flex-col justify-center items-center p-[13%]`}>
           <div className='w-full h-full p-2 flex flex-col justify-center items-center gap-4 overflow-hidden'>
             <Title name={`${titulo}`} />
-            <p className='text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base text-whiteWi text-center'>{textFront}</p>
+            <p className='text-xs sm:text-xs md:text-xs lg:text-base xl:text-base text-whiteWi text-center'>{textFront}</p>
           </div>
         </div>
         <div className={`cardBack ${cardBg} absolute ${radiusBack} w-full h-full [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center overflow-hidden`}>
           <img className={`absolute w-full h-full object-fill ${radiusImg}`} src={`${fcbImg}`} alt='imagenServicio' />
           <div className='w-full h-full absolute text-center overflow-hidden p-[15%] flex flex-col justify-center items-center gap-4'>
-            <p className='text-xs sm:text-xs md:text-xs lg:text-sm xl:text-base text-whiteWi font-semibold'>{textBack}</p>
-            <BotonBase name='Más info' clase='botonVerde text-[12px] md:text-[12px]' />
+            <p className='text-xs sm:text-xs md:text-xs lg:text-base xl:text-base text-whiteWi font-semibold'>{textBack}</p>
+            <BotonBase func={description} name='Más info' clase='botonVerde text-[12px] md:text-[12px]' />
           </div>
         </div>
       </div>
