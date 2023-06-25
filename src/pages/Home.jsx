@@ -16,10 +16,13 @@ const Home = () => {
     <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
       <Nav />
       <HomeBanner />
-      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
+      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:pb-[80px] lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
         <CardPrecentacion />
-        <Titulo titulo='Servicios' />
-        <FlipCardComp />
+      </section>
+      <div className='separador w-full h-10 lg:h-20' />
+      <Titulo titulo='Servicios' />
+      <FlipCardComp />
+      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 lg:pt-[80px] px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
         <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
         <CardListContenido />
       </section>

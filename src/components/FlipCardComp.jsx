@@ -48,15 +48,6 @@ const FlipCardComp = () => {
   const handleClickRight = () => {
     setCurrentCardIndex((prevIndex) => (prevIndex === cardCount - 1 ? 0 : prevIndex + 1))
   }
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentCardIndex((prevIndex) => (prevIndex === cardCount - 1 ? 0 : prevIndex + 1))
-  //   }, 5000)
-
-  //   return () => {
-  //     clearInterval(interval)
-  //   }
-  // }, [cardCount])
 
   const calculaFlex = (index) => {
     if (index === 0) {
@@ -78,7 +69,7 @@ const FlipCardComp = () => {
         <HiChevronLeft />
       </button>
       <section
-        className={`cajaPadre w-[190px] min-[450px]:w-[250px] sm:w-[310px] h-auto overflow-hidden md:w-full lg:w-full flex ${calculaFlex(currentCardIndex)} md:justify-center lg:justify-center gap-4 pt-10 py-20 lg:py-5`}
+        className={`cajaPadre w-[250.627px] h-auto overflow-hidden md:w-full lg:w-full flex ${calculaFlex(currentCardIndex)} md:justify-center lg:justify-center gap-4 pt-10 py-20 lg:py-[80px]`}
         // style={{ transform: `translateX(${getTranslateX()}px)` }}
       >
         {
