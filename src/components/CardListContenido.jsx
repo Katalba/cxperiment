@@ -2,8 +2,11 @@
 import { v4 as uuidv4 } from 'uuid'
 import CardContenido from './CardContenido.jsx'
 import fondo from '../images/logotipo.svg'
+import { useGeneralContext } from '../context/GeneralContext.jsx'
 
 const CardListContenido = () => {
+  const { descriptionRef } = useGeneralContext()
+
   const imgBg = fondo
 
   const contenido = [
@@ -19,7 +22,7 @@ const CardListContenido = () => {
       {
       contenido.map(item => {
         return (
-          <CardContenido key={uuidv4()} item={item} imgBg={imgBg} />
+          <CardContenido key={uuidv4()} item={item} imgBg={imgBg} ref={descriptionRef} />
         )
       })
       }
