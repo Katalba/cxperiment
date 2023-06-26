@@ -6,11 +6,12 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
 
 const FlipCardComp = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
-  const { serviciosRef } = useGeneralContext()
+  const { serviciosRef, descripcionRef0, descripcionRef1, descripcionRef2 } = useGeneralContext()
   const cardCount = 3
 
   const cards = [
     {
+      id: 0,
       titulo: 'Customer Research',
       bgColor: 'purpleBal',
       radiusFront: 'rounded-tr-[61px] rounded-l-[61px] rounded-t-[61px] lg:rounded-tr-[106px] lg:rounded-l-[106px] lg:rounded-t-[106px]',
@@ -21,6 +22,7 @@ const FlipCardComp = () => {
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/custumerResearch.png?alt=media&token=bdd5bb54-1d04-4be3-b6f9-c43b04c971cd'
     },
     {
+      id: 1,
       titulo: 'Customer Analysis',
       bgColor: 'verdeTurk',
       radiusFront: 'rounded-t-[61px] rounded-tr-[61px] rounded-b-[0] lg:rounded-t-[106px] lg:rounded-tr-[106px] lg:rounded-b-[0]',
@@ -30,6 +32,7 @@ const FlipCardComp = () => {
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerAnalysis.png?alt=media&token=3e049d7e-c53d-4d21-a94f-7b568163f3e0'
     },
     {
+      id: 2,
       titulo: 'Customer Insights',
       bgColor: 'purpleBal',
       radiusFront: 'rounded-t-[61px] rounded-br-[61px] lg:rounded-t-[106px] lg:rounded-br-[106px]',
@@ -58,6 +61,25 @@ const FlipCardComp = () => {
       return 'justify-end'
     }
   }
+  const handleRef0 = () => {
+    descripcionRef0.current.scrollIntoView({ behavior: 'smooth' })
+  }
+  const handleRef1 = () => {
+    descripcionRef1.current.scrollIntoView({ behavior: 'smooth' })
+  }
+  const handleRef2 = () => {
+    descripcionRef2.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const calcReferencia = (val) => {
+    if (val === 0) {
+      return handleRef0
+    } else if (val === 1) {
+      return handleRef1
+    } else if (val === 2) {
+      return handleRef2
+    }
+  }
 
   return (
     <div
@@ -78,6 +100,7 @@ const FlipCardComp = () => {
                 key={index}
                 objeto={element}
                 isCurrent={index === currentCardIndex}
+                func={calcReferencia(index)}
               />
 
             )

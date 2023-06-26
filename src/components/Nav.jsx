@@ -77,7 +77,7 @@ const Nav = () => {
             to='servicios'
             spy
             smooth
-            offset={-100}
+            offset={-150}
             duration={700}
             className={`navLink cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'servicios' ? 'active font-titulo text-lg font-[700] ' : 'font-[500]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(0)}
@@ -91,7 +91,7 @@ const Nav = () => {
             to='sobremi'
             spy
             smooth
-            offset={-100}
+            offset={-90}
             duration={700}
             className={`navLink  cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'sobremi' ? 'active font-[700]' : 'font-[500]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(1)}
@@ -104,7 +104,7 @@ const Nav = () => {
             to='contacto'
             spy
             smooth
-            offset={-100}
+            offset={-150}
             duration={700}
             className={`navLink cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'contacto' ? 'active font-[700]' : 'font-[500]'} transition-all duration-0 ease-in-out`}
             // onClick={() => handleActive(2)}

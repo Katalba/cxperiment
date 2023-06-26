@@ -13,6 +13,9 @@ export const GeneralContextProvider = ({ children }) => {
   const contactoRef = useRef(null)
   const serviciosRef = useRef(null)
   const sobremiRef = useRef(null)
+  const descripcionRef0 = useRef(null)
+  const descripcionRef1 = useRef(null)
+  const descripcionRef2 = useRef(null)
 
   useEffect(() => {
     const sr = ScrollReveal({
@@ -33,7 +36,10 @@ export const GeneralContextProvider = ({ children }) => {
         homeRef,
         contactoRef,
         serviciosRef,
-        sobremiRef
+        sobremiRef,
+        descripcionRef0,
+        descripcionRef1,
+        descripcionRef2
       }}
     >
       {children}
