@@ -5,7 +5,7 @@ import fondo from '../images/logotipo.svg'
 import { useGeneralContext } from '../context/GeneralContext.jsx'
 
 const CardListContenido = () => {
-  const { descriptionRef } = useGeneralContext()
+  const { descripcionRef0, descripcionRef1, descripcionRef2 } = useGeneralContext()
 
   const imgBg = fondo
 
@@ -17,12 +17,22 @@ const CardListContenido = () => {
     { id: 2, parrafo: 'te ayudamos descubrir los aspectos más relevantes de tus clientes y obtener una comprensión completa de sus necesidades, preferencias y comportamientos. Basándonos en los datos recopilados a través del Customer Analysis previo, brindaremos feedback valioso sobre los siguientes aspectos clave:', icono: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1686618751/consultora/fa-solid_search_1_kff27u.svg', titulo: 'Customer insights', lista: ['Puntos de dolor', 'Canales preferidos', 'Momentos de verdad'] }
   ]
 
+  const calcReferencia = (val) => {
+    if (val === 0) {
+      return descripcionRef0
+    } else if (val === 1) {
+      return descripcionRef1
+    } else if (val === 2) {
+      return descripcionRef2
+    }
+  }
+
   return (
     <section className='conteinerContenido w-full flex flex-col items-center justify-center gap-10 lg:gap-20'>
       {
       contenido.map(item => {
         return (
-          <CardContenido key={uuidv4()} item={item} imgBg={imgBg} ref={descriptionRef} />
+          <CardContenido key={uuidv4()} item={item} imgBg={imgBg} descripcionRef={calcReferencia(item.id)} />
         )
       })
       }

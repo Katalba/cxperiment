@@ -3,8 +3,8 @@ import BotonBase from './BotonBase'
 import { IoCheckmarkSharp } from 'react-icons/io5'
 import { useGeneralContext } from '../context/GeneralContext'
 
-const CardContenido = ({ item, imgBg }) => {
-  const { contactoRef, descriptionRef } = useGeneralContext()
+const CardContenido = ({ item, imgBg, descripcionRef }) => {
+  const { contactoRef } = useGeneralContext()
 
   const isPar = (val) => {
     return val % 2 !== 0
@@ -35,7 +35,7 @@ const CardContenido = ({ item, imgBg }) => {
 
   return (
     <>
-      <section className={`contenedoCard card-scroll bg-whiteWi w-full h-auto md:h-auto flex flex-col-reverse  flex-wrap justify-start items-center md:flex-row md:flex-nowrap md:justify-start md:items-center ${isPar(item.id) ? 'md:flex-row-reverse' : 'md:flex-row'} py-1 overflow-hidden gap-5 lg:gap-5 `}>
+      <section ref={descripcionRef} className={`contenedoCard card-scroll bg-whiteWi w-full h-auto md:h-auto flex flex-col-reverse  flex-wrap justify-start items-center md:flex-row md:flex-nowrap md:justify-start md:items-center ${isPar(item.id) ? 'md:flex-row-reverse' : 'md:flex-row'} py-1 overflow-hidden gap-5 lg:gap-5 `}>
 
         {/* seccion contenido */}
         <section className='contenido w-full xl:h-[550px] md:w-[50%] lg:w-[40%] md:h-full flex flex-col md:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
@@ -47,7 +47,7 @@ const CardContenido = ({ item, imgBg }) => {
             item.lista.map((element) => {
               return (
                 <li
-                  key={uuidv4()} ref={descriptionRef} className='font-parrafo font-[400] text-textPurple flex flex-row flex-nowrap justify-start items-center gap-1 xl:gap-2 text-xs lg:text-sm xl:text-base
+                  key={uuidv4()} className='font-parrafo font-[400] text-textPurple flex flex-row flex-nowrap justify-start items-center gap-1 xl:gap-2 text-xs lg:text-sm xl:text-base
                 leading-[18px] lg:leading-[24px] xl:leading-[27px]'
                 >
                   <span className='text-purpleBal p-1 bg-verdeMok rounded-full text-sm lg:text-lg'>

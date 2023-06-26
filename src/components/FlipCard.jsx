@@ -1,18 +1,12 @@
 import React, { useState } from 'react'
 import Title from './Title'
 import BotonBase from './BotonBase'
-import { useGeneralContext } from '../context/GeneralContext'
 
-const FlipCard = ({ objeto }) => {
+const FlipCard = ({ objeto, func }) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const { bgColor, radiusFront, radiusBack, radiusImg, textFront, textBack, fcbImg, titulo } = objeto
 
   const cardBg = `bg-${bgColor}`
-
-  const { descriptionRef } = useGeneralContext()
-  const description = () => {
-    descriptionRef.current.scrollIntoView({ behavior: 'smooth' })
-  }
 
   const flipCard = () => {
     setIsFlipped(prevState => !prevState)
@@ -31,7 +25,7 @@ const FlipCard = ({ objeto }) => {
           <img className={`absolute w-full h-full object-fill ${radiusImg}`} src={`${fcbImg}`} alt='imagenServicio' />
           <div className='w-full h-full absolute text-center overflow-hidden p-[15%] flex flex-col justify-center items-center gap-4'>
             <p className='text-xs sm:text-xs md:text-xs lg:text-base xl:text-base text-whiteWi font-semibold'>{textBack}</p>
-            <BotonBase func={description} name='Más info' clase='botonVerde text-[12px] md:text-[12px]' />
+            <BotonBase func={func} name='Más info' clase='botonVerde text-[12px] md:text-[12px]' />
           </div>
         </div>
       </div>
