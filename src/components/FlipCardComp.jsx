@@ -17,8 +17,8 @@ const FlipCardComp = () => {
       radiusFront: 'rounded-tr-[61px] rounded-l-[61px] rounded-t-[61px] lg:rounded-tr-[106px] lg:rounded-l-[106px] lg:rounded-t-[106px]',
       radiusBack: 'rounded-t-[61px] rounded-br-[61px] lg:rounded-t-[106px] lg:rounded-br-[106px]',
       radiusImg: 'rounded-t-[61px] rounded-br-[61px] lg:rounded-t-[106px] lg:rounded-br-[106px]',
-      textFront: 'Conociendo realmente a tu cliente',
-      textBack: 'Conoce a tus clientes desde una perspectiva profunda y significativa',
+      textFront: 'Comprende verdaderamente a tus clientes',
+      textBack: ' Obtené una perspectiva profunda de tus clientes.',
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/custumerResearch.png?alt=media&token=bdd5bb54-1d04-4be3-b6f9-c43b04c971cd'
     },
     {
@@ -27,8 +27,8 @@ const FlipCardComp = () => {
       bgColor: 'verdeTurk',
       radiusFront: 'rounded-t-[61px] rounded-tr-[61px] rounded-b-[0] lg:rounded-t-[106px] lg:rounded-tr-[106px] lg:rounded-b-[0]',
       radiusBack: 'rounded-t-[61px] rounded-tr-[61px] rounded-b-[0] lg:rounded-t-[106px] lg:rounded-tr-[106px] lg:rounded-b-[0]',
-      textFront: 'Entiende a tu cliente en profundidad',
-      textBack: 'Comprende a fondo a tu cliente y su experiencia con tu marca.',
+      textFront: 'Encuentra a tu cliente ideal',
+      textBack: 'Descubrí a tu cliente ideal y su experiencia completa.',
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerAnalysis.png?alt=media&token=3e049d7e-c53d-4d21-a94f-7b568163f3e0'
     },
     {
@@ -38,8 +38,8 @@ const FlipCardComp = () => {
       radiusFront: 'rounded-t-[61px] rounded-br-[61px] lg:rounded-t-[106px] lg:rounded-br-[106px]',
       radiusBack: 'rounded-tr-[61px] rounded-l-[61px] rounded-t-[61px] lg:rounded-tr-[106px] lg:rounded-l-[106px] lg:rounded-t-[106px]',
       radiusImg: 'rounded-tr-[61px] rounded-l-[61px] rounded-t-[61px] lg:rounded-tr-[106px] lg:rounded-l-[106px] lg:rounded-t-[106px]',
-      textFront: 'Fidelicemos a tu cliente',
-      textBack: 'Descubre aspectos relevantes de tus clientes y sus preferencias.',
+      textFront: 'Crea lealtad en tus clientes',
+      textBack: 'Mejora tu estrategia y fidelizá a tus clientes.',
       fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerInsights.png?alt=media&token=440802da-e4df-4671-b064-a5bf24cc8af6'
     }
   ]
