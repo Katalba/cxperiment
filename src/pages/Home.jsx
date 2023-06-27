@@ -7,11 +7,10 @@ import Titulo from '../components/Titulo'
 import QuoteSection from '../components/QuoteSection'
 import FlipCardComp from '../components/FlipCardComp'
 import Footer from '../components/Footer'
-import { Helmet } from 'react-helmet'
-import useSeo from '../hook/useSeo'
+import { Helmet } from 'react-helmet-async'
 
 const Home = () => {
-  useSeo({ title: 'CXperiment' })
+  // useSeo({ title: 'CXperiment' })
 
   const datosSeo = { title: 'cxperiment2.0', description: 'cxperiment consultora, experiencia de usuario personalizada', name: 'guillermo neculqueo', type: 'article' }
 
@@ -20,12 +19,18 @@ const Home = () => {
       <Helmet>
         {/* metadatos estandard */}
         <title>{datosSeo.title}</title>
+        <link rel='canonical' href='www.cxperiment.com' />
         <meta name='description' content={datosSeo.description} />
 
         {/* facebook tags */}
         <meta property='og:type' content={datosSeo.type} />
         <meta property='og:title' content={datosSeo.title} />'
         <meta property='og:description' content={datosSeo.description} />
+
+        <meta property='og:title' content='Omiod website' />
+        <meta property='og:type' content='website' />
+        <meta property='og:image' content='https://www.omiod.com/gfx/favicon512.png' />
+        <meta property='og:url' content='https://www.www.omiod.com' />
 
         {/* taggs twitter */}
         <meta name='twitter:creator' content={datosSeo.name} />
