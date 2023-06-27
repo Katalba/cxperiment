@@ -42,7 +42,7 @@
   /* katy */
 
   .homeImage {
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/heroimage.png?alt=media&token=7e3e78dd-a9e2-4965-9da9-94ef92b33320);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/bannerFinal.jpg?alt=media&token=f71d5a17-17d7-4b1d-9ce8-045a6d76d717);
   }
 
 
@@ -57,6 +57,11 @@
     pointer-events: none;
   }
 
+  @media screen and (max-width: 768px) {
+    .homeImage::before {
+      display: none;
+    }
+  }
 
   .flipped {
     transform: rotateY(180deg);
