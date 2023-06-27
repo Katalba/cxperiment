@@ -12,7 +12,7 @@ import { Helmet } from 'react-helmet-async'
 const Home = () => {
   // useSeo({ title: 'CXperiment' })
 
-  const datosSeo = { title: 'cxperiment2.0', description: 'cxperiment consultora, experiencia de usuario personalizada', name: 'guillermo neculqueo', type: 'article' }
+  const datosSeo = { title: 'CXperiment', description: 'cxperiment consultora, experiencia de usuario personalizada', name: 'guillermo neculqueo', type: 'websyte', linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png', urlWeb: 'https://www.cxperiment.com' }
 
   return (
     <>
@@ -20,17 +20,15 @@ const Home = () => {
         {/* metadatos estandard */}
         <title>{datosSeo.title}</title>
         <link rel='canonical' href='www.cxperiment.com' />
+        <meta name='name' content={datosSeo.title} />
         <meta name='description' content={datosSeo.description} />
 
         {/* facebook tags */}
-        <meta property='og:type' content={datosSeo.type} />
-        <meta property='og:title' content={datosSeo.title} />'
-        <meta property='og:description' content={datosSeo.description} />
-
-        <meta property='og:title' content='Omiod website' />
+        <meta property='og:title' content={datosSeo.title} />
         <meta property='og:type' content='website' />
-        <meta property='og:image' content='https://www.omiod.com/gfx/favicon512.png' />
-        <meta property='og:url' content='https://www.www.omiod.com' />
+        <meta property='og:image' content={datosSeo.linkImg} />
+        <meta property='og:url' content={datosSeo.urlWeb} />
+        <meta property='og:description' content={datosSeo.description} />
 
         {/* taggs twitter */}
         <meta name='twitter:creator' content={datosSeo.name} />
