@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
 const Error404 = () => {
-  const datosSeo = { title: 'Error404', description: 'Ruta no encontrada', name: 'Katherine Cantillo', type: 'websyte', linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png', urlWeb: 'https://www.cxperiment.com' }
+  const datosSeo = { title: 'Error404 | cxperiment', description: 'Ruta no encontrada', name: 'Katherine Cantillo', type: 'websyte', linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png', urlWeb: 'https://www.cxperiment.com' }
 
   return (
     <>
