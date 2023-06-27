@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='contact md:w-[45%] flex flex-col space-y-4 lg:pt-10 '>
           <p className='text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>Jesica Bilotti</p>
 
-          <Link to='https://wa.me/541141568854?text=Hola%20,%20estoy%20interesado%20en%20una%20asesoría%20.%20Me%20gustaría%20tener%20más%20información%20.%20Gracias%20.'>
+          <Link to='https://wa.me/541141568854?text=Hola,%20estoy%20interesado%20en%20una%20asesoría.%20Me%20gustaría%20tener%20más%20información.%20Gracias.' target='_blank'>
             <div className='whatsapp flex space-x-2 transition duration-500 ease-in-out hover:text-verdeMok'>
               <FaWhatsapp className='text-[2rem]' />
               <p className='text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>WhatsApp +54 11 4156-8854</p>
