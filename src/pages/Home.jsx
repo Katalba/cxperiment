@@ -7,39 +7,61 @@ import Titulo from '../components/Titulo'
 import QuoteSection from '../components/QuoteSection'
 import FlipCardComp from '../components/FlipCardComp'
 import Footer from '../components/Footer'
-import useTitle from '../hook/useTitle'
+import { Helmet } from 'react-helmet'
+import useSeo from '../hook/useSeo'
 
 const Home = () => {
-  useTitle({ title: 'CXperiment' })
+  useSeo({ title: 'CXperiment' })
+
+  const datosSeo = { title: 'cxperiment2.0', description: 'cxperiment consultora, experiencia de usuario personalizada', name: 'guillermo neculqueo', type: 'article' }
 
   return (
-    <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
-      <Nav />
-      <HomeBanner />
-      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:pb-[80px] lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
-        <CardPrecentacion />
-      </section>
-      <div className='separador w-full h-10 lg:h-20' />
-      <Titulo titulo='Servicios' />
-      <FlipCardComp />
-      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 lg:pt-[80px] px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
-        <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
-        <CardListContenido />
-      </section>
+    <>
+      <Helmet>
+        {/* metadatos estandard */}
+        <title>{datosSeo.title}</title>
+        <meta name='description' content={datosSeo.description} />
 
-      {/* separador margen */}
-      <div className='separador w-full h-10 lg:h-20' />
+        {/* facebook tags */}
+        <meta property='og:type' content={datosSeo.type} />
+        <meta property='og:title' content={datosSeo.title} />'
+        <meta property='og:description' content={datosSeo.description} />
 
-      {/* banner 2 */}
-      <QuoteSection />
-      <div className='separador w-full h-10 lg:h-20' />
+        {/* taggs twitter */}
+        <meta name='twitter:creator' content={datosSeo.name} />
+        <meta name='twitter:card' content={datosSeo.type} />
+        <meta name='twitter:title' content={datosSeo.title} />
+        <meta name='twitter:description' content={datosSeo.description} />
 
-      <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
-        <Contacto />
-      </section>
-      <div className='separador w-full h-10 lg:h-20' />
-      <Footer />
-    </div>
+      </Helmet>
+      <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
+        <Nav />
+        <HomeBanner />
+        <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:pb-[80px] lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
+          <CardPrecentacion />
+        </section>
+        <div className='separador w-full h-10 lg:h-20' />
+        <Titulo titulo='Servicios' />
+        <FlipCardComp />
+        <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 lg:pt-[80px] px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
+          <Titulo titulo='Descubrí los beneficios de trabajar juntos' />
+          <CardListContenido />
+        </section>
+
+        {/* separador margen */}
+        <div className='separador w-full h-10 lg:h-20' />
+
+        {/* banner 2 */}
+        <QuoteSection />
+        <div className='separador w-full h-10 lg:h-20' />
+
+        <section className='w-full max-w-[1440px] h-auto flex flex-col bg-white justify-start items-center gap-10 lg:gap-20 px-5 md:px-8 lg:px-10 xl:px-32 2xl:px-0 overflow-hidden'>
+          <Contacto />
+        </section>
+        <div className='separador w-full h-10 lg:h-20' />
+        <Footer />
+      </div>
+    </>
   )
 }
 
