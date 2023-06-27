@@ -2,8 +2,10 @@ import { useState } from 'react'
 import { IoChevronDown } from 'react-icons/io5'
 import BotonBase from './BotonBase'
 import { useFetchForm } from '../hook/useFetchForm'
+import Loader from './Loader'
 
 const FormContacto = () => {
+  const [loader, setLoader] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [telefono, setTelefono] = useState('')
@@ -18,7 +20,8 @@ const FormContacto = () => {
   const [successMessage, setSuccessMessage] = useState({})
   const [showModal, setShowModal] = useState(false)
 
-  const mailUser = 'Info.cxperiment@gmail.com'
+  // const mailUser = 'Info.cxperiment@gmail.com'
+  const mailUser = 'guillermoneculqueo@gmail.com'
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -118,10 +121,12 @@ const FormContacto = () => {
       setErrors(validationErrors)
     } else if (Object.keys(validationErrors).length === 0) {
       setErrors({})
+      setLoader(true)
       console.log(mensajeUsuario)
       useFetchForm(mailUser, mensajeUsuario)
         .then((response) => {
           console.log('Respuesta del servidor -> ', response)
+          setLoader(false)
           if (response.message === 'The form was submitted successfully.') {
             setSuccessMessage({ mensaje: 'Mensaje enviado, me pondre en contacto contigo a la brevedad', color: 'bg-green-500' })
           } else if (response.message === 'This form needs Activation. We\'ve sent you an email containing an \'Activate Form\' link. Just click it and your form will be actived!') { setSuccessMessage({ mensaje: 'Necesita activar el formulario, se le ha enviado un email con un enlace para activarlo', color: 'bg-orange-500' }) } else { setSuccessMessage({ mensaje: 'Ocurrio un error al enviar el mensaje', color: 'bg-red-500' }) }
@@ -146,6 +151,7 @@ const FormContacto = () => {
         .finally(() => {
           console.log('Finalizado')
           setTimeout(() => {
+            setLoader(false)
             handleCloseModal()
           }, 6000)
         })
@@ -258,7 +264,7 @@ const FormContacto = () => {
           {errors.mensaje && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.mensaje}</p>)}
         </label>
         <div className='w-full flex flex-row flex-nowrap justify-center items-center mt-6'>
-          <BotonBase type='submit' name='Enviar mensaje' clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]' />
+          {loader ? <BotonBase><Loader /></BotonBase> : <BotonBase type='submit' name='Enviar mensaje' clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]' />}
         </div>
       </form>
     </section>
