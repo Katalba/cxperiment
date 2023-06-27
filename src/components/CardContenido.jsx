@@ -29,8 +29,18 @@ const CardContenido = ({ item, imgBg, descripcionRef }) => {
     background: 'linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))'
   }
 
+  // const handleClick = () => {
+  //   contactoRef.current.scrollIntoView({ behavior: 'smooth' })
+  // }
   const handleClick = () => {
-    contactoRef.current.scrollIntoView({ behavior: 'smooth' })
+    const contactoElement = contactoRef.current
+    const contactoRect = contactoElement.getBoundingClientRect()
+    const offset = 150 // Ajusta este valor según tus necesidades
+
+    window.scrollTo({
+      top: contactoRect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
   }
 
   return (
