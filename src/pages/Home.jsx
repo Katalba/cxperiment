@@ -12,7 +12,7 @@ import { Helmet } from 'react-helmet-async'
 const Home = () => {
   // useSeo({ title: 'CXperiment' })
 
-  const datosSeo = { title: 'CXperiment', description: 'cxperiment consultora, experiencia de usuario personalizada', name: 'guillermo neculqueo', type: 'websyte', linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png', urlWeb: 'https://www.cxperiment.com' }
+  const datosSeo = { title: 'Home | CXperiment', description: 'cxperiment consultora, experiencia de usuario personalizada', name: 'guillermo neculqueo, katherine castillo', type: 'websyte', linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png', urlWeb: 'https://www.cxperiment.com' }
 
   return (
     <>
@@ -22,19 +22,37 @@ const Home = () => {
         <link rel='canonical' href='www.cxperiment.com' />
         <meta name='name' content={datosSeo.title} />
         <meta name='description' content={datosSeo.description} />
+        <meta name='author' content='guille.nec' />
+        <meta name='audience' content='all' />
+        <meta name='keywords' content='CXperiment, customer experience, Experiencia de cliente, asesoria personalizada, ayuda profesional' />
+        <meta name='image' content={datosSeo.linkImg} />
+        <meta name='language' content='es' />
+
+        <meta name='robots' content='index.follow' />
+        <meta name='googlebot' content='index, follow' />
 
         {/* facebook tags */}
         <meta property='og:title' content={datosSeo.title} />
         <meta property='og:type' content='website' />
+        <meta property='og:site_name' content='CXperiment.com' />
         <meta property='og:image' content={datosSeo.linkImg} />
         <meta property='og:url' content={datosSeo.urlWeb} />
         <meta property='og:description' content={datosSeo.description} />
 
         {/* taggs twitter */}
-        <meta name='twitter:creator' content={datosSeo.name} />
-        <meta name='twitter:card' content={datosSeo.type} />
+        <meta name='twitter:card' content='summary' />
+        <meta name='twitter:site' content='@CXperiment' />
         <meta name='twitter:title' content={datosSeo.title} />
         <meta name='twitter:description' content={datosSeo.description} />
+        <meta property='og:url' content={datosSeo.urlWeb} />
+        <meta name='twitter:creator' content={datosSeo.name} />
+        <meta property='og:image' content={datosSeo.linkImg} />
+
+        {/* <!-- Geo tags --> */}
+        {/* <meta name='ICBM' content='latitude, longitude' />
+        <meta name='geo.position' content='latitude;longitude' />
+        <meta name='geo.region' content='country[-state]' />
+        <meta name='geo.placename' content='city/town' /> */}
 
       </Helmet>
       <div className='w-full min-h-screen h-auto flex flex-col bg-white justify-start items-center relative z-1'>
