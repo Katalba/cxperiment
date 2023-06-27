@@ -32,6 +32,7 @@ const CardContenido = ({ item, imgBg, descripcionRef }) => {
   // const handleClick = () => {
   //   contactoRef.current.scrollIntoView({ behavior: 'smooth' })
   // }
+
   const handleClick = () => {
     const contactoElement = contactoRef.current
     const contactoRect = contactoElement.getBoundingClientRect()
