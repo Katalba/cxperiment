@@ -61,14 +61,36 @@ const FlipCardComp = () => {
       return 'justify-end'
     }
   }
+
   const handleRef0 = () => {
-    descripcionRef0.current.scrollIntoView({ behavior: 'smooth' })
+    const refDescripcion0 = descripcionRef0.current
+    const refDescricion0Rect = refDescripcion0.getBoundingClientRect()
+    const offset = 150
+    window.scrollTo({
+      top: refDescricion0Rect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
+    // descripcionRef0.current.scrollIntoView({ behavior: 'smooth' })
   }
   const handleRef1 = () => {
-    descripcionRef1.current.scrollIntoView({ behavior: 'smooth' })
+    const refDescripcion1 = descripcionRef1.current
+    const refDescricion1Rect = refDescripcion1.getBoundingClientRect()
+    const offset = 150
+    window.scrollTo({
+      top: refDescricion1Rect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
+    // descripcionRef1.current.scrollIntoView({ behavior: 'smooth' })
   }
   const handleRef2 = () => {
-    descripcionRef2.current.scrollIntoView({ behavior: 'smooth' })
+    const refDescripcion2 = descripcionRef2.current
+    const refDescricion2Rect = refDescripcion2.getBoundingClientRect()
+    const offset = 150
+    window.scrollTo({
+      top: refDescricion2Rect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
+    // descripcionRef2.current.scrollIntoView({ behavior: 'smooth' })
   }
 
   const calcReferencia = (val) => {
