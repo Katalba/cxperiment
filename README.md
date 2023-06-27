@@ -63,10 +63,10 @@
 
 # 😘 Demo Vite + React + Serve
 ### 🌐 Depoloy Netlify
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b17e44b0-a0f8-448d-a299-e96223e351ce/deploy-status)](https://app.netlify.com/sites/silly-cassata-975da9/deploys)
+[![Netlify Status](https://zippy-hotteok-06766e.netlify.app/)
 
 ### 🚂 Depoloy Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://react-frontend-production-a1a0.up.railway.app/)
+
 
 </br>
 
