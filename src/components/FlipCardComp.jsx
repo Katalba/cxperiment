@@ -80,7 +80,6 @@ const FlipCardComp = () => {
       top: refDescricion1Rect.top + window.scrollY - offset,
       behavior: 'smooth'
     })
-    // descripcionRef1.current.scrollIntoView({ behavior: 'smooth' })
   }
   const handleRef2 = () => {
     const refDescripcion2 = descripcionRef2.current
@@ -90,7 +89,6 @@ const FlipCardComp = () => {
       top: refDescricion2Rect.top + window.scrollY - offset,
       behavior: 'smooth'
     })
-    // descripcionRef2.current.scrollIntoView({ behavior: 'smooth' })
   }
 
   const calcReferencia = (val) => {

@@ -19,7 +19,8 @@
 * scrollreveal: 4.0.9,
 * react-icons: 4.9.0
 * standard: 17.1.0
-* postcss": 8.4.23
+* postcss: 8.4.23
+* react-helmet-async: 1.3.0
 
 </br>
 
@@ -85,7 +86,7 @@
 
 ## 💻🎨 Integrantes del Front-end
 
-| <img src="https://res.cloudinary.com/dpiwmbsog/image/upload/v1686264426/PERFIL_GENERAL_hbngdm.jpg" width=60>| <img src="https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/cv.jpg?alt=media&token=e37ff2df-6858-464f-90ed-bd9d4ce69d6c" width=60>|
+| <img src="https://res.cloudinary.com/dpiwmbsog/image/upload/v1686264426/PERFIL_GENERAL_hbngdm.jpg" height=60>| <img src="https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/cv.jpg?alt=media&token=e37ff2df-6858-464f-90ed-bd9d4ce69d6c" height=60>|
 |:-:|:-:|
 | **Guillermo Neculqueo**| **Katherine Cantillo**|
 | <a href="https://github.com/guillenec"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/guillermo-agust%C3%ADn-neculqueo-57932b196/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Katalba"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/katalbawebdesign/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
@@ -94,10 +95,10 @@
 </br>
 
 ## 🎨🌈 Integrante de UX/UI
-| <img src="img ux 1" width=60>| <img src="img ux 2" width=60>|
-|:-:|:-:|
-| **ux 1**| **ux 2**|
-| <a href="Link a github ux 1"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Link a Linkedin ux 1"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="Link github guthub ux 2"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Link a linkedin ux 2"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| <img src="https://media.licdn.com/dms/image/D4D03AQFspW9SiAZ_cA/profile-displayphoto-shrink_800_800/0/1687898087634?e=1693440000&v=beta&t=wdzrRDMJUSyOAg_h61OzDHvkJuFNeayEAZ1sMYeBK1k" height=60>| <img src="https://media.licdn.com/dms/image/C4E03AQFRIQHSXTkkNA/profile-displayphoto-shrink_800_800/0/1633501315304?e=1693440000&v=beta&t=wrz9Mq-gTkWWPDonTp50HUO3D-1DYb6OwqFzNMNjhfw" height=60>| <img src="https://media.licdn.com/dms/image/D4E35AQGyo1NQEmEQNg/profile-framedphoto-shrink_800_800/0/1677878741783?e=1688515200&v=beta&t=KqLipd5Xs6qXstiUDOY7JeuFBswEzcFjHqWcVYVl7_c" height=60>|
+|:-:|:-:|:-:|
+| **Victoria Salatino**| **Nadia Chayna**| **Quintin Rodríguez** |
+| <a href="https://www.behance.net/vickysalatino"><img src="https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white"/></a> <a href="https://www.linkedin.com/in/victoriasalatino"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://nadiachayna.github.io/portfolio/"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/nadiachayna/?originalSubdomain=pe"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://www.behance.net/quintnrodrguez"><img src="https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white"/></a> <a href="https://www.linkedin.com/in/quintinrodriguezt/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
@@ -127,11 +128,12 @@
 
 <a href="Link project Figma"><img src="https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=Figma&logoColor=white"/></a> <a href="Lin almacenamiento Cloud"><img src="https://img.shields.io/badge/Cloudinary-%231563FF.svg?&style=for-the-badge&logo=google-cloud&logoColor=white"/></a>  <a href="Link behance"><img src="https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white"/></a> 
 
-### 🎨 Arquitectura
-![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1686285587/wallet/PROYECTO_BILLETERA_VIRTUAL_1_wfyrk5.svg "dieño arquitectura")
+### 🎨 Maqueta Prototipo Inicial 
+![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687911003/consultora/mack123_ui5aoe.png "dieño maquetado inicial")
 
-### 🎨 User Story
-![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1686285587/wallet/PROYECTO_BILLETERA_VIRTUAL_sz5yo9.svg "user story")
+### 🎨 Maqueta Prototipo Final
+![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687910553/consultora/superiorMakup1_gx0ncl.png "dieño maquetado final")
+![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687910556/consultora/makup-front2_x5v6el.png "dieño maquetado final")
 
 ### <a href="https://www.figma.com/file/GhpuaHSsS2nCRGXN9s3yVf/CXperiment-Figma?node-id=393%3A326&mode=dev"><img height="18px" src="https://img.icons8.com/color/344/figma--v1.png"/> Mockup</a>
 
@@ -139,8 +141,6 @@
 </br>
 
 ## Testing
-Seccion de prueba,ustedes deciden esta parte
-Se realizaron un conjunto de pruebas manuales funcionales a la app web CXperiment. Entre las herramientas usadas están:
-  - Selenium IDE.
-  - Browser Stack (Mobile testing).
+Se realizaron un conjunto de pruebas manuales funcionales a la app web CXperiment. se comprobo el correcto funcionamiento del formulario de contactos y luego se testio el seo con la herramienta de google META SEO.
+  
 
