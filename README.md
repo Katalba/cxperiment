@@ -65,9 +65,7 @@
 # 😘 Demo Vite + React + Serve
 ### 🌐 Depoloy Netlify
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ee58f5f6-e852-47c0-b010-bc7d5dc9c88a/deploy-status)](https://app.netlify.com/sites/zippy-hotteok-06766e/deploys)
-
-### 🚂 Depoloy Railway
-
+add
 
 </br>
 
@@ -111,10 +109,10 @@
 </br>
 
 ## 🛠️💼 Integrante Product Manager
-| <img src="tu imagen" width=60>|
+| <img src="https://media.licdn.com/dms/image/C4E03AQHiZJ3FtiJXcg/profile-displayphoto-shrink_800_800/0/1664293927619?e=1693440000&v=beta&t=58jEZkZtYwsAyOmpA9rph6DjBuzlv_Ds6h9zEe0duUk" width=60>|
 |:-:|
-| **Cristian** |
-| <a href="tu"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/cristian-machuca-dev/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| **Dana Nañez** |
+| <a href="tu"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/danananez/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
@@ -141,6 +139,6 @@
 </br>
 
 ## Testing
-Se realizaron un conjunto de pruebas manuales funcionales a la app web CXperiment. se comprobo el correcto funcionamiento del formulario de contactos y luego se testio el seo con la herramienta de google META SEO.
+Se realizaron un conjunto de pruebas manuales funcionales a la app web CXperiment. se comprobo el correcto funcionamiento del formulario de contactos y luego se testeó el seo con la herramienta de google META SEO.
   
 
