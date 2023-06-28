@@ -63,7 +63,7 @@
 
 # 😘 Demo Vite + React + Serve
 ### 🌐 Depoloy Netlify
-[![Netlify Status](https://zippy-hotteok-06766e.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee58f5f6-e852-47c0-b010-bc7d5dc9c88a/deploy-status)](https://app.netlify.com/sites/zippy-hotteok-06766e/deploys)
 
 ### 🚂 Depoloy Railway
 
