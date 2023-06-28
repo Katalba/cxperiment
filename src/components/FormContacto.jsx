@@ -122,10 +122,10 @@ const FormContacto = () => {
     } else if (Object.keys(validationErrors).length === 0) {
       setErrors({})
       setLoader(true)
-      console.log(mensajeUsuario)
+      // console.log(mensajeUsuario)
       useFetchForm(mailUser, mensajeUsuario)
         .then((response) => {
-          console.log('Respuesta del servidor -> ', response)
+          // console.log('Respuesta del servidor -> ', response)
           setLoader(false)
           if (response.message === 'The form was submitted successfully.') {
             setSuccessMessage({ mensaje: 'Mensaje enviado, me pondre en contacto contigo a la brevedad', color: 'bg-green-500' })
@@ -136,7 +136,7 @@ const FormContacto = () => {
           handleReset()
         })
         .catch((error) => {
-          console.log('Error -> ', error)
+          // console.log('Error -> ', error)
           if (error.message === 'Failed to fetch') {
             setSuccessMessage({ mensaje: 'Ups!!! algo salio mal, intentalo mas tarde', color: 'bg-red-500' })
             setShowModal(true)
@@ -149,7 +149,7 @@ const FormContacto = () => {
           handleReset()
         })
         .finally(() => {
-          console.log('Finalizado')
+          // console.log('Finalizado')
           setTimeout(() => {
             setLoader(false)
             handleCloseModal()

@@ -9,12 +9,3 @@ const Titulo = ({ titulo }) => {
 }
 
 export default Titulo
-
-/*
-Tamaños fuentes componente titulo
-font-size: 48px; >= xl = 1280px
-font-size: 30px  = lg = 1024px
-font-size: 25px; = md = 768px
-font-size: 24px; <= sm = 640px
-
-*/
