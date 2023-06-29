@@ -101,10 +101,10 @@ add
 </br>
 
 ## 🌍📣 Integrante Comunity Manager
-| <img src="img ux 1" width=60>| <img src="img ux 2" width=60>|
+| <img src="https://media.licdn.com/dms/image/D4D35AQHdEWdD-2csIA/profile-framedphoto-shrink_800_800/0/1680982501711?e=1688608800&v=beta&t=NrXAd1HDMDFvsqz_5U-G3UmbF7_koaeJbceo-I-779U" width=60>
 |:-:|:-:|
-| **ux 1**| **ux 2**|
-| <a href="Link a github ux 1"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Link a Linkedin ux 1"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="Link github guthub ux 2"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Link a linkedin ux 2"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| **Mariano Espinosa**
+| <a href="https://www.linkedin.com/in/mariano-espinosa28/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
 </br>
 
