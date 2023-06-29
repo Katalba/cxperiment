@@ -23,8 +23,8 @@ const FormContacto = () => {
   // const [successMessage, setSuccessMessage] = useState({})
   // const [showModal, setShowModal] = useState(false)
 
-  // const mailUser = 'Info.cxperiment@gmail.com'
-  const mailUser = 'guillermoneculqueo@gmail.com'
+  const mailUser = 'Info.cxperiment@gmail.com'
+  // const mailUser = 'guillermoneculqueo@gmail.com'
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
@@ -125,31 +125,47 @@ const FormContacto = () => {
     } else if (Object.keys(validationErrors).length === 0) {
       setErrors({})
       setLoader(true)
+      // console.log(mensajeUsuario)
       useFetchForm(mailUser, mensajeUsuario)
         .then((response) => {
+          // console.log('Respuesta del servidor -> ', response)
           setLoader(false)
           if (response.message === 'The form was submitted successfully.') {
+            // setSuccessMessage({ mensaje: 'Mensaje enviado, me pondre en contacto contigo a la brevedad', color: 'bg-green-500' })
             toast.success('Mensaje enviado, me pondre en contacto contigo a la brevedad')
           } else if (response.message === 'This form needs Activation. We\'ve sent you an email containing an \'Activate Form\' link. Just click it and your form will be actived!') {
+            // setSuccessMessage({ mensaje: 'Necesita activar el formulario, se le ha enviado un email con un enlace para activarlo', color: 'bg-orange-500' })
             toast.warning('Necesita activar el formulario, se le ha enviado un email con un enlace para activarlo')
           } else {
+            // setSuccessMessage({ mensaje: 'Ocurrio un error al enviar el mensaje', color: 'bg-red-500' })
             toast.error('Ocurrio un error al enviar el mensaje')
           }
+
+          // setShowModal(true)
 
           handleReset()
         })
         .catch((error) => {
+          // console.log('Error -> ', error)
           if (error.message === 'Failed to fetch') {
+            // setSuccessMessage({ mensaje: 'Ups!!! algo salio mal, intentalo mas tarde', color: 'bg-red-500' })
+            // setShowModal(true)
             toast.error('Ups!!! algo salio mal, intentalo mas tarde')
           } else {
+            // setSuccessMessage({ mensaje: error.message, color: 'bg-red-500' })
             toast.error(error.message)
           }
+          // setShowModal(true)
 
+          // reset estados
           handleReset()
         })
         .finally(() => {
+          // console.log('Finalizado')
           setTimeout(() => {
             setLoader(false)
+            // handleCloseModal()
+            toast.default('gracias por contactarnos')
           }, 6000)
         })
     }
@@ -157,7 +173,13 @@ const FormContacto = () => {
 
   return (
     <section className='card-scroll w-full xl:w-full xl:max-w-[600px] flex flex-col justify-center items-center gap-2'>
-
+      {/* {showModal
+        ? (
+          <div className={`w-full h-[90px] rounded-lg flex items-center justify-center ${successMessage.color}`}>
+            <p className='font-titulo font-[500] text-lg text-center text-white '>{successMessage.mensaje}</p>
+          </div>
+          )
+        : null} */}
       <form
         onSubmit={handleSubmit}
         className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto bg-bgForm rounded-lg px-5 md:px-5 lg:px-0 xl:px-8 py-14 flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7 border-[.5px] text-[16px] md:text-[14px] lg:text-[14px] xl:text-[18px]'
@@ -255,23 +277,12 @@ const FormContacto = () => {
           {errors.mensaje && (<p className='text-red-500 font-parrafo font-[400] w-full'>{errors.mensaje}</p>)}
         </label>
         <div className='w-full flex flex-row flex-nowrap justify-center items-center mt-6'>
-          {loader ? <div className='font-titulo rounded-md transition-all duration-300 ease-in-out flex flex-row flex-nowrap items-center justify-start gap-2 py-[10px] px-[24px] md:py-[16px] md:px-[32px] xl:px-[36px] xl:py-[24px] xl:text-[18px]'><Loader /></div> : <BotonBase type='submit' name='Enviar mensaje' clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]' />}
+          {loader ? <BotonBase><Loader /></BotonBase> : <BotonBase type='submit' name='Enviar mensaje' clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]' />}
         </div>
       </form>
-      <ToastContainer
-        position='bottom-left'
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme='light'
-        className='toastify'
-      />
-
+      <div>
+        <ToastContainer />
+      </div>
     </section>
   )
 }
