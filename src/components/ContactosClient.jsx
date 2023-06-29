@@ -8,10 +8,6 @@ const ContactosClient = () => {
   const watsapp = '541141568854'
   const ubicacion = 'Buenos Aires, Argentina'
 
-  // const handleEmailClick = (e) => {
-  //   e.preventDefault()
-  //   window.open(`mailto:${mail}`, '_blank')
-  // }
   const handleEmailClick = (e) => {
     e.preventDefault()
     const subject = encodeURIComponent('Interesado en una asesoría personalizada')
@@ -31,7 +27,6 @@ const ContactosClient = () => {
   }
 
   return (
-
     <section className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto xl:max-w-[600px] rounded-lg flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7'>
       <div className='w-full h-auto flex flex-col gap-4'>
         <h3 className='font-parrafo text-purpleBal  font-[700] text-sm md:text-baselg:text-base xl:text-lg uppercase'>Contacto</h3>
