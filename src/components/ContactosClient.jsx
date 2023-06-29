@@ -10,12 +10,15 @@ const ContactosClient = () => {
 
   const handleEmailClick = (e) => {
     e.preventDefault()
-    window.open(`mailto:${mail}`, '_blank')
+    const subject = encodeURIComponent('Interesado en una asesoría personalizada')
+    const body = encodeURIComponent('Hola,\n\nEstoy interesad@ en una asesoría personalizada. Me gustaría recibir más información.\n\n¡Gracias!')
+    window.open(`mailto:${mail}?subject=${subject}&body=${body}`, '_blank')
   }
 
   const handlePhoneClick = (e) => {
     e.preventDefault()
-    window.open(`https://wa.me/${watsapp}`, '_blank')
+    const message = encodeURIComponent('Hola, estoy interesad@ en una asesoría. Me gustaría recibir más información. ¡Gracias!')
+    window.open(`https://wa.me/${watsapp}?text=${message}`, '_blank')
   }
 
   const handleLocationClick = (e) => {
@@ -24,12 +27,11 @@ const ContactosClient = () => {
   }
 
   return (
-
     <section className='w-full h-auto md:w-[80%] lg:w-full xl:w-full xl:h-auto xl:max-w-[600px] rounded-lg flex flex-col justify-center items-center gap-5 lg:gap-6 xl:gap-7'>
       <div className='w-full h-auto flex flex-col gap-4'>
         <h3 className='font-parrafo text-purpleBal  font-[700] text-sm md:text-baselg:text-base xl:text-lg uppercase'>Contacto</h3>
         <h2 className='font-titulo text-purpleBal font-[700] text-xl md:text-2xl lg:text-2xl xl:text-[44px]'>Conectemos hoy</h2>
-        <p className='font-parrafo font-[400] text-xs md:text-sm lg:text-sm xl:text-base text-blackBl leading-[18px] sm:leading-[18px] md:leading-[24px] lg:leading-[24px] xl:leading-[30px]'>Si necesitás una cotización o simplemente tenés curiosidad por saber más sobre alguno de los servicios, ¡Escribime!</p>
+        <p className='font-parrafo font-[400] text-xs md:text-sm lg:text-sm xl:text-base text-blackBl leading-[18px] sm:leading-[18px] md:leading-[24px] lg:leading-[24px] xl:leading-[30px]'>Si necesitás una cotización o simplemente tenés curiosidad por saber más sobre alguno de los servicios, ¡Escribinos!</p>
       </div>
       <div className='w-full h-auto flex flex-col text-xs md:text-sm lg:text-sm xl:text-lg gap-4'>
         <a
@@ -54,7 +56,7 @@ const ContactosClient = () => {
           className='flex flex-row justify-start items-center  font-parrafo font-[400] gap-2'
         >
           <IoLocationOutline className='text-2xl' />
-          Buenos Aires, Argentina
+          Buenos Aires - Argentina
         </a>
       </div>
       <div className='w-full h-auto flex justify-start items-center'>

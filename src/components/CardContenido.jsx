@@ -50,8 +50,8 @@ const CardContenido = ({ item, imgBg, descripcionRef }) => {
 
         {/* seccion contenido */}
         <section className='contenido w-full xl:h-[550px] md:w-[50%] lg:w-[40%] md:h-full flex flex-col md:flex-col justify-center items-start gap-5 md:gap-5 lg:gap-6 relative'>
-          <h2 className='font-titulo font-[700] text-[20px] md:text-[16.511px ] xl:text-[31px] 2xl:text-4xl text-textPurple'>{item.titulo}</h2>
-          <p className='w-full md:w-full font-parrafo font-[400] text-textPurple text-xs md:text-sm xl:text-base md:pb-0 leading-[18px] md:leading-[24px] xl:leading-[27px]'>En <span className='font-[600]'>CXperiment</span>, {item.parrafo}</p>
+          <h2 className='font-titulo font-[700] text-[20px] md:text-[16.511px ] xl:text-[31px] 2xl:text-4xl text-textPurple capitalize'>{item.titulo}</h2>
+          <p className='w-full md:w-full font-parrafo font-[400] text-textPurple text-xs md:text-sm xl:text-base md:pb-0 leading-[18px] md:leading-[24px] xl:leading-[27px]'>{item.parrafo}</p>
           <div className='main w-full gap-3 md:w-full flex flex-row justify-around items-center relative'>
             <ul className='w-full flex flex-col justify-start items-start gap-3'>
               {
@@ -84,7 +84,7 @@ const CardContenido = ({ item, imgBg, descripcionRef }) => {
             src={imgBg} alt='logo cxPeriment'
             className={`bgCustomerCards h-full w-full hidden md:block object-contain md:object-cover object-center lg:object-left opacity-40 transform relative  ${isPar(item.id) ? '-scale-x-100' : ''}`}
           />
-          <h2 className={`text-left hidden md:block md:absolute w-full h-auto md:text-center md:w-[100px] lg:w-[130px] xl:w-[200px] ${isPar(item.id) ? 'md:mr-[50px] lg:mr-[90px] xl:mr-[70px] 2xl:mr-[120px]' : 'md:ml-[50px] lg:ml-[90px] xl:ml-[70px] 2xl:ml-[120px]'} font-titulo font-[700] text-[20px] md:text-[17px] lg:text-[17px] xl:text-[31px] 2xl:text-4xl text-textPurple leading-none`}>
+          <h2 className={`text-left capitalize hidden md:block md:absolute w-full h-auto md:text-center md:w-[100px] lg:w-[130px] xl:w-[200px] ${isPar(item.id) ? 'md:mr-[50px] lg:mr-[90px] xl:mr-[70px] 2xl:mr-[120px]' : 'md:ml-[50px] lg:ml-[90px] xl:ml-[70px] 2xl:ml-[120px]'} font-titulo font-[700] text-[20px] md:text-[17px] lg:text-[17px] xl:text-[31px] 2xl:text-4xl text-textPurple leading-none`}>
             {item.titulo}
           </h2>
         </section>

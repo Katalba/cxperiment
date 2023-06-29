@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import FlipCard from './FlipCard'
 import { useGeneralContext } from '../context/GeneralContext'
+import cajaResearch from '../images/cajaResearch.svg'
+import cajaInsghts from '../images/cajaInsghts.svg'
+import cajaAnalysis from '../images/cajaAnalysis.svg'
 
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2'
 
@@ -19,7 +22,7 @@ const FlipCardComp = () => {
       radiusImg: 'rounded-t-[61px] rounded-br-[61px] lg:rounded-t-[106px] lg:rounded-br-[106px]',
       textFront: 'Comprende verdaderamente a tus clientes',
       textBack: ' Obtené una perspectiva profunda de tus clientes.',
-      fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/custumerResearch.png?alt=media&token=bdd5bb54-1d04-4be3-b6f9-c43b04c971cd'
+      fcbImg: cajaResearch
     },
     {
       id: 1,
@@ -29,7 +32,7 @@ const FlipCardComp = () => {
       radiusBack: 'rounded-t-[61px] rounded-tr-[61px] rounded-b-[0] lg:rounded-t-[106px] lg:rounded-tr-[106px] lg:rounded-b-[0]',
       textFront: 'Encuentra a tu cliente ideal',
       textBack: 'Descubrí a tu cliente ideal y su experiencia completa.',
-      fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerAnalysis.png?alt=media&token=3e049d7e-c53d-4d21-a94f-7b568163f3e0'
+      fcbImg: cajaAnalysis
     },
     {
       id: 2,
@@ -40,7 +43,7 @@ const FlipCardComp = () => {
       radiusImg: 'rounded-tr-[61px] rounded-l-[61px] rounded-t-[61px] lg:rounded-tr-[106px] lg:rounded-l-[106px] lg:rounded-t-[106px]',
       textFront: 'Crea lealtad en tus clientes',
       textBack: 'Mejora tu estrategia y fidelizá a tus clientes.',
-      fcbImg: 'https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/customerInsights.png?alt=media&token=440802da-e4df-4671-b064-a5bf24cc8af6'
+      fcbImg: cajaInsghts
     }
   ]
 
