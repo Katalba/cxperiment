@@ -101,10 +101,11 @@ add
 </br>
 
 ## 🌍📣 Integrante Comunity Manager
-| <img src="https://media.licdn.com/dms/image/D4D35AQHdEWdD-2csIA/profile-framedphoto-shrink_800_800/0/1680982501711?e=1688608800&v=beta&t=NrXAd1HDMDFvsqz_5U-G3UmbF7_koaeJbceo-I-779U" width=60>
-|:-:|:-:|
-| **Mariano Espinosa**
-| <a href="https://www.linkedin.com/in/mariano-espinosa28/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
+| <img src="https://media.licdn.com/dms/image/D4D35AQHdEWdD-2csIA/profile-framedphoto-shrink_800_800/0/1680982501711?e=1688608800&v=beta&t=NrXAd1HDMDFvsqz_5U-G3UmbF7_koaeJbceo-I-779U" width=60>|
+|:-:|
+| **Mariano Espinosa** |
+| <a href="tu"><img src=''/></a> <a href="https://www.linkedin.com/in/mariano-espinosa28/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
