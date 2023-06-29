@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
           </Link>
 
-          <Link to='mailto:info.cxperiment@gmail.com' target='_blank'>
+          <Link to='mailto:contacto@cxperiment.com' target='_blank'>
             <div className='mail flex space-x-2 transition duration-500 ease-in-out hover:text-verdeMok'>
               <IoMailOutline className='text-[2rem]' />
               <p className='text-base sm:text-base md:text-lg lg:text-xl xl:text-xl'>contacto@cxperiment.com</p>
