@@ -258,8 +258,9 @@ const FormContacto = () => {
           {loader ? <div className='font-titulo rounded-md transition-all duration-300 ease-in-out flex flex-row flex-nowrap items-center justify-start gap-2 py-[10px] px-[24px] md:py-[16px] md:px-[32px] xl:px-[36px] xl:py-[24px] xl:text-[18px]'><Loader /></div> : <BotonBase type='submit' name='Enviar mensaje' clase='botonVerde text-[16px] md:text-[16px] font-[600] xl:font-[700]' />}
         </div>
       </form>
+
       <ToastContainer
-        position='bottom-left'
+        position='bottom-right'
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -269,9 +270,8 @@ const FormContacto = () => {
         draggable
         pauseOnHover
         theme='light'
-        className='toastify'
+        className='toastify font-titulo font-[600] text-md lg:text-lg'
       />
-
     </section>
   )
 }
