@@ -1,6 +1,6 @@
 #  CXperiment:
 
-![ScreenShot](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png)
+![ScreenShot](https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/homesection.png?alt=media&token=346bf21d-85b3-4d3f-9130-bfc6f5ff2ff2)
 
 ***
 ## CXperiment -FRONTEND- 
