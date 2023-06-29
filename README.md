@@ -1,6 +1,6 @@
 #  CXperiment:
 
-![ScreenShot](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png)
+![ScreenShot](https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/homesection.png?alt=media&token=346bf21d-85b3-4d3f-9130-bfc6f5ff2ff2)
 
 ***
 ## CXperiment -FRONTEND- 
@@ -21,10 +21,11 @@
 * standard: 17.1.0
 * postcss: 8.4.23
 * react-helmet-async: 1.3.0
+* react-toastify: 9.1.3
 
 </br>
 
-## 🚀 Caracteristica
+## 🚀 Características
 * Landing page responsive
 * Banner principal y presentación
 * Cards animadas e interactivas para la sección de ayuda
@@ -63,18 +64,17 @@
 <br>  
 
 # 😘 Demo Vite + React + Serve
-### 🌐 Depoloy Netlify
+### 🌐 Deploy Netlify
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ee58f5f6-e852-47c0-b010-bc7d5dc9c88a/deploy-status)](https://app.netlify.com/sites/zippy-hotteok-06766e/deploys)
-add
 
 </br>
 
 ## 📷 Capturas de Pantalla
-### 🥰 Vistazo seccion CustomCards
+### 🥰 Vistazo sección CustomCards
 ![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479839/consultora/customers-desktop_svfwpy.png "cuwstom cards")
 
-### 🥰 Vistazo seccion Servicios
-![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479822/consultora/servicios-desktop_l0cxqy.png "seccion services")
+### 🥰 Vistazo sección Servicios
+![🛸 Vistazo Detalles](https://firebasestorage.googleapis.com/v0/b/cxperiment.appspot.com/o/servicios.png?alt=media&token=01329dbe-2b1b-46ef-8726-37b5a01480d3 "sección servicios")
 
 ### 🥰 Responsive Contacto y CustomCards
 ![🛸 Vistazo Detalles](https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/vista_movil_htjmzu.png "home")
@@ -105,7 +105,7 @@ add
 | <img src="https://media.licdn.com/dms/image/D4D35AQHdEWdD-2csIA/profile-framedphoto-shrink_800_800/0/1680982501711?e=1688608800&v=beta&t=NrXAd1HDMDFvsqz_5U-G3UmbF7_koaeJbceo-I-779U" width=60>|
 |:-:|
 | **Mariano Espinosa** |
-| <a href="tu"><img src=''/></a> <a href="https://www.linkedin.com/in/mariano-espinosa28/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| <a href="https://www.linkedin.com/in/mariano-espinosa28/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
@@ -113,7 +113,7 @@ add
 | <img src="https://media.licdn.com/dms/image/C4E03AQHiZJ3FtiJXcg/profile-displayphoto-shrink_800_800/0/1664293927619?e=1693440000&v=beta&t=58jEZkZtYwsAyOmpA9rph6DjBuzlv_Ds6h9zEe0duUk" width=60>|
 |:-:|
 | **Dana Nañez** |
-| <a href="tu"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/danananez/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| <a href="https://www.linkedin.com/in/danananez/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
@@ -140,6 +140,6 @@ add
 </br>
 
 ## Testing
-Se realizaron un conjunto de pruebas manuales funcionales a la app web CXperiment. se comprobo el correcto funcionamiento del formulario de contactos y luego se testeó el seo con la herramienta de google META SEO.
+Se realizaron un conjunto de pruebas manuales funcionales a la app web CXperiment. se comprobó el correcto funcionamiento del formulario de contactos y luego se testeó el seo con la herramienta de google META SEO.
   
 
