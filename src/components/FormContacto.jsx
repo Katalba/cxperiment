@@ -23,8 +23,7 @@ const FormContacto = () => {
   // const [successMessage, setSuccessMessage] = useState({})
   // const [showModal, setShowModal] = useState(false)
 
-  // const mailUser = 'Info.cxperiment@gmail.com'
-  const mailUser = 'guillermoneculqueo@gmail.com'
+  const mailUser = 'contacto@cxperiment.com'
 
   const handleInputChange = (e) => {
     const { name, value } = e.target
