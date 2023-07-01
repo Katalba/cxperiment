@@ -17,7 +17,7 @@ const Home = () => {
     description: 'cxperiment consultora, experiencia de usuario personalizada',
     name: 'guillermo neculqueo, katherine castillo',
     type: 'websyte',
-    linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1687479824/consultora/home_phwpkf.png',
+    linkImg: 'https://res.cloudinary.com/dpiwmbsog/image/upload/v1688246199/consultora/vistaPrevia_bcgqsw.svg',
     urlWeb: 'https://zippy-hotteok-06766e.netlify.app/' // cambiar por la web dinal
   }
 
