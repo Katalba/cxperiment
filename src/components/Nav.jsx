@@ -26,7 +26,7 @@ const Nav = () => {
         const { ref } = section
         if (ref && ref.current) {
           const top = window.scrollY
-          const offset = ref.current.offsetTop - (isOpem ? 330 : 150)
+          const offset = ref.current.offsetTop - (isOpem && window.innerWidth < 768 ? 340 : 150)
           const height = ref.current.offsetHeight
           return top >= offset && top < offset + height
         }
@@ -46,7 +46,7 @@ const Nav = () => {
   const handleRefService = () => {
     const refServiciosRef = serviciosRef.current
     const serviciosRefRect = refServiciosRef.getBoundingClientRect()
-    const offset = 150
+    const offset = isOpem && window.innerWidth < 768 ? 330 : 150
     window.scrollTo({
       top: serviciosRefRect.top + window.scrollY - offset,
       behavior: 'smooth'
@@ -56,7 +56,7 @@ const Nav = () => {
   const handleRefContact = () => {
     const refContactoRef = contactoRef.current
     const refContactoRefRect = refContactoRef.getBoundingClientRect()
-    const offset = 150
+    const offset = isOpem && window.innerWidth < 768 ? 330 : 150
     window.scrollTo({
       top: refContactoRefRect.top + window.scrollY - offset,
       behavior: 'smooth'
@@ -66,7 +66,7 @@ const Nav = () => {
   const handleRefSobreMi = () => {
     const refSobremiRef = sobremiRef.current
     const refSobremiRefRect = refSobremiRef.getBoundingClientRect()
-    const offset = 150
+    const offset = isOpem && window.innerWidth < 768 ? 330 : 150
     window.scrollTo({
       top: refSobremiRefRect.top + window.scrollY - offset,
       behavior: 'smooth'
