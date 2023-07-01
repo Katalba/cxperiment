@@ -19,10 +19,6 @@ const FormContacto = () => {
   // control del error
   const [errors, setErrors] = useState({})
 
-  // control de mensaje y modal
-  // const [successMessage, setSuccessMessage] = useState({})
-  // const [showModal, setShowModal] = useState(false)
-
   const mailUser = 'info.cxperiment@gmail.com'
 
   const handleInputChange = (e) => {
@@ -60,12 +56,6 @@ const FormContacto = () => {
     setMensaje('')
     setErrors({})
   }
-
-  // const handleCloseModal = () => {
-  //   setSuccessMessage({})
-  //   setShowModal(false)
-  //   handleReset()
-  // }
 
   const handleSubmit = (e) => {
     e.preventDefault()
