@@ -26,7 +26,7 @@ const Nav = () => {
         const { ref } = section
         if (ref && ref.current) {
           const top = window.scrollY
-          const offset = ref.current.offsetTop - 150
+          const offset = ref.current.offsetTop - (isOpem && window.innerWidth < 768 ? 340 : 150)
           const height = ref.current.offsetHeight
           return top >= offset && top < offset + height
         }
@@ -42,6 +42,36 @@ const Nav = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [contactoRef, serviciosRef, sobremiRef])
+
+  const handleRefService = () => {
+    const refServiciosRef = serviciosRef.current
+    const serviciosRefRect = refServiciosRef.getBoundingClientRect()
+    const offset = isOpem && window.innerWidth < 768 ? 330 : 150
+    window.scrollTo({
+      top: serviciosRefRect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleRefContact = () => {
+    const refContactoRef = contactoRef.current
+    const refContactoRefRect = refContactoRef.getBoundingClientRect()
+    const offset = isOpem && window.innerWidth < 768 ? 330 : 150
+    window.scrollTo({
+      top: refContactoRefRect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleRefSobreMi = () => {
+    const refSobremiRef = sobremiRef.current
+    const refSobremiRefRect = refSobremiRef.getBoundingClientRect()
+    const offset = isOpem && window.innerWidth < 768 ? 330 : 150
+    window.scrollTo({
+      top: refSobremiRefRect.top + window.scrollY - offset,
+      behavior: 'smooth'
+    })
+  }
 
   return (
     <>
@@ -69,45 +99,45 @@ const Nav = () => {
           md:flex md:w-[400px] md:h-full md:flex-row md:justify-end  md:relative md:p-0 md:top-0 ${isOpem ? 'activeOpen' : ''}`}
 
         >
-          <Link
-            to='servicios'
-            spy
-            smooth
-            offset={-150}
-            duration={700}
+          <a
+            // to='servicios'
+            // spy
+            // smooth
+            // offset={-150}
+            // duration={700}
             className={`navLink cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'servicios' ? 'active font-titulo text-lg font-[700] ' : 'font-[500]'} transition-all duration-0 ease-in-out`}
-            // onClick={() => handleActive(0)}
+            onClick={handleRefService}
           >
             Servicios
             {/* {activeIndex === 0 && <div className='bordeBotMenu translate-x-1 transition-all duration-300 ease ' />} */}
             {activeIndex === 'servicios' && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
-          </Link>
+          </a>
 
-          <Link
-            to='sobremi'
-            spy
-            smooth
-            offset={-90}
-            duration={700}
+          <a
+            // to='sobremi'
+            // spy
+            // smooth
+            // offset={-90}
+            // duration={700}
             className={`navLink  cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'sobremi' ? 'active font-[700]' : 'font-[500]'} transition-all duration-0 ease-in-out`}
-            // onClick={() => handleActive(1)}
+            onClick={handleRefSobreMi}
           >
             Sobre mi
             {activeIndex === 'sobremi' && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
 
-          </Link>
-          <Link
-            to='contacto'
-            spy
-            smooth
-            offset={-150}
-            duration={700}
+          </a>
+          <a
+            // to='contacto'
+            // spy
+            // smooth
+            // offset={-150}
+            // duration={700}
             className={`navLink cursor-pointer font-titulo text-lg relative text-purpleBal ${activeIndex === 'contacto' ? 'active font-[700]' : 'font-[500]'} transition-all duration-0 ease-in-out`}
-            // onClick={() => handleActive(2)}
+            onClick={handleRefContact}
           >
             Contacto
             {activeIndex === 'contacto' && <div className='bordeBotMenu absolute bottom-3 w-full h-[3px] bg-whiteWi rounded-sm  z-0 opacity-0 transition-all duration-300 ease' />}
-          </Link>
+          </a>
         </section>
 
         {/* toggle */}

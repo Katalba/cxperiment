@@ -101,11 +101,10 @@
 </br>
 
 ## 🌍📣 Integrante Comunity Manager
-
-| <img src="https://media.licdn.com/dms/image/D4D35AQHdEWdD-2csIA/profile-framedphoto-shrink_800_800/0/1680982501711?e=1688608800&v=beta&t=NrXAd1HDMDFvsqz_5U-G3UmbF7_koaeJbceo-I-779U" width=60>|
-|:-:|
-| **Mariano Espinosa** |
-| <a href="https://www.linkedin.com/in/mariano-espinosa28/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| <img src="img ux 1" width=60>| <img src="img ux 2" width=60>|
+|:-:|:-:|
+| **ux 1**| **ux 2**|
+| <a href="Link a github ux 1"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Link a Linkedin ux 1"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="Link github guthub ux 2"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="Link a linkedin ux 2"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
@@ -113,7 +112,7 @@
 | <img src="https://media.licdn.com/dms/image/C4E03AQHiZJ3FtiJXcg/profile-displayphoto-shrink_800_800/0/1664293927619?e=1693440000&v=beta&t=58jEZkZtYwsAyOmpA9rph6DjBuzlv_Ds6h9zEe0duUk" width=60>|
 |:-:|
 | **Dana Nañez** |
-| <a href="https://www.linkedin.com/in/danananez/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| <a href="tu"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/danananez/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 </br>
 
